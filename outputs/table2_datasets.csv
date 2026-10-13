@@ -1,0 +1,115 @@
+dataset,configurations,rows,rows_with_zero_cell,double_zero_or_double_all_event_rows,reason
+dat.aloe2013,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.anand1999,1,34,3,1,Documented binary counts; mappings and source rows in corpus.json
+dat.anker2025,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.assink2016,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.axfors2021,4,33,21,15,Documented binary counts; mappings and source rows in corpus.json
+dat.bakdash2021,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.baker2009,16,77,6,3,Documented binary counts; mappings and source rows in corpus.json
+dat.bangertdrowns2004,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.bartos2023,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.baskerville2012,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.bassler2004,1,10,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.bauer2002,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.bcg,1,13,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.begg1989,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.berkey1998,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.berkey1998r,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.besson2016,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.bonett2010,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.bornmann2007,1,66,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.bourassa1996,1,96,3,1,Documented binary counts; mappings and source rows in corpus.json
+dat.cannon2006,6,24,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.chiarito2020,4,32,2,0,Documented binary counts; mappings and source rows in corpus.json
+dat.cohen1981,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.colditz1994,1,13,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.collins1985a,14,71,15,5,Documented binary counts; mappings and source rows in corpus.json
+dat.collins1985b,4,34,8,6,Documented binary counts; mappings and source rows in corpus.json
+dat.craft2003,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.crede2010,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.crisafulli2020,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.curtin2002,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.curtis1998,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.dagostino1998,8,34,2,0,Documented binary counts; mappings and source rows in corpus.json
+dat.damico2009,1,16,1,0,Documented binary counts; mappings and source rows in corpus.json
+dat.debruin2009,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.demir2022,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.dogliotti2014,11,28,1,1,Documented binary counts; mappings and source rows in corpus.json
+dat.dong2013,10,82,24,12,Documented binary counts; mappings and source rows in corpus.json
+dat.dorn2007,1,19,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.dumouchel1994,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.egger2001,1,16,1,0,Documented binary counts; mappings and source rows in corpus.json
+dat.feng2019,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.fine1993,4,66,4,1,Documented binary counts; mappings and source rows in corpus.json
+dat.franchini2012,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.frank2008,1,4,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.furukawa2003,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.gibson2002,1,7,1,0,Documented binary counts; mappings and source rows in corpus.json
+dat.graves2010,1,17,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.greb2008,1,14,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.greenland1992,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.gurusamy2011,8,16,8,3,Documented binary counts; mappings and source rows in corpus.json
+dat.hackshaw1998,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.hahn2001,1,12,4,3,Documented binary counts; mappings and source rows in corpus.json
+dat.hannum2020,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.hart1999,2,6,0,0,"Structural counts over patient denominators; validates numerical 2x2 calculation, not original person-time incidence-rate analysis"
+dat.hartmannboyce2018,11,136,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.hasselblad1998,6,28,2,0,Documented binary counts; mappings and source rows in corpus.json
+dat.higgins2008,1,17,6,0,Documented binary counts; mappings and source rows in corpus.json
+dat.hine1989,1,6,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.huber2000,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.ishak2007,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.kalaian1996,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.karner2014,6,128,18,7,Documented binary counts; mappings and source rows in corpus.json
+dat.kearon1998,2,30,8,0,"Structural diagnostic 2x2 tables; cases versus noncases as groups, test positivity as outcome; not a treatment-effect interpretation"
+dat.knapp2017,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.konstantopoulos2011,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.landenberger2005,1,58,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.laopaiboon2015,1,15,1,0,Documented binary counts; mappings and source rows in corpus.json
+dat.lau1992,1,33,1,0,Documented binary counts; mappings and source rows in corpus.json
+dat.lee2004,1,16,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.lehmann2018,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.li2007,1,22,2,0,Documented binary counts; mappings and source rows in corpus.json
+dat.lim2014,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.linde2005,4,24,2,1,Documented binary counts; mappings and source rows in corpus.json
+dat.linde2015,76,328,20,9,Documented binary counts; mappings and source rows in corpus.json
+dat.linde2016,41,124,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.lloyd2010,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.lopez2019,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.maire2019,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.mccurdy2020,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.mcdaniel1994,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.meeker2017,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.metap,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.michael2013,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.molloy2014,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.moore1998,1,37,3,0,Documented binary counts; mappings and source rows in corpus.json
+dat.moura2021,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.nakagawa2007,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.nielweise2007,1,18,6,1,Documented binary counts; mappings and source rows in corpus.json
+dat.nielweise2008,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.nissen2007,2,84,66,23,Documented binary counts; mappings and source rows in corpus.json
+dat.normand1999,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.obrien2003,10,55,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.pagliaro1992,3,30,2,0,Documented binary counts; mappings and source rows in corpus.json
+dat.pignon2000,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.poole2003,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.pritz1997,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.quan2000,1,11,1,0,Documented binary counts; mappings and source rows in corpus.json
+dat.raudenbush1985,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.riley2003,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.rivera2025,1,10,0,0,"Structural diagnostic 2x2 tables; cases versus noncases as groups, test positivity as outcome; not a treatment-effect interpretation"
+dat.roever2022,23,42,32,9,"Within-study dose cohort pairs; numerical 2x2 validation only, not randomized concurrent treatment contrasts"
+dat.senn2013,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.spooner2002,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.steurer2006,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.stowe2010,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.tannersmith2016,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.thompson1999,1,28,2,0,Documented binary counts; mappings and source rows in corpus.json
+dat.tian2009,2,96,78,35,Documented binary counts; mappings and source rows in corpus.json
+dat.ursino2021,19,78,58,8,"Within-study dose cohort pairs; numerical 2x2 validation only, not randomized concurrent treatment contrasts"
+dat.vanhowe1999,1,33,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.viechtbauer2021,1,20,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.white2020,0,0,0,0,No documented two-group binary count structure; see inventory and package documentation
+dat.woods2010,6,8,0,0,Documented binary counts; mappings and source rows in corpus.json
+dat.yusuf1985,6,118,17,11,Documented binary counts; mappings and source rows in corpus.json

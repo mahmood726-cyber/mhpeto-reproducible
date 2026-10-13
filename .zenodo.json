@@ -1,0 +1,25 @@
+{
+  "title": "Mantel-Haenszel and Peto meta-analysis in the browser: a tool validated against the R package metafor",
+  "creators": [
+    {
+      "name": "Ahmad, Mahmood"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mahmood726-cyber/allmeta",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23288388",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    }
+  ],
+  "description": "Validation of MH/Peto pooling: 68461/68461 checks after seven fixes. See README for numerical, UI and diagnostic scope."
+}

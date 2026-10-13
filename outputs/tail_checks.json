@@ -1,0 +1,962 @@
+{
+  "checks": 106,
+  "passed": 106,
+  "z_ge_8": 94,
+  "tolerance": 1e-09,
+  "rows": [
+    {
+      "configuration": "dat.bcg|tuberculosis|all|OR",
+      "quantity": "OR.p",
+      "app": 7.877167325444362e-31,
+      "reference": 7.877167325444393e-31,
+      "z": -11.544419298260156,
+      "difference": 4.0026083165028685e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.bcg|tuberculosis|all|OR",
+      "quantity": "PETO.p",
+      "app": 1.8380733863215435e-31,
+      "reference": 1.8380733863216688e-31,
+      "z": -11.668889267819587,
+      "difference": 6.81371327070142e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.bcg|tuberculosis|all|RR",
+      "quantity": "RR.p",
+      "app": 8.911379670741117e-31,
+      "reference": 8.911379670741684e-31,
+      "z": -11.53380718562632,
+      "difference": 6.368552334436855e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.bcg|tuberculosis|all|RD",
+      "quantity": "RD.p",
+      "app": 1.849445345827783e-30,
+      "reference": 1.8494453458278087e-30,
+      "z": -11.470798610202621,
+      "difference": 1.3827765730747327e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.bourassa1996|left-eye vs right-eye|all|OR",
+      "quantity": "OR.p",
+      "app": 0,
+      "reference": 0,
+      "z": 51.13626911173234,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.bourassa1996|left-eye vs right-eye|all|OR",
+      "quantity": "PETO.p",
+      "app": 0,
+      "reference": 0,
+      "z": 54.58349472933936,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.bourassa1996|left-eye vs right-eye|all|RR",
+      "quantity": "RR.p",
+      "app": 0,
+      "reference": 0,
+      "z": 52.12459821171906,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.bourassa1996|left-eye vs right-eye|all|RD",
+      "quantity": "RD.p",
+      "app": 0,
+      "reference": 0,
+      "z": 47.66211740237848,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.colditz1994|tuberculosis|all|OR",
+      "quantity": "OR.p",
+      "app": 7.877167325444362e-31,
+      "reference": 7.877167325444393e-31,
+      "z": -11.544419298260156,
+      "difference": 4.0026083165028685e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.colditz1994|tuberculosis|all|OR",
+      "quantity": "PETO.p",
+      "app": 1.8380733863215435e-31,
+      "reference": 1.8380733863216688e-31,
+      "z": -11.668889267819587,
+      "difference": 6.81371327070142e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.colditz1994|tuberculosis|all|RR",
+      "quantity": "RR.p",
+      "app": 8.911379670741117e-31,
+      "reference": 8.911379670741684e-31,
+      "z": -11.53380718562632,
+      "difference": 6.368552334436855e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.colditz1994|tuberculosis|all|RD",
+      "quantity": "RD.p",
+      "app": 1.849445345827783e-30,
+      "reference": 1.8494453458278087e-30,
+      "z": -11.470798610202621,
+      "difference": 1.3827765730747327e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.damico2009|binary|all|OR",
+      "quantity": "OR.p",
+      "app": 3.5419980605380863e-37,
+      "reference": 3.5419980605380988e-37,
+      "z": -12.740042944183488,
+      "difference": 3.5371517331248425e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.damico2009|binary|all|OR",
+      "quantity": "PETO.p",
+      "app": 5.278143471438789e-39,
+      "reference": 5.278143471438674e-39,
+      "z": -13.064134600738972,
+      "difference": 2.175866557213353e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.damico2009|binary|all|RR",
+      "quantity": "RR.p",
+      "app": 3.847963275512153e-35,
+      "reference": 3.8479632755119954e-35,
+      "z": -12.368954718817903,
+      "difference": 4.0980931106848334e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.damico2009|binary|all|RD",
+      "quantity": "RD.p",
+      "app": 3.96879143879274e-41,
+      "reference": 3.9687914387927454e-41,
+      "z": -13.431208902781886,
+      "difference": 1.412944875957507e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.dorn2007|binary|all|OR",
+      "quantity": "OR.p",
+      "app": 1.612886313227495e-13,
+      "reference": 1.6128863132274868e-13,
+      "z": 7.37750061118085,
+      "difference": 5.008372631855685e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.dorn2007|binary|all|OR",
+      "quantity": "PETO.p",
+      "app": 2.1684236240218347e-14,
+      "reference": 2.168423624021834e-14,
+      "z": 7.640225062517696,
+      "difference": 2.9103571699994307e-16,
+      "passed": true
+    },
+    {
+      "configuration": "dat.dorn2007|binary|all|RR",
+      "quantity": "RR.p",
+      "app": 7.28844690771232e-13,
+      "reference": 7.288446907712374e-13,
+      "z": 7.173912001566877,
+      "difference": 7.481163882963708e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.dorn2007|binary|all|RD",
+      "quantity": "RD.p",
+      "app": 2.3806550106823926e-14,
+      "reference": 2.380655010682395e-14,
+      "z": 7.628193799179904,
+      "difference": 1.0603614910098428e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.graves2010|binary|all|OR",
+      "quantity": "OR.p",
+      "app": 5.829562405020307e-42,
+      "reference": 5.829562405020462e-42,
+      "z": -13.572504402138053,
+      "difference": 2.6671945460712772e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.graves2010|binary|all|OR",
+      "quantity": "PETO.p",
+      "app": 1.38669203311195e-43,
+      "reference": 1.3866920331119445e-43,
+      "z": -13.843804198245703,
+      "difference": 4.020951700754063e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.graves2010|binary|all|RR",
+      "quantity": "RR.p",
+      "app": 1.4436897537382113e-41,
+      "reference": 1.4436897537381777e-41,
+      "z": -13.505884702023277,
+      "difference": 2.3305631335262166e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.graves2010|binary|all|RD",
+      "quantity": "RD.p",
+      "app": 1.6614428809028497e-32,
+      "reference": 1.6614428809028095e-32,
+      "z": -11.871656807184126,
+      "difference": 2.4215453381228406e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hartmannboyce2018|cessation|gum|OR",
+      "quantity": "OR.p",
+      "app": 2.1326157936183867e-31,
+      "reference": 2.1326157936181992e-31,
+      "z": 11.656236658503882,
+      "difference": 8.788440475978141e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hartmannboyce2018|cessation|gum|OR",
+      "quantity": "PETO.p",
+      "app": 1.0504196799193869e-31,
+      "reference": 1.0504196799193691e-31,
+      "z": 11.716399672404993,
+      "difference": 1.6883902718266217e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hartmannboyce2018|cessation|gum|RR",
+      "quantity": "RR.p",
+      "app": 6.538423525451267e-31,
+      "reference": 6.538423525451699e-31,
+      "z": 11.560425188458797,
+      "difference": 6.6036574051733e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hartmannboyce2018|cessation|gum|RD",
+      "quantity": "RD.p",
+      "app": 2.393435437330617e-31,
+      "reference": 2.393435437330404e-31,
+      "z": 11.64640527081551,
+      "difference": 8.8919133121347e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hartmannboyce2018|cessation|patch|OR",
+      "quantity": "OR.p",
+      "app": 7.388672307036609e-47,
+      "reference": 7.38867230703694e-47,
+      "z": 14.375358260812844,
+      "difference": 4.4743855580320344e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hartmannboyce2018|cessation|patch|OR",
+      "quantity": "PETO.p",
+      "app": 1.2505300680374141e-47,
+      "reference": 1.250530068037471e-47,
+      "z": 14.497823258473453,
+      "difference": 4.548651046309354e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hartmannboyce2018|cessation|patch|RR",
+      "quantity": "RR.p",
+      "app": 6.198202423357926e-46,
+      "reference": 6.1982024233582825e-46,
+      "z": 14.22735508651337,
+      "difference": 5.747918514486319e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hartmannboyce2018|cessation|patch|RD",
+      "quantity": "RD.p",
+      "app": 4.121074583457818e-49,
+      "reference": 4.12107458345784e-49,
+      "z": 14.730261605798528,
+      "difference": 5.345624478283142e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hasselblad1998|xi|ind_counseling vs no_contact|OR",
+      "quantity": "OR.p",
+      "app": 6.492602637411314e-38,
+      "reference": 6.492602637411619e-38,
+      "z": 12.871736291947213,
+      "difference": 4.6955318501738665e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hasselblad1998|xi|ind_counseling vs no_contact|OR",
+      "quantity": "PETO.p",
+      "app": 2.130362368428677e-40,
+      "reference": 2.1303623684286125e-40,
+      "z": 13.306203035161436,
+      "difference": 3.0247146014419797e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hasselblad1998|xi|ind_counseling vs no_contact|RR",
+      "quantity": "RR.p",
+      "app": 4.130927908104757e-37,
+      "reference": 4.13092790810488e-37,
+      "z": 12.728037362772643,
+      "difference": 2.972216693226857e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.hasselblad1998|xi|ind_counseling vs no_contact|RD",
+      "quantity": "RD.p",
+      "app": 5.908034925266404e-41,
+      "reference": 5.908034925266523e-41,
+      "z": 13.401716984121352,
+      "difference": 2.019126897768239e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.higgins2008|observed response|all|OR",
+      "quantity": "OR.p",
+      "app": 7.827158528610192e-13,
+      "reference": 7.827158528610195e-13,
+      "z": 7.164148390098285,
+      "difference": 3.870147595677432e-16,
+      "passed": true
+    },
+    {
+      "configuration": "dat.higgins2008|observed response|all|OR",
+      "quantity": "PETO.p",
+      "app": 8.865116726588945e-14,
+      "reference": 8.865116726588752e-14,
+      "z": 7.45679694133046,
+      "difference": 2.1783486394365002e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.higgins2008|observed response|all|RD",
+      "quantity": "RD.p",
+      "app": 9.251418072069182e-15,
+      "reference": 9.251418072069242e-15,
+      "z": 7.749143834177639,
+      "difference": 6.480458274586142e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.karner2014|exa|all|OR",
+      "quantity": "OR.p",
+      "app": 6.178298065515252e-13,
+      "reference": 6.1782980655155e-13,
+      "z": -7.196488535283869,
+      "difference": 4.0204684073504094e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.karner2014|exa|all|OR",
+      "quantity": "PETO.p",
+      "app": 5.690067834688474e-13,
+      "reference": 5.690067834688436e-13,
+      "z": -7.207709927896432,
+      "difference": 6.743363268190458e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.karner2014|exa|all|RR",
+      "quantity": "RR.p",
+      "app": 5.653442615558693e-13,
+      "reference": 5.653442615558328e-13,
+      "z": -7.20858945715029,
+      "difference": 6.447696949843822e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.karner2014|exa|all|RD",
+      "quantity": "RD.p",
+      "app": 6.575651312181159e-13,
+      "reference": 6.575651312181246e-13,
+      "z": -7.187980785086903,
+      "difference": 1.3205963078648027e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.karner2014|dropout|all|OR",
+      "quantity": "OR.p",
+      "app": 5.12064140948445e-35,
+      "reference": 5.120641409484428e-35,
+      "z": -12.345980741119602,
+      "difference": 4.384455338581294e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.karner2014|dropout|all|OR",
+      "quantity": "PETO.p",
+      "app": 2.9090686492623104e-35,
+      "reference": 2.9090686492622404e-35,
+      "z": -12.39140355766875,
+      "difference": 2.4071771363035627e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.karner2014|dropout|all|RR",
+      "quantity": "RR.p",
+      "app": 4.908500728185235e-35,
+      "reference": 4.90850072818415e-35,
+      "z": -12.34938534242305,
+      "difference": 2.2107411863395383e-13,
+      "passed": true
+    },
+    {
+      "configuration": "dat.karner2014|dropout|all|RD",
+      "quantity": "RD.p",
+      "app": 7.425901907724947e-35,
+      "reference": 7.425901907724738e-35,
+      "z": -12.316032118577311,
+      "difference": 2.8218087967638088e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.kearon1998|test positive in cases vs noncases|symptomatic|OR",
+      "quantity": "OR.p",
+      "app": 1.96836251243448e-148,
+      "reference": 1.968362512434524e-148,
+      "z": 25.946948435105305,
+      "difference": 2.2408407321546018e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.kearon1998|test positive in cases vs noncases|symptomatic|OR",
+      "quantity": "PETO.p",
+      "app": 0,
+      "reference": 0,
+      "z": 43.33010336125312,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.kearon1998|test positive in cases vs noncases|symptomatic|RR",
+      "quantity": "RR.p",
+      "app": 1.0124250759297003e-136,
+      "reference": 1.0124250759296274e-136,
+      "z": 24.8876456596612,
+      "difference": 7.204148476032296e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.kearon1998|test positive in cases vs noncases|symptomatic|RD",
+      "quantity": "RD.p",
+      "app": 0,
+      "reference": 0,
+      "z": 76.56855118806547,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.kearon1998|test positive in cases vs noncases|asymptomatic|OR",
+      "quantity": "OR.p",
+      "app": 7.075164489334966e-63,
+      "reference": 7.075164489334496e-63,
+      "z": 16.73674601283186,
+      "difference": 6.637183713412593e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.kearon1998|test positive in cases vs noncases|asymptomatic|OR",
+      "quantity": "PETO.p",
+      "app": 3.000660894815094e-104,
+      "reference": 3.000660894815108e-104,
+      "z": 21.68250926316391,
+      "difference": 4.7493331456647664e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.kearon1998|test positive in cases vs noncases|asymptomatic|RR",
+      "quantity": "RR.p",
+      "app": 1.3266724511589484e-61,
+      "reference": 1.326672451158954e-61,
+      "z": 16.561312913102977,
+      "difference": 4.296366628690482e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.kearon1998|test positive in cases vs noncases|asymptomatic|RD",
+      "quantity": "RD.p",
+      "app": 3.293118646700623e-70,
+      "reference": 3.29311864670044e-70,
+      "z": 17.713601289233186,
+      "difference": 5.549095372230537e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.landenberger2005|recidivism|all|OR",
+      "quantity": "OR.p",
+      "app": 2.336921665578011e-38,
+      "reference": 2.3369216655779994e-38,
+      "z": -12.950413410093338,
+      "difference": 5.0260769179407965e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.landenberger2005|recidivism|all|OR",
+      "quantity": "PETO.p",
+      "app": 6.938109746314977e-39,
+      "reference": 6.938109746314809e-39,
+      "z": -13.043307005270929,
+      "difference": 2.4264945558663567e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.landenberger2005|recidivism|all|RR",
+      "quantity": "RR.p",
+      "app": 1.5517259007221298e-38,
+      "reference": 1.5517259007222684e-38,
+      "z": -12.981808590706441,
+      "difference": 8.931826609053629e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.landenberger2005|recidivism|all|RD",
+      "quantity": "RD.p",
+      "app": 1.442015480659587e-38,
+      "reference": 1.4420154806594765e-38,
+      "z": -12.987422821480237,
+      "difference": 7.656516388301331e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.lau1992|binary|all|OR",
+      "quantity": "OR.p",
+      "app": 3.3800731347249607e-16,
+      "reference": 3.3800731347249055e-16,
+      "z": -8.15892933511835,
+      "difference": 1.63370025335162e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.lau1992|binary|all|OR",
+      "quantity": "PETO.p",
+      "app": 2.9078575968339527e-16,
+      "reference": 2.907857596833913e-16,
+      "z": -8.17708795376158,
+      "difference": 1.3733851124723678e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.lau1992|binary|all|RR",
+      "quantity": "RR.p",
+      "app": 3.653581549112799e-16,
+      "reference": 3.6535815491127407e-16,
+      "z": -8.14952445220774,
+      "difference": 1.5923687750771036e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.lau1992|binary|all|RD",
+      "quantity": "RD.p",
+      "app": 2.817382150795046e-16,
+      "reference": 2.8173821507950943e-16,
+      "z": -8.180897188308775,
+      "difference": 1.7149867450942432e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.linde2005|binary|3|OR",
+      "quantity": "OR.p",
+      "app": 1.695351353042431e-14,
+      "reference": 1.695351353042429e-14,
+      "z": 7.671848493972984,
+      "difference": 1.1167397065704563e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.linde2005|binary|3|OR",
+      "quantity": "PETO.p",
+      "app": 2.9860214409137212e-18,
+      "reference": 2.98602144091373e-18,
+      "z": 8.711983883526294,
+      "difference": 2.966916989541215e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.linde2005|binary|3|RD",
+      "quantity": "RD.p",
+      "app": 2.3551584876641667e-22,
+      "reference": 2.355158487664174e-22,
+      "z": 9.725168195031687,
+      "difference": 3.194334430004347e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.moore1998|binary|all|OR",
+      "quantity": "OR.p",
+      "app": 3.336243645658954e-51,
+      "reference": 3.336243645658692e-51,
+      "z": 15.052262858074721,
+      "difference": 7.844798335789153e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.moore1998|binary|all|OR",
+      "quantity": "PETO.p",
+      "app": 3.3633774921001317e-54,
+      "reference": 3.363377492100147e-54,
+      "z": 15.501985103153826,
+      "difference": 4.480213720452337e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.moore1998|binary|all|RR",
+      "quantity": "RR.p",
+      "app": 1.8326942966662353e-48,
+      "reference": 1.832694296666085e-48,
+      "z": 14.62907213908164,
+      "difference": 8.190451358856388e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.moore1998|binary|all|RD",
+      "quantity": "RD.p",
+      "app": 9.337247211724424e-57,
+      "reference": 9.337247211724386e-57,
+      "z": 15.875693947590614,
+      "difference": 4.121839682758692e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 2|OR",
+      "quantity": "OR.p",
+      "app": 9.121096702017005e-111,
+      "reference": 9.121096702012707e-111,
+      "z": -22.362521670485023,
+      "difference": 4.711492168385746e-13,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 2|OR",
+      "quantity": "PETO.p",
+      "app": 9.626051190958991e-113,
+      "reference": 9.626051190958347e-113,
+      "z": -22.56472949451742,
+      "difference": 6.690181111808943e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 2|RR",
+      "quantity": "RR.p",
+      "app": 1.0091456868696533e-110,
+      "reference": 1.0091456868694128e-110,
+      "z": -22.35800928409794,
+      "difference": 2.3832101763439884e-13,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 2|RD",
+      "quantity": "RD.p",
+      "app": 3.7139798743131244e-124,
+      "reference": 3.7139798743128767e-124,
+      "z": -23.698753596208718,
+      "difference": 6.669979101929501e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 3|OR",
+      "quantity": "OR.p",
+      "app": 0,
+      "reference": 0,
+      "z": -40.0754299361046,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 3|OR",
+      "quantity": "PETO.p",
+      "app": 0,
+      "reference": 0,
+      "z": -40.96610816486759,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 3|RR",
+      "quantity": "RR.p",
+      "app": 0,
+      "reference": 0,
+      "z": -39.949111980388125,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 3|RD",
+      "quantity": "RD.p",
+      "app": 1.283938883271512e-303,
+      "reference": 1.2839388832707669e-303,
+      "z": -37.244847321950616,
+      "difference": 5.804050939003518e-13,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 4|OR",
+      "quantity": "OR.p",
+      "app": 0,
+      "reference": 0,
+      "z": -52.98905153449601,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 4|OR",
+      "quantity": "PETO.p",
+      "app": 0,
+      "reference": 0,
+      "z": -55.41416621895312,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 4|RR",
+      "quantity": "RR.p",
+      "app": 0,
+      "reference": 0,
+      "z": -52.88167770617931,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 4|RD",
+      "quantity": "RD.p",
+      "app": 0,
+      "reference": 0,
+      "z": -49.2781733557053,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 3|OR",
+      "quantity": "OR.p",
+      "app": 5.874337533316431e-196,
+      "reference": 5.874337533314623e-196,
+      "z": -29.863440538655265,
+      "difference": 3.077688453027246e-13,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 3|OR",
+      "quantity": "PETO.p",
+      "app": 1.1228092114629397e-198,
+      "reference": 1.1228092114629601e-198,
+      "z": -30.072097459080304,
+      "difference": 1.8188203170512532e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 3|RR",
+      "quantity": "RR.p",
+      "app": 1.2611623320784716e-198,
+      "reference": 1.2611623320781874e-198,
+      "z": -30.068237423149117,
+      "difference": 2.253757984585107e-13,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 3|RD",
+      "quantity": "RD.p",
+      "app": 1.420067376497784e-156,
+      "reference": 1.420067376497793e-156,
+      "z": -26.658666971360116,
+      "difference": 6.1954440340047135e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 4|OR",
+      "quantity": "OR.p",
+      "app": 0,
+      "reference": 0,
+      "z": -50.95753801988837,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 4|OR",
+      "quantity": "PETO.p",
+      "app": 0,
+      "reference": 0,
+      "z": -52.05673851524722,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 4|RR",
+      "quantity": "RR.p",
+      "app": 0,
+      "reference": 0,
+      "z": -51.83251765399142,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 4|RD",
+      "quantity": "RD.p",
+      "app": 0,
+      "reference": 0,
+      "z": -41.08746067436791,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 4|OR",
+      "quantity": "OR.p",
+      "app": 2.7496181394701e-73,
+      "reference": 2.749618139470311e-73,
+      "z": -18.108123645016807,
+      "difference": 7.67853138313224e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 4|OR",
+      "quantity": "PETO.p",
+      "app": 5.40570782953911e-74,
+      "reference": 5.405707829539473e-74,
+      "z": -18.197459755755318,
+      "difference": 6.727438022491816e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 4|RR",
+      "quantity": "RR.p",
+      "app": 1.3433829313084737e-73,
+      "reference": 1.3433829313086429e-73,
+      "z": -18.14751674256428,
+      "difference": 1.2594100553533833e-13,
+      "passed": true
+    },
+    {
+      "configuration": "dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 4|RD",
+      "quantity": "RD.p",
+      "app": 2.3518940812644347e-71,
+      "reference": 2.351894081264597e-71,
+      "z": -17.861510062508597,
+      "difference": 6.908040107411036e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.rivera2025|test positive in cases vs noncases|all|OR",
+      "quantity": "OR.p",
+      "app": 5.633304163096286e-155,
+      "reference": 5.633304163096179e-155,
+      "z": 26.520440017759892,
+      "difference": 1.896177369719344e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.rivera2025|test positive in cases vs noncases|all|OR",
+      "quantity": "PETO.p",
+      "app": 1.254253500698133e-308,
+      "reference": 1.2542535006984116e-308,
+      "z": 37.55309343072922,
+      "difference": 2.221664313468525e-13,
+      "passed": true
+    },
+    {
+      "configuration": "dat.rivera2025|test positive in cases vs noncases|all|RR",
+      "quantity": "RR.p",
+      "app": 1.039891652053966e-102,
+      "reference": 1.0398916520539001e-102,
+      "z": 21.518722091368666,
+      "difference": 6.330262030217994e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.rivera2025|test positive in cases vs noncases|all|RD",
+      "quantity": "RD.p",
+      "app": 0,
+      "reference": 0,
+      "z": 39.40044786066513,
+      "difference": 0,
+      "passed": true
+    },
+    {
+      "configuration": "dat.vanhowe1999|positive|all|OR",
+      "quantity": "OR.p",
+      "app": 8.117635161592143e-19,
+      "reference": 8.117635161591855e-19,
+      "z": -8.858392655791105,
+      "difference": 3.5469261792917266e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.vanhowe1999|positive|all|OR",
+      "quantity": "PETO.p",
+      "app": 2.811684632731761e-21,
+      "reference": 2.811684632731753e-21,
+      "z": -9.469506661469598,
+      "difference": 2.809462322184766e-15,
+      "passed": true
+    },
+    {
+      "configuration": "dat.vanhowe1999|positive|all|RR",
+      "quantity": "RR.p",
+      "app": 6.04754326857983e-22,
+      "reference": 6.047543268579395e-22,
+      "z": -9.628724548079585,
+      "difference": 7.18411911695136e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.vanhowe1999|positive|all|RD",
+      "quantity": "RD.p",
+      "app": 4.2155330196892217e-20,
+      "reference": 4.2155330196891524e-20,
+      "z": -9.182408995044959,
+      "difference": 1.641858978524143e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.viechtbauer2021|binary|all|OR",
+      "quantity": "OR.p",
+      "app": 2.653786463728679e-20,
+      "reference": 2.653786463728729e-20,
+      "z": 9.2320993888171,
+      "difference": 1.882359738257005e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.viechtbauer2021|binary|all|OR",
+      "quantity": "PETO.p",
+      "app": 1.1182219504809187e-20,
+      "reference": 1.1182219504808975e-20,
+      "z": 9.324201688498922,
+      "difference": 1.8972371302957234e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.viechtbauer2021|binary|all|RR",
+      "quantity": "RR.p",
+      "app": 4.2565198553777625e-20,
+      "reference": 4.256519855377841e-20,
+      "z": 9.18136727677698,
+      "difference": 1.8381425824169264e-14,
+      "passed": true
+    },
+    {
+      "configuration": "dat.viechtbauer2021|binary|all|RD",
+      "quantity": "RD.p",
+      "app": 1.2138823841729501e-20,
+      "reference": 1.2138823841729071e-20,
+      "z": 9.315492339043812,
+      "difference": 3.545030206878156e-14,
+      "passed": true
+    }
+  ]
+}

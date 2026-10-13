@@ -1,0 +1,38 @@
+{
+  "title": "mh-peto refuses fewer than two current rows",
+  "status": "passed",
+  "panels": [
+    {
+      "url": "http://127.0.0.1:8000/mh-peto/index.html#eyJ2IjoxLCJzcmMiOiJTdHVkeUEsIDMsIDUwMCwgOCwgNTAwXG5TdHVkeUIsIDEsIDIwMCwgNSwgMjAwXG5TdHVkeUMsIDAsIDE1MCwgNCwgMTUwXG5TdHVkeUQsIDIsIDQwMCwgNiwgNDAwXG5TdHVkeUUsIDQsIDYwMCwgMTAsIDYwMCIsIm1lYXN1cmUiOiJPUiJ9",
+      "panel": "INDEPENDENT VALIDATION\nValidate this analysis in RRe-run full validation\n\nValidation refused: Need at least two valid studies\n\nFull R re-execution (one-command instructions) · Open Codespaces · Reproducible repository ·"
+    }
+  ],
+  "requests": [
+    "http://127.0.0.1:8000/mh-peto/index.html",
+    "http://127.0.0.1:8000/shared/forced-colors.css",
+    "http://127.0.0.1:8000/hub/app-style.css",
+    "http://127.0.0.1:8000/hub/shared/csv-upload.js",
+    "http://127.0.0.1:8000/hub/shared/chart-download.js",
+    "http://127.0.0.1:8000/hub/shared/axis-controls.js",
+    "http://127.0.0.1:8000/hub/shared/results-export.js",
+    "http://127.0.0.1:8000/hub/shared/url-state.js",
+    "http://127.0.0.1:8000/hub/shared/reset-undo.js",
+    "http://127.0.0.1:8000/hub/shared/tooltips.js",
+    "http://127.0.0.1:8000/shared/ma-core.js",
+    "http://127.0.0.1:8000/shared/fragility.js",
+    "http://127.0.0.1:8000/shared/diagnostic-plots.js",
+    "http://127.0.0.1:8000/shared/build-info.js",
+    "http://127.0.0.1:8000/shared/ma-studies-v1.js",
+    "http://127.0.0.1:8000/shared/truthcert-export.js",
+    "http://127.0.0.1:8000/shared/truthcert-ui.js",
+    "http://127.0.0.1:8000/shared/ma-comparisons-v1.js",
+    "http://127.0.0.1:8000/shared/autosave.js",
+    "http://127.0.0.1:8000/hub/shared/glossary.json",
+    "http://127.0.0.1:8000/hub/shared/a11y-landmarks.js",
+    "http://127.0.0.1:8000/shared/alm-validate.js",
+    "http://127.0.0.1:8000/mh-peto/validate/adapter.js"
+  ],
+  "hosts": [
+    "127.0.0.1:8000"
+  ]
+}

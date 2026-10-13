@@ -1,0 +1,1965 @@
+{
+  "quantities": {
+    "OR.est": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 7.486461255031365e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 9.16970699702746e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 9.712971412722299e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.z": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 2.16004695158545e-14,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.p": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 3.760880495917718e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.beta": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 6.996183214316981e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.se": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 2.1151887883993452e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "PETO.est": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.321532149834662e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "PETO.lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.3708155804436645e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "PETO.hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.2541139812768353e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "PETO.z": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 4.566904694945765e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "PETO.p": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 4.926614671774132e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "PETO.beta": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 3.70118025037257e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "PETO.se": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 2.0787924442811585e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.display_pooled_est": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.0004979616577331925,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "OR.display_pooled_lo": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.0004927606979252541,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "OR.display_pooled_hi": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.0004979480571793982,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "OR.display_pooled_zval": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.004979158897440605,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0050000001
+    },
+    "OR.display_pooled_pval": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.0004993045988408024,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "PETO.display_pooled_est": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.0004970882072647953,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "PETO.display_pooled_lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.0004968355153232018,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "PETO.display_pooled_hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.0004987997129621835,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "PETO.display_pooled_zval": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.004985061330972984,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0050000001
+    },
+    "PETO.display_pooled_pval": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.0004989015913334782,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "OR.study_count": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.study_beta": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 2.6843495405077977e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.study_se": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 2.687093631145331e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.display_study_est": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.0005000000000023874,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "OR.display_study_lo": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.0004999866516366414,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "OR.display_study_hi": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.0004996219346882214,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "OR.labbe_logEff": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 7.569127928496508e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.labbe_pc": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.labbe_pt": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.labbe_curve_max_abs_error": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 4.440892098500626e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.est": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 6.196437984902803e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 6.661338147750939e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 9.486734299035277e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.z": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 3.223278537722119e-14,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.p": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.0158540675320182e-14,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.beta": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 6.106226635438361e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.se": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 2.1681944796241854e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.display_pooled_est": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.0004997702000615334,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RR.display_pooled_lo": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.0004986511598966126,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RR.display_pooled_hi": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.0004997686033580973,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RR.display_pooled_zval": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.004967114984429699,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0050000001
+    },
+    "RR.display_pooled_pval": {
+      "checks": 247,
+      "pass": 247,
+      "max_difference": 0.0004997998293305717,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RR.study_count": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.study_beta": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 8.291978215169138e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.study_se": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 2.9128992564597523e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.display_study_est": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.0005000000000006111,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RR.display_study_lo": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.0004998637235283931,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RR.display_study_hi": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.000498892433989484,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RR.labbe_logEff": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 7.887181004866377e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.labbe_pc": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.labbe_pt": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.labbe_curve_max_abs_error": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 9.992007221626409e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.est": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.1275702593849246e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 2.220446049250313e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.1102230246251565e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.z": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 5.88418203051333e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.p": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 3.497202527569243e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.beta": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.1275702593849246e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.se": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 2.7755575615628914e-17,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.display_pooled_est": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.0004989278055754082,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RD.display_pooled_lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.0004966950352588151,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RD.display_pooled_hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.0004969465136518414,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RD.display_pooled_zval": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.00494045422340994,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0050000001
+    },
+    "RD.display_pooled_pval": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0.0004988098869946889,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RD.study_count": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.study_beta": {
+      "checks": 2236,
+      "pass": 2236,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.study_se": {
+      "checks": 2236,
+      "pass": 2236,
+      "max_difference": 5.551115123125783e-17,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.display_study_est": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.0005000000000000004,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RD.display_study_lo": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.0004997767875723758,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RD.display_study_hi": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0.0004992423518194108,
+      "nonfinite_mismatches": 0,
+      "tolerance": 0.0005000001
+    },
+    "RD.labbe_logEff": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 7.569127928496508e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.labbe_pc": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.labbe_pt": {
+      "checks": 2389,
+      "pass": 2389,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.labbe_curve_max_abs_error": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 4.440892098500626e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.single_row_refusal": {
+      "checks": 84,
+      "pass": 84,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.single_row_UI_clear": {
+      "checks": 84,
+      "pass": 84,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.single_row_refusal": {
+      "checks": 84,
+      "pass": 84,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.single_row_UI_clear": {
+      "checks": 84,
+      "pass": 84,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.single_row_refusal": {
+      "checks": 84,
+      "pass": 84,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.single_row_UI_clear": {
+      "checks": 84,
+      "pass": 84,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.fragility_FI": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.fragility_FQ": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.fragility_DL_beta": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.2212453270876722e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.fragility_DL_lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 2.1094237467877974e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "OR.fragility_DL_hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 1.7530171878316158e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.fragility_FI": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.fragility_FQ": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.fragility_DL_beta": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 2.831068712794149e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.fragility_DL_lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 3.83026943495679e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RR.fragility_DL_hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 9.547918011776346e-15,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.fragility_FI": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.fragility_FQ": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 0,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.fragility_DL_beta": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 3.3306690738754696e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.fragility_DL_lo": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 4.440892098500626e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    },
+    "RD.fragility_DL_hi": {
+      "checks": 252,
+      "pass": 252,
+      "max_difference": 3.3306690738754696e-16,
+      "nonfinite_mismatches": 0,
+      "tolerance": 1e-09
+    }
+  },
+  "failures": [],
+  "single_row_scope_exclusions": [
+    {
+      "id": "dat.baker2009|exac|Fluticasone+Salmeterol vs Tiotropium|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.baker2009|exac|Fluticasone+Salmeterol vs Tiotropium|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.baker2009|exac|Fluticasone+Salmeterol vs Tiotropium|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.baker2009|exac|Formoterol vs Tiotropium|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.baker2009|exac|Formoterol vs Tiotropium|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.baker2009|exac|Formoterol vs Tiotropium|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.collins1985a|o|R / AA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.collins1985a|o|R / AA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.collins1985a|o|R / AA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.collins1985a|d|R / AA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.collins1985a|d|R / AA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.collins1985a|d|R / AA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Apixaban vs Aspirin|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Apixaban vs Aspirin|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Apixaban vs Aspirin|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Apixaban vs VKAs|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Apixaban vs VKAs|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Apixaban vs VKAs|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Aspirin vs Aspirin+Clopidogtrel|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Aspirin vs Aspirin+Clopidogtrel|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Aspirin vs Aspirin+Clopidogtrel|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Aspirin+Clopidogtrel vs VKAs|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Aspirin+Clopidogtrel vs VKAs|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Aspirin+Clopidogtrel vs VKAs|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 110mg vs Dabigatran 150mg|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 110mg vs Dabigatran 150mg|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 110mg vs Dabigatran 150mg|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 110mg vs VKAs|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 110mg vs VKAs|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 110mg vs VKAs|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 150mg vs VKAs|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 150mg vs VKAs|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Dabigatran 150mg vs VKAs|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Rivaroxaban vs VKAs|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Rivaroxaban vs VKAs|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dogliotti2014|stroke|Rivaroxaban vs VKAs|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dong2013|death|LABA-ICS vs TIO-HH|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dong2013|death|LABA-ICS vs TIO-HH|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.dong2013|death|LABA-ICS vs TIO-HH|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Antithrombin III vs Control/Placebo|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Antithrombin III vs Control/Placebo|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Antithrombin III vs Control/Placebo|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Control/Placebo vs EACA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Control/Placebo vs EACA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Control/Placebo vs EACA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Control/Placebo vs Solvent detergent plasma|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Control/Placebo vs Solvent detergent plasma|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|Control/Placebo vs Solvent detergent plasma|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|EACA vs Tranexamic acid|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|EACA vs Tranexamic acid|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.gurusamy2011|death|EACA vs Tranexamic acid|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hart1999|stroke counts over patients (not person-time)|control|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hart1999|stroke counts over patients (not person-time)|control|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hart1999|stroke counts over patients (not person-time)|control|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|oral spray|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|oral spray|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|oral spray|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch and inhalator|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch and inhalator|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch and inhalator|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch and lozenge|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch and lozenge|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch and lozenge|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch, gum, and lozenge|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch, gum, and lozenge|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.hartmannboyce2018|cessation|patch, gum, and lozenge|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NRI vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NRI vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NRI vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NaSSa vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NaSSa vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NaSSa vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NaSSa vs rMAO-A|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NaSSa vs rMAO-A|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|NaSSa vs rMAO-A|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|Placebo vs SNRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|Placebo vs SNRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|resp|Placebo vs SNRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NRI vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NRI vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NRI vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs Placebo|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs Placebo|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs Placebo|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs rMAO-A|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs rMAO-A|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|NaSSa vs rMAO-A|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|SNRI vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|SNRI vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|remi|SNRI vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NRI vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NRI vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NRI vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NaSSa vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NaSSa vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NaSSa vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NaSSa vs rMAO-A|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NaSSa vs rMAO-A|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|NaSSa vs rMAO-A|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|Placebo vs SNRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|Placebo vs SNRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss|Placebo vs SNRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|NRI vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|NRI vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|NRI vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|NaSSa vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|NaSSa vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|NaSSa vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|Placebo vs SNRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|Placebo vs SNRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2015|loss.ae|Placebo vs SNRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT vs Remote CBT|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT vs Remote CBT|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT vs Remote CBT|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT + SSRI vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT + SSRI vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face CBT + SSRI vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs Face-to-face PST + SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs Face-to-face PST + SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs Face-to-face PST + SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs UC|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs UC|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST vs UC|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST + SSRI vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST + SSRI vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face PST + SSRI vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs Face-to-face interpsy + SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs Face-to-face interpsy + SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs Face-to-face interpsy + SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy + SSRI vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy + SSRI vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face interpsy + SSRI vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face psychodyn vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face psychodyn vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Face-to-face psychodyn vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Ind drug vs Other face-to-face|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Ind drug vs Other face-to-face|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Ind drug vs Other face-to-face|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NRI vs SSRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NRI vs SSRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NRI vs SSRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NaSSa vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NaSSa vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NaSSa vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NaSSa vs rMAO-A|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NaSSa vs rMAO-A|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|NaSSa vs rMAO-A|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Other face-to-face vs TCA|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Other face-to-face vs TCA|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Other face-to-face vs TCA|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Placebo vs SNRI|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Placebo vs SNRI|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.linde2016|resp|Placebo vs SNRI|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 5|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 5|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 5|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 5|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 5|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 5|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 5|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 5|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 5|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|4 vs 5|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|4 vs 5|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.obrien2003|preeclampsia by within-study BMI category rank|4 vs 5|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 120|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 120|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 120|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 40|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 40|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 40|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 60|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 60|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 60|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 70|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 70|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 70|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 90|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 90|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 90|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|120 vs 150|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|120 vs 150|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|120 vs 150|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|120 vs 80|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|120 vs 80|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|120 vs 80|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|150 vs 80|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|150 vs 80|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|150 vs 80|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 50|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 50|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 50|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 80|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 80|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 80|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 70|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 70|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 70|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 80|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 80|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 80|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|60 vs 70|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|60 vs 70|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.roever2022|dose-limiting toxicity by dose cohort|60 vs 70|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 200|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 200|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 200|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 400|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 400|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 400|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 600|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 600|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 600|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 800|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 800|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 800|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 600|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 600|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 600|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 800|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 800|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 800|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs Placebo|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs Placebo|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs Placebo|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs SFC|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs SFC|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs SFC|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs Salmeterol|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs Salmeterol|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Fluticasone vs Salmeterol|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Placebo vs SFC|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Placebo vs SFC|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|Placebo vs SFC|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|SFC vs Salmeterol|OR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|SFC vs Salmeterol|RR",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    },
+    {
+      "id": "dat.woods2010|r|SFC vs Salmeterol|RD",
+      "reason": "Page requires >=2 input rows; R accepts a single row",
+      "page_refused": true
+    }
+  ],
+  "page_configurations": 1008,
+  "expected_page_configurations": 1008,
+  "fragility_configurations": 756,
+  "checks": 68461,
+  "pass": 68461
+}

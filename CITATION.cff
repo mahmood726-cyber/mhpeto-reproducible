@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite this validation archive when using these results."
+title: "Mantel-Haenszel and Peto meta-analysis in the browser: a tool validated against the R package metafor"
+type: software
+authors:
+  - family-names: Ahmad
+    given-names: Mahmood
+version: 1.0.0
+license: MIT
+references:
+  - type: software
+    title: allmeta
+    authors:
+      - family-names: Ahmad
+        given-names: Mahmood
+    url: https://github.com/mahmood726-cyber/allmeta
+    notes: "isDerivedFrom; validated source commit 7433ef7 (PR #105, squash-merged; seven fixes, direct upper-tail p-values and the Validate-in-R button)"
+  - type: software
+    title: allmeta
+    authors:
+      - family-names: Ahmad
+        given-names: Mahmood
+    version: 1.2.1
+    doi: 10.5281/zenodo.23288388
+    notes: isDerivedFrom

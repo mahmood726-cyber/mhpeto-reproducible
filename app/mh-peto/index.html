@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; media-src 'self' blob:; manifest-src 'self'">
+  <link rel="stylesheet" href="../shared/forced-colors.css">
+  <meta name="description" content="Mantel-Haenszel and Peto one-step pooling of 2×2 tables for rare events. No continuity correction needed.">
+  <meta name="color-scheme" content="light dark">
+  <title>MH / Peto pooling</title>
+  <style>
+    :root { --bg:#f6f4ef; --panel:#fff; --ink:#15181d; --muted:#5c6470;
+            --accent:#2c5e8a; --accent-soft:#e8f0f7; --warn:#b05a1c;
+            --warn-soft:#fbeedd; --border:#d9d5cc; --input-bg:#fbfaf6; }
+    @media (prefers-color-scheme:dark) {
+      :root { --bg:#141618; --panel:#1c1f23; --ink:#e7e4dc; --muted:#98a0ae;
+              --accent:#6aa6d4; --accent-soft:#223044; --warn:#e0a268;
+              --warn-soft:#3a2d1c; --border:#2f343a; --input-bg:#23272c; }
+    }
+    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; } }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+           background: var(--bg); color: var(--ink); min-height: 100vh; line-height: 1.5; }
+    header { padding: 2rem clamp(1rem, 3vw, 3rem) 1rem; border-bottom: 1px solid var(--border); background: var(--panel); }
+    header h1 { margin: 0 0 0.25rem; font-size: 1.6rem; letter-spacing: -0.01em; }
+    header p { margin: 0; color: var(--muted); font-size: 0.95rem; max-width: 72ch; }
+    main { padding: 1.5rem clamp(1rem, 3vw, 3rem); display: grid; gap: 1.5rem;
+           grid-template-columns: minmax(320px, 26rem) 1fr; align-items: start; }
+    @media (max-width: 1000px) { main { grid-template-columns: 1fr; } }
+    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem 1.25rem; }
+    .panel h2 { margin: 0 0 0.75rem; font-size: 0.85rem; font-weight: 600;
+                text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+    textarea { width: 100%; min-height: 11rem; padding: 0.5rem 0.65rem;
+               border: 1px solid var(--border); background: var(--input-bg); color: var(--ink);
+               border-radius: 6px; font: 0.84rem/1.4 "SF Mono", Consolas, monospace; }
+    select { width: 100%; padding: 0.35rem 0.55rem; border: 1px solid var(--border);
+      background: var(--input-bg); color: var(--ink); border-radius: 6px; font: inherit; }
+    label { display: block; font-size: 0.85rem; margin-bottom: 0.55rem; }
+    label .hint { display: block; color: var(--muted); font-size: 0.72rem; margin-top: 0.1rem; }
+    button.primary { background: var(--accent); color: #fff; border: none; padding: 0.5rem 1rem;
+                     border-radius: 6px; font-weight: 600; font-size: 0.88rem; cursor: pointer; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.84rem; margin-bottom: 1rem; }
+    th, td { padding: 0.35rem 0.5rem; border-bottom: 1px solid var(--border); text-align: left; }
+    th { color: var(--muted); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    td code { background: var(--accent-soft); padding: 0.1rem 0.35rem; border-radius: 4px; }
+    .pooled-row { background: var(--accent-soft); font-weight: 600; }
+    svg { width: 100%; height: auto; display: block; }
+    footer { padding: 1rem clamp(1rem, 3vw, 3rem) 2rem; color: var(--muted); font-size: 0.8rem; }
+    footer code { background: var(--accent-soft); padding: 0.1rem 0.35rem; border-radius: 3px; }
+    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem;
+               padding-top: 0.75rem; border-top: 1px dashed var(--border); align-items: center; }
+  </style>
+  <link rel="stylesheet" href="../hub/app-style.css">
+  <!-- Cycle 2.6 shared UX modules — wired per RETROFIT_AUDIT.md:
+       wired: csv-upload, chart-download, axis-controls, results-export, url-state, reset-undo, tooltips -->
+  <script src="../hub/shared/csv-upload.js"></script>
+  <script src="../hub/shared/chart-download.js"></script>
+  <script src="../hub/shared/axis-controls.js"></script>
+  <script src="../hub/shared/results-export.js"></script>
+  <script src="../hub/shared/url-state.js"></script>
+  <script src="../hub/shared/reset-undo.js"></script>
+  <script src="../hub/shared/tooltips.js"></script>
+  <script src="../shared/ma-core.js"></script>
+  <script src="../shared/fragility.js"></script>
+  <script src="../shared/diagnostic-plots.js"></script>
+  <script src="../shared/build-info.js"></script>
+  <script src="../shared/ma-studies-v1.js"></script>
+  <script src="../shared/truthcert-export.js"></script>
+  <script src="../shared/truthcert-ui.js"></script>
+  <script src="../shared/ma-comparisons-v1.js"></script>
+  <script src="../shared/autosave.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:-9999px;z-index:99999;padding:6px 10px;background:#000;color:#fff;border-radius:4px;text-decoration:none" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px';this.style.top='-9999px'">Skip to main content</a>
+<a id="hub-back" href="../" aria-label="Back to allmeta hub" style="position:fixed;top:12px;left:12px;z-index:99999;padding:6px 12px;background:rgba(28,31,35,0.85);color:#fff;text-decoration:none;border-radius:14px;font:600 12px/1 system-ui,sans-serif;letter-spacing:.04em;box-shadow:0 2px 8px rgba(0,0,0,0.18);transition:opacity .15s ease;opacity:.85" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">&#8592; allmeta</a>
+  <header>
+    <h1>MH / Peto pooling</h1>
+    <p>For rare events, inverse-variance pooling on log-OR is biased. Mantel-Haenszel (fixed-effect) and Peto one-step odds ratio avoid continuity correction and perform well when event rates are low (&lt; 1%).</p>
+  </header>
+  <main id="main">
+    <section class="panel">
+      <h2>Input</h2>
+
+      <!-- csv-upload mount: file picker for study,e1,n1,e2,n2 CSV files -->
+      <div id="alm-csv-mount"></div>
+
+      <label style="display:block; font-size:0.85rem; margin-bottom:0.4rem; margin-top:0.6rem">
+        Studies — <code>study, e1, n1, e2, n2</code>
+        <span class="hint">events + totals per arm; one row per study</span>
+      </label>
+      <textarea id="src" aria-label="Studies — name, events1, n1, events2, n2 (one per line)">StudyA, 3, 500, 8, 500
+StudyB, 1, 200, 5, 200
+StudyC, 0, 150, 4, 150
+StudyD, 2, 400, 6, 400
+StudyE, 4, 600, 10, 600</textarea>
+      <label>
+        <span>Effect measure</span>
+        <select id="measure" aria-label="Measure">
+          <option value="OR" selected>Odds ratio</option>
+          <option value="RR">Risk ratio</option>
+          <option value="RD">Risk difference</option>
+        </select>
+      </label>
+      <button type="button" id="btn-run" class="primary" style="width:100%">Pool</button>
+
+      <!-- axis-controls mount -->
+      <div id="alm-axis-mount" style="margin-top:0.75rem"></div>
+
+      <!-- reset-undo mount -->
+      <div id="alm-undo-mount" style="margin-top:0.5rem"></div>
+    </section>
+    <section class="panel">
+      <h2>Pooled estimates</h2>
+      <table id="pooled">
+        <thead><tr><th>Method</th><th>Estimate</th><th>95% CI</th><th>z</th><th>p</th></tr></thead>
+        <tbody id="pooled-body"></tbody>
+      </table>
+      <p id="fragility-note" class="stat" style="margin:0.4rem 0 0;font-size:0.85rem"></p>
+      <h2 style="margin-top:0.5rem">Per-study</h2>
+      <table id="per-study">
+        <thead><tr><th>Study</th><th>e1/n1</th><th>e2/n2</th><th>Effect</th><th>95% CI</th></tr></thead>
+        <tbody id="per-body"></tbody>
+      </table>
+      <h2 style="margin-top:0.5rem">Forest</h2>
+      <svg id="forest" viewBox="0 0 600 280" role="img" aria-label="Forest plot of per-study and pooled effects"></svg>
+      <h2 style="margin-top:0.5rem">L'Abbé plot</h2>
+      <p style="font-size:0.8rem;color:var(--muted);margin:0 0 .3rem">Control vs treatment event rate per study (point size increases with study size). The diagonal is no effect; the curve holds an inverse-variance fixed-effect estimate constant (RR for the RR selection, OR otherwise, including the RD selection). It is separate from the MH/Peto estimates above.</p>
+      <svg id="labbe" viewBox="0 0 600 320" role="img" aria-label="L'Abbe plot of control vs treatment event rates"></svg>
+
+      <!-- chart-download mount -->
+      <div class="actions">
+        <span style="font-size:0.8rem;color:var(--muted)">Download chart:</span>
+        <div id="alm-chart-mount"></div>
+      </div>
+
+      <!-- results-export mount -->
+      <div class="actions">
+        <span style="font-size:0.8rem;color:var(--muted)">Export results:</span>
+        <div id="alm-export-mount"></div>
+      </div>
+
+      <!-- cross-tool bus (ma-studies-v1) producer -->
+      <div class="actions">
+        <span style="font-size:0.8rem;color:var(--muted)">Cross-tool:</span>
+        <button type="button" id="btn-bus-save" title="Send the per-study effects (log scale for OR/RR, identity for RD) to the shared ma-studies-v1 bus so forest-plot, funnel-plot, influence and other tools can pool them without re-typing." style="border:1px solid var(--border);border-radius:6px;padding:0.45rem 0.85rem;cursor:pointer;background:transparent;color:inherit">Send to bus</button>
+        <button type="button" id="btn-verify-in-r" title="Push the per-study effects to the shared bus and open WebR Validator pre-loaded with metafor — independent R verification in your browser." style="background:#2a6cae;color:#fff;border:1px solid #2a6cae;border-radius:6px;padding:0.45rem 0.85rem;font-weight:600;cursor:pointer">Verify in R</button>
+        <button type="button" id="btn-truthcert" title="Download an HMAC-signed TruthCert receipt of the current per-study effects — re-verifiable offline with your signing key." style="background:#7c3aed;color:#fff;border:1px solid #7c3aed;border-radius:6px;padding:0.45rem 0.85rem;font-weight:600;cursor:pointer">TruthCert receipt</button>
+        <button type="button" id="btn-truthcert-key" title="Set or generate the TruthCert signing key (shared across all allmeta apps)." style="border:1px solid var(--border);border-radius:6px;padding:0.45rem 0.85rem;cursor:pointer;background:transparent;color:inherit">&#128273; Key</button>
+      </div>
+    </section>
+    <section id="alm-validate" class="panel" style="grid-column:1/-1"></section>
+  </main>
+  <footer>
+    <span data-gloss="mh-or">MH</span> for OR: &Sigma;(a&middot;d/n) / &Sigma;(b&middot;c/n), with Robins-Breslow-Greenland variance.
+    <span data-gloss="peto-or">Peto OR</span>: exp(&Sigma;(O&minus;E) / &Sigma;V).
+    Cochrane Handbook 10.4.4 recommends MH or Peto for rare events over DerSimonian-Laird; Peto requires roughly balanced arms.
+  </footer>
+  <script>
+  (function () {
+    'use strict';
+
+    // ---- engine (unchanged from pre-retrofit) ----
+
+    // Cycle 7.1: exact qnorm(0.975) for 95% CIs.  Using 1.96 introduces a
+    // ~1.3e-5 drift vs metafor / R; the R-parity Playwright test now asserts
+    // 1e-6 agreement so the looser value would fail.
+    var Z975 = 1.959963984540054;
+
+    function parse(text) {
+      // Accepts either:
+      //   study, e1, n1, e2, n2   (study label first — canonical CSV format)
+      //   e1, n1, e2, n2, label   (legacy textarea format, numeric first)
+      return text.trim().split(/\n/).map(function (l, i) {
+        if (!l.trim()) return null;
+        var parts = l.split(/,/).map(function (s) { return s.trim(); });
+        // Try study-first format: parts[0] is string label, rest are numbers
+        var label, e1, n1, e2, n2;
+        if (isNaN(Number(parts[0])) || !Number.isFinite(Number(parts[0]))) {
+          // study name first
+          label = parts[0] || ('Study ' + (i + 1));
+          e1 = parseInt(parts[1], 10); n1 = parseInt(parts[2], 10);
+          e2 = parseInt(parts[3], 10); n2 = parseInt(parts[4], 10);
+        } else {
+          // legacy: numeric first, optional label at end
+          e1 = parseInt(parts[0], 10); n1 = parseInt(parts[1], 10);
+          e2 = parseInt(parts[2], 10); n2 = parseInt(parts[3], 10);
+          label = parts[4] || ('Study ' + (i + 1));
+        }
+        if (![e1, n1, e2, n2].every(Number.isFinite) || n1 <= 0 || n2 <= 0 || e1 < 0 || e2 < 0 || e1 > n1 || e2 > n2) return null;
+        return { e1: e1, n1: n1, e2: e2, n2: n2, label: label };
+      }).filter(Boolean);
+    }
+
+    // NEW: parse from CSV upload row objects (keys: study,e1,n1,e2,n2)
+    function parseRows(rows) {
+      return rows.map(function (r, i) {
+        var e1 = parseInt(r.e1, 10), n1 = parseInt(r.n1, 10);
+        var e2 = parseInt(r.e2, 10), n2 = parseInt(r.n2, 10);
+        if (![e1, n1, e2, n2].every(Number.isFinite) || n1 <= 0 || n2 <= 0 || e1 < 0 || e2 < 0 || e1 > n1 || e2 > n2) return null;
+        return { e1: e1, n1: n1, e2: e2, n2: n2, label: r.study || ('Study ' + (i + 1)) };
+      }).filter(Boolean);
+    }
+
+    function normUpper(x) {
+      // Upper-tail standard normal probability P(Z > x), computed directly: 1 - CDF loses every digit in the tail
+      // (it returned exactly 0 for |z| >= 8). Agrees with R's pnorm(x, lower.tail = FALSE) to < 1e-13 relative.
+      if (!Number.isFinite(x)) return x > 0 ? 0 : (x < 0 ? 1 : NaN);
+      if (x < 0) return 1 - normUpper(-x);
+      var phi = Math.exp(-x * x / 2) / Math.sqrt(2 * Math.PI);
+      if (x < 2) {
+        // 1/2 - phi * (x + x^3/3 + x^5/(3*5) + ...); the tail is >= 0.023 here, so no precision is lost.
+        var term = x, sum = x, q = x * x;
+        for (var i = 3; i < 1000; i += 2) { term *= q / i; var next = sum + term; if (next === sum) break; sum = next; }
+        return 0.5 - phi * sum;
+      }
+      // Mills ratio by its continued fraction, evaluated backwards: phi / (x + 1/(x + 2/(x + 3/(x + ...)))).
+      var f = x;
+      for (var k = 300; k >= 1; k--) f = x + k / f;
+      return phi / f;
+    }
+    function fmt(x, d) { d = d === undefined ? 3 : d; return Number.isFinite(x) ? x.toFixed(d) : '—'; }
+    function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+    function escSvg(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+
+    function mhOR(rows) {
+      // Mantel-Haenszel OR with Robins-Breslow-Greenland SE
+      var num = 0, denom = 0, SR = 0, ST = 0, SS = 0;
+      for (var i = 0; i < rows.length; i++) {
+        var r = rows[i];
+        var a = r.e1, b = r.n1 - r.e1, c = r.e2, d = r.n2 - r.e2, n = r.n1 + r.n2;
+        if (n === 0) continue;
+        num += a * d / n;
+        denom += b * c / n;
+        SR += ((a + d) * a * d) / (n * n);
+        ST += ((b + c) * a * d + (a + d) * b * c) / (n * n);
+        SS += ((b + c) * b * c) / (n * n);
+      }
+      if (denom === 0 || num === 0) return null;
+      var or = num / denom;
+      var varLogOR = 0.5 * (SR / (num * num) + ST / (num * denom) + SS / (denom * denom));
+      var seLog = Math.sqrt(varLogOR);
+      return { est: or, logEst: Math.log(or), seLog: seLog, lo: Math.exp(Math.log(or) - Z975 * seLog), hi: Math.exp(Math.log(or) + Z975 * seLog) };
+    }
+
+    function mhRR(rows) {
+      var num = 0, denom = 0, varNum = 0;
+      for (var i = 0; i < rows.length; i++) {
+        var r = rows[i];
+        var a = r.e1, c = r.e2, n = r.n1 + r.n2;
+        num += a * r.n2 / n;
+        denom += c * r.n1 / n;
+        varNum += ((r.n1 * r.n2 * (a + c)) / (n * n) - (a * c) / n);
+      }
+      if (denom === 0 || num === 0) return null;
+      var rr = num / denom;
+      var varLogRR = varNum / (num * denom);
+      var seLog = Math.sqrt(Math.max(varLogRR, 0));
+      return { est: rr, logEst: Math.log(rr), seLog: seLog, lo: Math.exp(Math.log(rr) - Z975 * seLog), hi: Math.exp(Math.log(rr) + Z975 * seLog) };
+    }
+
+    function mhRD(rows) {
+      var num = 0, denom = 0, va = 0, vb = 0;
+      for (var i = 0; i < rows.length; i++) {
+        var r = rows[i], a = r.e1, c = r.e2;
+        var n1 = r.n1, n2 = r.n2, n = n1 + n2;
+        num += a * n2 / n - c * n1 / n;
+        denom += n1 * n2 / n;
+        // Greenland-Robins variance used by metafor::rma.mh(measure="RD").
+        va += c * Math.pow(n1 / n, 2) - a * Math.pow(n2 / n, 2)
+          + (n1 / n) * (n2 / n) * (n2 - n1) / 2;
+        vb += (a * (n2 - c) / n + c * (n1 - a) / n) / 2;
+      }
+      if (denom === 0) return null;
+      var rd = num / denom;
+      var se = Math.sqrt(rd * va + vb) / denom;
+      return { est: rd, se: se, lo: rd - Z975 * se, hi: rd + Z975 * se };
+    }
+
+    function peto(rows) {
+      var sumOE = 0, sumV = 0;
+      for (var i = 0; i < rows.length; i++) {
+        var r = rows[i];
+        var n = r.n1 + r.n2, m1 = r.e1 + r.e2, m2 = n - m1;
+        var E = r.n1 * m1 / n;
+        var V = (r.n1 * r.n2 * m1 * m2) / (n * n * (n - 1));
+        sumOE += (r.e1 - E);
+        sumV += V;
+      }
+      if (sumV === 0) return null;
+      var logOR = sumOE / sumV;
+      var seLog = 1 / Math.sqrt(sumV);
+      return { est: Math.exp(logOR), logEst: logOR, seLog: seLog, lo: Math.exp(logOR - Z975 * seLog), hi: Math.exp(logOR + Z975 * seLog) };
+    }
+
+    function perStudy(rows, measure) {
+      return rows.map(function (r) {
+        // 0.5 correction for display
+        var a = r.e1, b = r.n1 - r.e1, c = r.e2, d = r.n2 - r.e2;
+        if (a === 0 || b === 0 || c === 0 || d === 0) { a += 0.5; b += 0.5; c += 0.5; d += 0.5; }
+        if (measure === 'OR') {
+          var or = (a * d) / (b * c);
+          var varLog = 1 / a + 1 / b + 1 / c + 1 / d;
+          var se = Math.sqrt(varLog);
+          return Object.assign({}, r, { est: or, lo: Math.exp(Math.log(or) - Z975 * se), hi: Math.exp(Math.log(or) + Z975 * se) });
+        }
+        if (measure === 'RR') {
+          var rr = (a / (a + b)) / (c / (c + d));
+          var varLogRR = 1 / a - 1 / (a + b) + 1 / c - 1 / (c + d);
+          var seRR = Math.sqrt(Math.max(varLogRR, 0));
+          return Object.assign({}, r, { est: rr, lo: Math.exp(Math.log(rr) - Z975 * seRR), hi: Math.exp(Math.log(rr) + Z975 * seRR) });
+        }
+        var p1 = r.e1 / r.n1, p2 = r.e2 / r.n2;
+        var rd = p1 - p2;
+        var seRD = Math.sqrt(p1 * (1 - p1) / r.n1 + p2 * (1 - p2) / r.n2);
+        return Object.assign({}, r, { est: rd, lo: rd - Z975 * seRD, hi: rd + Z975 * seRD });
+      });
+    }
+
+    // ---- axis state (overrideable by axis-controls) ----
+    var _axisState = {};
+
+    // ---- results storage for export ----
+    var _lastResults = null;
+
+    function run() {
+      var rows = parse(document.getElementById('src').value);
+      var measure = document.getElementById('measure').value;
+      if (rows.length < 2) {
+        _lastResults = null;
+        ['pooled-body', 'per-body', 'forest', 'labbe'].forEach(function (id) { document.getElementById(id).innerHTML = ''; });
+        document.getElementById('fragility-note').textContent = 'Enter at least two valid studies.';
+        return;
+      }
+
+      var pooled = [];
+      var Q = null, QEp = null;
+      if (measure === 'OR') {
+        var mh = mhOR(rows), pe = peto(rows);
+        if (mh) { pooled.push(Object.assign({ name: 'MH OR' }, mh)); Q = mh._Q; }
+        if (pe) pooled.push(Object.assign({ name: 'Peto OR' }, pe));
+      } else if (measure === 'RR') {
+        var mrr = mhRR(rows);
+        if (mrr) pooled.push(Object.assign({ name: 'MH RR' }, mrr));
+      } else {
+        var mrd = mhRD(rows);
+        if (mrd) pooled.push(Object.assign({ name: 'MH RD' }, mrd));
+      }
+
+      var body = document.getElementById('pooled-body');
+      var parts = [];
+      var firstPooled = pooled.find(function (p) { return p.name.indexOf('MH ') === 0; }) || null;
+      for (var i = 0; i < pooled.length; i++) {
+        var p = pooled[i];
+        if (!p) continue;
+        var z = p.logEst !== undefined ? p.logEst / p.seLog : p.est / p.se;
+        var pval = 2 * normUpper(Math.abs(z));
+        parts.push('<tr><td><code>' + p.name + '</code></td><td>' + fmt(p.est) + '</td><td>[' + fmt(p.lo) + ', ' + fmt(p.hi) + ']</td><td>' + fmt(z, 2) + '</td><td>' + fmt(pval, 3) + '</td></tr>');
+      }
+      body.innerHTML = parts.join('');
+
+      // Fragility index (DL OR/RR/RD; number of event modifications to flip significance).
+      var fragNote = document.getElementById('fragility-note');
+      var frag = null;
+      if (window.AlmFragility) {
+        frag = window.AlmFragility.fragility(rows.map(function (r) { return { e1: r.e1, n1: r.n1, e0: r.e2, n0: r.n2 }; }), { measure: measure });
+        if (Number.isFinite(frag.FI)) fragNote.textContent = 'DL fragility index = ' + frag.FI + ' event modification' + (frag.FI === 1 ? '' : 's') + ' to lose significance (FQ = ' + fmt(frag.FQ, 4) + ').';
+        else fragNote.textContent = 'DL fragility index: ' + (frag.dir || 'not applicable') + '.';
+      }
+
+      var studies = perStudy(rows, measure);
+      var perBody = document.getElementById('per-body');
+      var perParts = [];
+      for (var j = 0; j < studies.length; j++) {
+        var s = studies[j];
+        perParts.push('<tr><td>' + esc(s.label) + '</td><td>' + s.e1 + '/' + s.n1 + '</td><td>' + s.e2 + '/' + s.n2 + '</td><td>' + fmt(s.est) + '</td><td>[' + fmt(s.lo) + ', ' + fmt(s.hi) + ']</td></tr>');
+      }
+      perBody.innerHTML = perParts.join('');
+
+      drawForest(studies, pooled, measure);
+      drawLabbe(rows, measure);
+
+      // Build results for export
+      var firstZ = firstPooled ? (firstPooled.logEst !== undefined ? firstPooled.logEst / firstPooled.seLog : firstPooled.est / firstPooled.se) : null;
+      _lastResults = {
+        _schema: 'mhpeto-results-v1',
+        measure: measure,
+        k: rows.length,
+        mh_est: firstPooled ? firstPooled.est : null,
+        mh_lo:  firstPooled ? firstPooled.lo  : null,
+        mh_hi:  firstPooled ? firstPooled.hi  : null,
+        mh_z:   firstZ,
+        mh_p:   firstZ !== null ? 2 * normUpper(Math.abs(firstZ)) : null,
+        fragility_index: frag ? frag.FI : null,
+        fragility_quotient: frag ? frag.FQ : null,
+      };
+      var pe2 = pooled.find(function (p) { return p.name === 'Peto OR'; });
+      if (measure === 'OR' && pe2) {
+        var pZ = pe2.logEst / pe2.seLog;
+        _lastResults.peto_est = pe2.est;
+        _lastResults.peto_lo  = pe2.lo;
+        _lastResults.peto_hi  = pe2.hi;
+        _lastResults.peto_z   = pZ;
+        _lastResults.peto_p   = 2 * normUpper(Math.abs(pZ));
+      }
+
+      // Persist URL state
+      if (window.alm && window.alm.urlState) {
+        window.alm.urlState.write({ src: document.getElementById('src').value, measure: measure });
+      }
+    }
+
+    function drawLabbe(rows, measure) {
+      var svg = document.getElementById('labbe');
+      if (!svg || !window.AlmDiagPlots || !rows.length) { if (svg) svg.innerHTML = ''; return; }
+      var m = (measure === 'RR') ? 'RR' : 'OR';
+      var lb = window.AlmDiagPlots.labbe(rows.map(function (r) { return { ai: r.e1, bi: r.n1 - r.e1, ci: r.e2, di: r.n2 - r.e2 }; }), { measure: m, method: 'FE' });
+      window.__almLabbe = lb;
+      var W = 600, H = 320, pad = 48, pw = W - pad * 2, ph = H - pad * 2;
+      var dark = matchMedia('(prefers-color-scheme:dark)').matches;
+      var X = function (p) { return pad + p * pw; }, Y = function (p) { return pad + ph - p * ph; };
+      var maxN = Math.max.apply(null, lb.points.map(function (q) { return q.n; }), 1);
+      var s = ["<rect width='" + W + "' height='" + H + "' fill='" + (dark ? '#1c1f23' : '#fff') + "'/>"];
+      s.push("<rect x='" + pad + "' y='" + pad + "' width='" + pw + "' height='" + ph + "' fill='none' stroke='currentColor' opacity='0.4'/>");
+      s.push("<line x1='" + X(0) + "' y1='" + Y(0) + "' x2='" + X(1) + "' y2='" + Y(1) + "' stroke='#888' stroke-dasharray='4 3'/>");
+      var cv = lb.curve.map(function (q, i) { return (i ? 'L' : 'M') + X(q.pc) + ',' + Y(q.pt); }).join(' ');
+      s.push("<path d='" + cv + "' fill='none' stroke='#b23a48' stroke-width='2'/>");
+      lb.points.forEach(function (q) {
+        var r = 3 + Math.sqrt(q.n / maxN) * 9;
+        s.push("<circle cx='" + X(q.pc) + "' cy='" + Y(q.pt) + "' r='" + r.toFixed(1) + "' fill='var(--accent,#2c5e8a)' fill-opacity='0.5' stroke='currentColor' stroke-width='0.6'/>");
+      });
+      [0, 0.25, 0.5, 0.75, 1].forEach(function (t) {
+        s.push("<text x='" + X(t) + "' y='" + (pad + ph + 16) + "' text-anchor='middle' font-size='10' fill='currentColor'>" + t + "</text>");
+        s.push("<text x='" + (pad - 8) + "' y='" + (Y(t) + 3) + "' text-anchor='end' font-size='10' fill='currentColor'>" + t + "</text>");
+      });
+      s.push("<text x='" + (pad + pw / 2) + "' y='" + (H - 6) + "' text-anchor='middle' font-size='11' fill='currentColor'>Control event rate</text>");
+      s.push("<text x='14' y='" + (pad + ph / 2) + "' transform='rotate(-90 14 " + (pad + ph / 2) + ")' text-anchor='middle' font-size='11' fill='currentColor'>Treatment event rate</text>");
+      svg.innerHTML = s.join('');
+    }
+
+    function drawForest(studies, pooled, measure) {
+      var svg = document.getElementById('forest');
+      var W = 600, H = Math.max(200, 40 + (studies.length + pooled.length + 1) * 26);
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+      var parts = [];
+      var padL = 130, padR = 30;
+      var plotW = W - padL - padR;
+      var all = studies.concat(pooled.filter(Boolean));
+
+      // Respect axis-controls override
+      var logScale = measure !== 'RD';
+      var xLog = _axisState && _axisState.xLog;
+      if (xLog !== undefined) logScale = xLog;
+
+      var mapFn = function (v) { return logScale ? Math.log(Math.max(v, 1e-6)) : v; };
+
+      var loAll = all.map(function (r) { return r.lo; });
+      var hiAll = all.map(function (r) { return r.hi; });
+      var lo = Math.min.apply(null, loAll.map(mapFn));
+      var hi = Math.max.apply(null, hiAll.map(mapFn));
+
+      // Apply axis range override if set
+      if (_axisState && Array.isArray(_axisState.x)) {
+        if (_axisState.x[0] !== null) lo = logScale ? Math.log(Math.max(_axisState.x[0], 1e-6)) : _axisState.x[0];
+        if (_axisState.x[1] !== null) hi = logScale ? Math.log(Math.max(_axisState.x[1], 1e-6)) : _axisState.x[1];
+      }
+
+      var pad = (hi - lo) * 0.1 || 0.3;
+      var X = function (v) { return padL + (mapFn(v) - (lo - pad)) / ((hi + pad) - (lo - pad)) * plotW; };
+      var nullV = logScale ? 1 : 0;
+      parts.push('<line x1="' + X(nullV) + '" y1="10" x2="' + X(nullV) + '" y2="' + (H - 25) + '" stroke="currentColor" stroke-dasharray="3 3" opacity="0.4"/>');
+      var y = 25;
+      for (var i = 0; i < studies.length; i++) {
+        var s = studies[i];
+        parts.push('<text x="' + (padL - 10) + '" y="' + (y + 4) + '" text-anchor="end" font-size="11" fill="currentColor">' + escSvg(s.label) + '</text>');
+        parts.push('<line x1="' + X(s.lo) + '" y1="' + y + '" x2="' + X(s.hi) + '" y2="' + y + '" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>');
+        parts.push('<rect x="' + (X(s.est) - 3.5) + '" y="' + (y - 3.5) + '" width="7" height="7" fill="var(--accent)"/>');
+        y += 22;
+      }
+      y += 6;
+      for (var j = 0; j < pooled.length; j++) {
+        var p = pooled[j];
+        if (!p) continue;
+        parts.push('<text x="' + (padL - 10) + '" y="' + (y + 4) + '" text-anchor="end" font-size="12" fill="currentColor" font-weight="700">' + escSvg(p.name) + '</text>');
+        parts.push('<polygon points="' + X(p.lo) + ',' + y + ' ' + X(p.est) + ',' + (y - 7) + ' ' + X(p.hi) + ',' + y + ' ' + X(p.est) + ',' + (y + 7) + '" fill="var(--warn)" opacity="0.9"/>');
+        y += 24;
+      }
+      svg.innerHTML = parts.join('');
+    }
+
+    document.getElementById('btn-run').addEventListener('click', function () {
+      window.alm && window.alm.resetUndo && window.alm.resetUndo.snapshot && window.alm.resetUndo.snapshot();
+      run();
+    });
+    document.getElementById('measure').addEventListener('change', run);
+
+    // ---- snapshot/restore helpers for reset-undo ----
+    function snapshot() {
+      return { src: document.getElementById('src').value, measure: document.getElementById('measure').value };
+    }
+    function restore(snap) {
+      if (!snap) return;
+      if (snap.src !== undefined) document.getElementById('src').value = snap.src;
+      if (snap.measure !== undefined) document.getElementById('measure').value = snap.measure;
+      run();
+    }
+
+    // ---- load CSV rows into textarea ----
+    window.__almLoad = function (rows) {
+      var lines = rows.map(function (r) {
+        return [r.study || '', r.e1, r.n1, r.e2, r.n2].join(', ');
+      });
+      document.getElementById('src').value = lines.join('\n');
+      run();
+    };
+
+    // Validation hooks use the page parser and rendering path.
+    window.__mhValidation = {parse: parse, run: run, restoreResult: function (r) { _lastResults = r; }};
+
+    // Expose last results for export
+    window._almLastMhPeto = function () { return _lastResults; };
+
+    // Cross-tool bus producer (ma-studies-v1): build per-study {label, est, se}
+    // on the contract scale — log for OR/RR ratios, identity for RD. Recomputed
+    // from current inputs so it always matches the on-screen analysis. fromCI
+    // recovers the SE exactly from the per-study CI this app already builds
+    // (the CI was constructed as est ± Z975·se), so no variance is recomputed.
+    window.__mhPetoBusStudies = function () {
+      if (!window.MaStudies || typeof MaStudies.fromCI !== 'function') return [];
+      var rows = parse(document.getElementById('src').value);
+      if (rows.length < 2) return [];
+      var measure = document.getElementById('measure').value;
+      var scale = (measure === 'RD') ? 'linear' : 'ratio';
+      var ps = perStudy(rows, measure);
+      var out = [];
+      for (var i = 0; i < ps.length; i++) {
+        var c = MaStudies.fromCI(ps[i].est, ps[i].lo, ps[i].hi, scale);
+        if (c) out.push({ label: ps[i].label || ('Study ' + (i + 1)), est: c.est, se: c.se });
+      }
+      return out;
+    };
+
+    // ---- module init ----
+
+    window.alm.csvUpload({
+      target: '#alm-csv-mount',
+      columns: [
+        { name: 'study', required: false, type: 'string', example: 'Smith 2024' },
+        { name: 'e1',    required: true,  type: 'int',    example: '3' },
+        { name: 'n1',    required: true,  type: 'int',    example: '500' },
+        { name: 'e2',    required: true,  type: 'int',    example: '8' },
+        { name: 'n2',    required: true,  type: 'int',    example: '500' },
+      ],
+      onParse: function (result) {
+        window.alm.resetUndo.snapshot();
+        window.__almLoad(result.rows);
+      },
+    });
+
+    window.alm.chartDownload({
+      target: '#alm-chart-mount',
+      basename: 'mhpeto-forest',
+      getSvg: function () { return document.getElementById('forest'); },
+      getReceiptInput: function () {
+        if (!_lastResults) return null;
+        return {
+          studies: [], // bind only the current results below — never the (possibly stale) shared bus
+          method: 'Mantel-Haenszel / Peto fixed-effect pooling (OR/RR/RD)',
+          label: 'mhpeto-forest',
+          results: _lastResults,
+        };
+      },
+    });
+
+    window.alm.axisControls({
+      target: '#alm-axis-mount',
+      axes: [
+        { key: 'x', label: 'X axis', range: [null, null], log: false },
+      ],
+      onChange: function (state) {
+        _axisState = state;
+        run();
+      },
+    });
+
+    window.alm.resultsExport({
+      target: '#alm-export-mount',
+      basename: 'mhpeto-results',
+      getResults: function () { return window._almLastMhPeto ? window._almLastMhPeto() : {}; },
+    });
+
+    window.alm.urlState({ version: 1 });
+    var restored = window.alm.urlState.read();
+    if (restored && Object.keys(restored).length > 0) {
+      restore(restored);
+    } else {
+      run();
+    }
+
+    window.alm.resetUndo({
+      target: '#alm-undo-mount',
+      snapshot: snapshot,
+      restore: restore,
+      capacity: 20,
+    });
+
+    window.alm.tooltips({
+      src: '../hub/shared/glossary.json',
+    });
+  })();
+  </script>
+<script src="../hub/shared/a11y-landmarks.js"></script>
+
+<script>
+(function () {
+  function ready(fn) {
+    if (document.readyState !== "loading") fn();
+    else document.addEventListener("DOMContentLoaded", fn);
+  }
+  ready(function () {
+    if (window.AlmAutosave && typeof AlmAutosave.install === "function") {
+      AlmAutosave.install({ appKey: 'mh-peto' });
+    }
+  });
+})();
+</script>
+
+<script>
+// Cross-tool bus producer wiring (ma-studies-v1). mh-peto's input is 2x2 cell
+// counts, which cannot represent a {est, se} bus row, so this app is WRITE-only
+// (a producer) — there is no "Load from bus". See shared/ma-studies-v1.md.
+(function () {
+  function ready(fn) {
+    if (document.readyState !== "loading") fn();
+    else document.addEventListener("DOMContentLoaded", fn);
+  }
+  ready(function () {
+    if (!window.MaStudies) return;
+    function notify(msg, kind) {
+      if (window.Toast && typeof Toast.show === "function") Toast.show(msg, kind || "warn");
+      else if (kind === "error") alert(msg);
+    }
+    function current() {
+      return window.__mhPetoBusStudies ? window.__mhPetoBusStudies() : [];
+    }
+    var save = document.getElementById("btn-bus-save");
+    if (save) {
+      save.addEventListener("click", function () {
+        var s = current();
+        if (!s.length) { notify("Pool at least 2 valid studies before sending to the bus.", "warn"); return; }
+        var ok = MaStudies.write(s);
+        var measure = document.getElementById("measure").value;
+        notify(ok
+          ? ("Sent " + s.length + " per-study " + measure + " effect" + (s.length === 1 ? "" : "s") + " to the shared bus.")
+          : "Could not save to the bus.", ok ? "warn" : "error");
+      });
+    }
+    if (typeof MaStudies.attachVerifyInRButton === "function") {
+      MaStudies.attachVerifyInRButton({ btn: "#btn-verify-in-r", getStudies: current });
+    }
+    if (window.TruthCertUI) {
+      TruthCertUI.attachSettingsButton({ btn: "#btn-truthcert-key" });
+      TruthCertUI.attachReceiptButton({ btn: "#btn-truthcert", basename: "mh-peto", getStudies: current });
+    }
+  });
+})();
+</script>
+<script src="../shared/alm-validate.js"></script>
+<script src="validate/adapter.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+id,dataset,outcome,comparison,mapping,mode,valid_rows,page_status
+dat.anand1999|binary|all,dat.anand1999,binary,all,"ai,n1i,ci,n2i",total,34,eligible
+dat.axfors2021|death|hcq / Standard of Care,dat.axfors2021,death,hcq / Standard of Care,"hcq_arm_event,hcq_arm_total,control_arm_event,control_arm_total",total,19,eligible
+dat.axfors2021|death|hcq / Placebo,dat.axfors2021,death,hcq / Placebo,"hcq_arm_event,hcq_arm_total,control_arm_event,control_arm_total",total,9,eligible
+dat.axfors2021|death|cq / Placebo,dat.axfors2021,death,cq / Placebo,"hcq_arm_event,hcq_arm_total,control_arm_event,control_arm_total",total,3,eligible
+dat.axfors2021|death|cq / Standard of Care,dat.axfors2021,death,cq / Standard of Care,"hcq_arm_event,hcq_arm_total,control_arm_event,control_arm_total",total,2,eligible
+dat.baker2009|exac|Budesonide vs Budesonide+Formoterol,dat.baker2009,exac,Budesonide vs Budesonide+Formoterol,"e1,n1,e2,n2",total,2,eligible
+dat.baker2009|exac|Budesonide vs Formoterol,dat.baker2009,exac,Budesonide vs Formoterol,"e1,n1,e2,n2",total,2,eligible
+dat.baker2009|exac|Budesonide vs Placebo,dat.baker2009,exac,Budesonide vs Placebo,"e1,n1,e2,n2",total,2,eligible
+dat.baker2009|exac|Budesonide+Formoterol vs Formoterol,dat.baker2009,exac,Budesonide+Formoterol vs Formoterol,"e1,n1,e2,n2",total,2,eligible
+dat.baker2009|exac|Budesonide+Formoterol vs Placebo,dat.baker2009,exac,Budesonide+Formoterol vs Placebo,"e1,n1,e2,n2",total,2,eligible
+dat.baker2009|exac|Fluticasone vs Fluticasone+Salmeterol,dat.baker2009,exac,Fluticasone vs Fluticasone+Salmeterol,"e1,n1,e2,n2",total,4,eligible
+dat.baker2009|exac|Fluticasone vs Placebo,dat.baker2009,exac,Fluticasone vs Placebo,"e1,n1,e2,n2",total,8,eligible
+dat.baker2009|exac|Fluticasone vs Salmeterol,dat.baker2009,exac,Fluticasone vs Salmeterol,"e1,n1,e2,n2",total,4,eligible
+dat.baker2009|exac|Fluticasone+Salmeterol vs Placebo,dat.baker2009,exac,Fluticasone+Salmeterol vs Placebo,"e1,n1,e2,n2",total,7,eligible
+dat.baker2009|exac|Fluticasone+Salmeterol vs Salmeterol,dat.baker2009,exac,Fluticasone+Salmeterol vs Salmeterol,"e1,n1,e2,n2",total,7,eligible
+dat.baker2009|exac|Fluticasone+Salmeterol vs Tiotropium,dat.baker2009,exac,Fluticasone+Salmeterol vs Tiotropium,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.baker2009|exac|Formoterol vs Placebo,dat.baker2009,exac,Formoterol vs Placebo,"e1,n1,e2,n2",total,4,eligible
+dat.baker2009|exac|Formoterol vs Tiotropium,dat.baker2009,exac,Formoterol vs Tiotropium,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.baker2009|exac|Placebo vs Salmeterol,dat.baker2009,exac,Placebo vs Salmeterol,"e1,n1,e2,n2",total,16,eligible
+dat.baker2009|exac|Placebo vs Tiotropium,dat.baker2009,exac,Placebo vs Tiotropium,"e1,n1,e2,n2",total,12,eligible
+dat.baker2009|exac|Salmeterol vs Tiotropium,dat.baker2009,exac,Salmeterol vs Tiotropium,"e1,n1,e2,n2",total,3,eligible
+dat.bassler2004|binary|all,dat.bassler2004,binary,all,"Ee,Ne,Ec,Nc",total,10,eligible
+dat.bcg|tuberculosis|all,dat.bcg,tuberculosis,all,"tpos,tneg,cpos,cneg",cells,13,eligible
+dat.bornmann2007|award|all,dat.bornmann2007,award,all,"waward,wtotal,maward,mtotal",total,66,eligible
+dat.bourassa1996|left-eye vs right-eye|all,dat.bourassa1996,left-eye vs right-eye,all,"lh.le,rh.le,lh.re,rh.re",cells,96,eligible
+dat.cannon2006|ep1|all,dat.cannon2006,ep1,all,"ep1t,nt,ep1c,nc",total,4,eligible
+dat.cannon2006|ep2|all,dat.cannon2006,ep2,all,"ep2t,nt,ep2c,nc",total,4,eligible
+dat.cannon2006|ep3|all,dat.cannon2006,ep3,all,"ep3t,nt,ep3c,nc",total,4,eligible
+dat.cannon2006|ep4|all,dat.cannon2006,ep4,all,"ep4t,nt,ep4c,nc",total,4,eligible
+dat.cannon2006|ep5|all,dat.cannon2006,ep5,all,"ep5t,nt,ep5c,nc",total,4,eligible
+dat.cannon2006|ep6|all,dat.cannon2006,ep6,all,"ep6t,nt,ep6c,nc",total,4,eligible
+dat.chiarito2020|mi|all,dat.chiarito2020,mi,all,"p2y12.mi,p2y12.total,aspirin.mi,aspirin.total",total,8,eligible
+dat.chiarito2020|stroke|all,dat.chiarito2020,stroke,all,"p2y12.stroke,p2y12.total,aspirin.stroke,aspirin.total",total,8,eligible
+dat.chiarito2020|death|all,dat.chiarito2020,death,all,"p2y12.death,p2y12.total,aspirin.death,aspirin.total",total,9,eligible
+dat.chiarito2020|vdeath|all,dat.chiarito2020,vdeath,all,"p2y12.vdeath,p2y12.total,aspirin.vdeath,aspirin.total",total,7,eligible
+dat.colditz1994|tuberculosis|all,dat.colditz1994,tuberculosis,all,"tpos,tneg,cpos,cneg",cells,13,eligible
+dat.collins1985a|b|C / P,dat.collins1985a,b,C / P,"b.xti,nti,b.xci,nci",total,18,eligible
+dat.collins1985a|b|C / AA,dat.collins1985a,b,C / AA,"b.xti,nti,b.xci,nci",total,3,eligible
+dat.collins1985a|b|C / UT,dat.collins1985a,b,C / UT,"b.xti,nti,b.xci,nci",total,2,eligible
+dat.collins1985a|b|R / P,dat.collins1985a,b,R / P,"b.xti,nti,b.xci,nci",total,2,eligible
+dat.collins1985a|o|C / P,dat.collins1985a,o,C / P,"o.xti,nti,o.xci,nci",total,14,eligible
+dat.collins1985a|o|C / AA,dat.collins1985a,o,C / AA,"o.xti,nti,o.xci,nci",total,2,eligible
+dat.collins1985a|o|C / UT,dat.collins1985a,o,C / UT,"o.xti,nti,o.xci,nci",total,3,eligible
+dat.collins1985a|o|R / P,dat.collins1985a,o,R / P,"o.xti,nti,o.xci,nci",total,2,eligible
+dat.collins1985a|o|R / AA,dat.collins1985a,o,R / AA,"o.xti,nti,o.xci,nci",total,1,single-row page refusal
+dat.collins1985a|d|C / P,dat.collins1985a,d,C / P,"d.xti,nti,d.xci,nci",total,16,eligible
+dat.collins1985a|d|C / AA,dat.collins1985a,d,C / AA,"d.xti,nti,d.xci,nci",total,2,eligible
+dat.collins1985a|d|C / UT,dat.collins1985a,d,C / UT,"d.xti,nti,d.xci,nci",total,3,eligible
+dat.collins1985a|d|R / P,dat.collins1985a,d,R / P,"d.xti,nti,d.xci,nci",total,2,eligible
+dat.collins1985a|d|R / AA,dat.collins1985a,d,R / AA,"d.xti,nti,d.xci,nci",total,1,single-row page refusal
+dat.collins1985b|pre|all,dat.collins1985b,pre,all,"pre.xti,pre.nti,pre.xci,pre.nci",total,9,eligible
+dat.collins1985b|ped|all,dat.collins1985b,ped,all,"ped.xti,fup.nti,ped.xci,fup.nci",total,9,eligible
+dat.collins1985b|stb|all,dat.collins1985b,stb,all,"stb.xti,fup.nti,stb.xci,fup.nci",total,8,eligible
+dat.collins1985b|ned|all,dat.collins1985b,ned,all,"ned.xti,fup.nti,ned.xci,fup.nci",total,8,eligible
+dat.dagostino1998|binary|rngoal1 / chlorpheniramine,dat.dagostino1998,binary,rngoal1 / chlorpheniramine,"xt,nt,xc,nc",total,3,eligible
+dat.dagostino1998|binary|rngoal2 / chlorpheniramine,dat.dagostino1998,binary,rngoal2 / chlorpheniramine,"xt,nt,xc,nc",total,3,eligible
+dat.dagostino1998|binary|sngoal1 / chlorpheniramine,dat.dagostino1998,binary,sngoal1 / chlorpheniramine,"xt,nt,xc,nc",total,3,eligible
+dat.dagostino1998|binary|sngoal2 / chlorpheniramine,dat.dagostino1998,binary,sngoal2 / chlorpheniramine,"xt,nt,xc,nc",total,3,eligible
+dat.dagostino1998|binary|rngoal1 / doxylamine,dat.dagostino1998,binary,rngoal1 / doxylamine,"xt,nt,xc,nc",total,6,eligible
+dat.dagostino1998|binary|rngoal2 / doxylamine,dat.dagostino1998,binary,rngoal2 / doxylamine,"xt,nt,xc,nc",total,6,eligible
+dat.dagostino1998|binary|sngoal1 / doxylamine,dat.dagostino1998,binary,sngoal1 / doxylamine,"xt,nt,xc,nc",total,5,eligible
+dat.dagostino1998|binary|sngoal2 / doxylamine,dat.dagostino1998,binary,sngoal2 / doxylamine,"xt,nt,xc,nc",total,5,eligible
+dat.damico2009|binary|all,dat.damico2009,binary,all,"xt,nt,xc,nc",total,16,eligible
+dat.dogliotti2014|stroke|Apixaban vs Aspirin,dat.dogliotti2014,stroke,Apixaban vs Aspirin,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dogliotti2014|stroke|Apixaban vs VKAs,dat.dogliotti2014,stroke,Apixaban vs VKAs,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dogliotti2014|stroke|Aspirin vs Aspirin+Clopidogtrel,dat.dogliotti2014,stroke,Aspirin vs Aspirin+Clopidogtrel,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dogliotti2014|stroke|Aspirin vs Placebo/Control,dat.dogliotti2014,stroke,Aspirin vs Placebo/Control,"e1,n1,e2,n2",total,5,eligible
+dat.dogliotti2014|stroke|Aspirin vs VKAs,dat.dogliotti2014,stroke,Aspirin vs VKAs,"e1,n1,e2,n2",total,9,eligible
+dat.dogliotti2014|stroke|Aspirin+Clopidogtrel vs VKAs,dat.dogliotti2014,stroke,Aspirin+Clopidogtrel vs VKAs,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dogliotti2014|stroke|Dabigatran 110mg vs Dabigatran 150mg,dat.dogliotti2014,stroke,Dabigatran 110mg vs Dabigatran 150mg,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dogliotti2014|stroke|Dabigatran 110mg vs VKAs,dat.dogliotti2014,stroke,Dabigatran 110mg vs VKAs,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dogliotti2014|stroke|Dabigatran 150mg vs VKAs,dat.dogliotti2014,stroke,Dabigatran 150mg vs VKAs,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dogliotti2014|stroke|Placebo/Control vs VKAs,dat.dogliotti2014,stroke,Placebo/Control vs VKAs,"e1,n1,e2,n2",total,6,eligible
+dat.dogliotti2014|stroke|Rivaroxaban vs VKAs,dat.dogliotti2014,stroke,Rivaroxaban vs VKAs,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dong2013|death|ICS vs LABA,dat.dong2013,death,ICS vs LABA,"e1,n1,e2,n2",total,7,eligible
+dat.dong2013|death|ICS vs LABA-ICS,dat.dong2013,death,ICS vs LABA-ICS,"e1,n1,e2,n2",total,7,eligible
+dat.dong2013|death|ICS vs Placebo,dat.dong2013,death,ICS vs Placebo,"e1,n1,e2,n2",total,15,eligible
+dat.dong2013|death|LABA vs LABA-ICS,dat.dong2013,death,LABA vs LABA-ICS,"e1,n1,e2,n2",total,15,eligible
+dat.dong2013|death|LABA vs Placebo,dat.dong2013,death,LABA vs Placebo,"e1,n1,e2,n2",total,13,eligible
+dat.dong2013|death|LABA vs TIO-HH,dat.dong2013,death,LABA vs TIO-HH,"e1,n1,e2,n2",total,2,eligible
+dat.dong2013|death|LABA-ICS vs Placebo,dat.dong2013,death,LABA-ICS vs Placebo,"e1,n1,e2,n2",total,10,eligible
+dat.dong2013|death|LABA-ICS vs TIO-HH,dat.dong2013,death,LABA-ICS vs TIO-HH,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.dong2013|death|Placebo vs TIO-HH,dat.dong2013,death,Placebo vs TIO-HH,"e1,n1,e2,n2",total,10,eligible
+dat.dong2013|death|Placebo vs TIO-SMI,dat.dong2013,death,Placebo vs TIO-SMI,"e1,n1,e2,n2",total,2,eligible
+dat.dorn2007|binary|all,dat.dorn2007,binary,all,"x.a,n.a,x.p,n.p",total,19,eligible
+dat.egger2001|binary|all,dat.egger2001,binary,all,"ai,n1i,ci,n2i",total,16,eligible
+dat.fine1993|survival1|all,dat.fine1993,survival1,all,"e1i,nei,c1i,nci",total,16,eligible
+dat.fine1993|survival2|all,dat.fine1993,survival2,all,"e2i,nei,c2i,nci",total,17,eligible
+dat.fine1993|survival3|all,dat.fine1993,survival3,all,"e3i,nei,c3i,nci",total,16,eligible
+dat.fine1993|survival4|all,dat.fine1993,survival4,all,"e4i,nei,c4i,nci",total,17,eligible
+dat.frank2008|ins.ins vs other genotype|all,dat.frank2008,ins.ins vs other genotype,all,"bc.ins.ins,bc.other,ct.ins.ins,ct.other",cells,4,eligible
+dat.gibson2002|binary|all,dat.gibson2002,binary,all,"ai,bi,ci,di",cells,7,eligible
+dat.graves2010|binary|all,dat.graves2010,binary,all,"ai,n1i,ci,n2i",total,17,eligible
+dat.greb2008|binary|all,dat.greb2008,binary,all,"Ee,Ne,Ec,Nc",total,14,eligible
+dat.gurusamy2011|death|Antithrombin III vs Control/Placebo,dat.gurusamy2011,death,Antithrombin III vs Control/Placebo,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.gurusamy2011|death|Aprotonin vs Control/Placebo,dat.gurusamy2011,death,Aprotonin vs Control/Placebo,"e1,n1,e2,n2",total,4,eligible
+dat.gurusamy2011|death|Aprotonin vs Tranexamic acid,dat.gurusamy2011,death,Aprotonin vs Tranexamic acid,"e1,n1,e2,n2",total,2,eligible
+dat.gurusamy2011|death|Control/Placebo vs EACA,dat.gurusamy2011,death,Control/Placebo vs EACA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.gurusamy2011|death|Control/Placebo vs Solvent detergent plasma,dat.gurusamy2011,death,Control/Placebo vs Solvent detergent plasma,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.gurusamy2011|death|Control/Placebo vs Tranexamic acid,dat.gurusamy2011,death,Control/Placebo vs Tranexamic acid,"e1,n1,e2,n2",total,3,eligible
+dat.gurusamy2011|death|Control/Placebo vs rFVIIa,dat.gurusamy2011,death,Control/Placebo vs rFVIIa,"e1,n1,e2,n2",total,3,eligible
+dat.gurusamy2011|death|EACA vs Tranexamic acid,dat.gurusamy2011,death,EACA vs Tranexamic acid,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.hahn2001|binary|all,dat.hahn2001,binary,all,"ai,n1i,ci,n2i",total,12,eligible
+dat.hart1999|stroke counts over patients (not person-time)|placebo,dat.hart1999,stroke counts over patients (not person-time),placebo,"x1i,n1i,x2i,n2i",total,5,eligible
+dat.hart1999|stroke counts over patients (not person-time)|control,dat.hart1999,stroke counts over patients (not person-time),control,"x1i,n1i,x2i,n2i",total,1,single-row page refusal
+dat.hartmannboyce2018|cessation|gum,dat.hartmannboyce2018,cessation,gum,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,56,eligible
+dat.hartmannboyce2018|cessation|patch,dat.hartmannboyce2018,cessation,patch,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,51,eligible
+dat.hartmannboyce2018|cessation|inhalator,dat.hartmannboyce2018,cessation,inhalator,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,4,eligible
+dat.hartmannboyce2018|cessation|intranasal spray,dat.hartmannboyce2018,cessation,intranasal spray,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,4,eligible
+dat.hartmannboyce2018|cessation|tablets/lozenges,dat.hartmannboyce2018,cessation,tablets/lozenges,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,8,eligible
+dat.hartmannboyce2018|cessation|oral spray,dat.hartmannboyce2018,cessation,oral spray,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,1,single-row page refusal
+dat.hartmannboyce2018|cessation|choice of product,dat.hartmannboyce2018,cessation,choice of product,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,7,eligible
+dat.hartmannboyce2018|cessation|patch and inhalator,dat.hartmannboyce2018,cessation,patch and inhalator,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,1,single-row page refusal
+dat.hartmannboyce2018|cessation|patch and lozenge,dat.hartmannboyce2018,cessation,patch and lozenge,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,1,single-row page refusal
+dat.hartmannboyce2018|cessation|patch and gum,dat.hartmannboyce2018,cessation,patch and gum,"x.nrt,n.nrt,x.ctrl,n.ctrl",total,2,eligible
+"dat.hartmannboyce2018|cessation|patch, gum, and lozenge",dat.hartmannboyce2018,cessation,"patch, gum, and lozenge","x.nrt,n.nrt,x.ctrl,n.ctrl",total,1,single-row page refusal
+dat.hasselblad1998|xi|grp_counseling vs ind_counseling,dat.hasselblad1998,xi,grp_counseling vs ind_counseling,"e1,n1,e2,n2",total,4,eligible
+dat.hasselblad1998|xi|grp_counseling vs no_contact,dat.hasselblad1998,xi,grp_counseling vs no_contact,"e1,n1,e2,n2",total,2,eligible
+dat.hasselblad1998|xi|grp_counseling vs self_help,dat.hasselblad1998,xi,grp_counseling vs self_help,"e1,n1,e2,n2",total,2,eligible
+dat.hasselblad1998|xi|ind_counseling vs no_contact,dat.hasselblad1998,xi,ind_counseling vs no_contact,"e1,n1,e2,n2",total,15,eligible
+dat.hasselblad1998|xi|ind_counseling vs self_help,dat.hasselblad1998,xi,ind_counseling vs self_help,"e1,n1,e2,n2",total,2,eligible
+dat.hasselblad1998|xi|no_contact vs self_help,dat.hasselblad1998,xi,no_contact vs self_help,"e1,n1,e2,n2",total,3,eligible
+dat.higgins2008|observed response|all,dat.higgins2008,observed response,all,"resp.halo,fail.halo,resp.plac,fail.plac",cells,17,eligible
+dat.hine1989|binary|all,dat.hine1989,binary,all,"ai,n1i,ci,n2i",total,6,eligible
+dat.karner2014|exa|all,dat.karner2014,exa,all,"tiotropium.exa,tiotropium.total,placebo.exa,placebo.total",total,22,eligible
+dat.karner2014|sexa|all,dat.karner2014,sexa,all,"tiotropium.sexa,tiotropium.total,placebo.sexa,placebo.total",total,21,eligible
+dat.karner2014|hospi|all,dat.karner2014,hospi,all,"tiotropium.hospi,tiotropium.total,placebo.hospi,placebo.total",total,19,eligible
+dat.karner2014|deaths|all,dat.karner2014,deaths,all,"tiotropium.deaths,tiotropium.total,placebo.deaths,placebo.total",total,22,eligible
+dat.karner2014|sae|all,dat.karner2014,sae,all,"tiotropium.sae,tiotropium.total,placebo.sae,placebo.total",total,22,eligible
+dat.karner2014|dropout|all,dat.karner2014,dropout,all,"tiotropium.dropout,tiotropium.total,placebo.dropout,placebo.total",total,22,eligible
+dat.kearon1998|test positive in cases vs noncases|symptomatic,dat.kearon1998,test positive in cases vs noncases,symptomatic,"tp,np,fp,nn",total,16,eligible
+dat.kearon1998|test positive in cases vs noncases|asymptomatic,dat.kearon1998,test positive in cases vs noncases,asymptomatic,"tp,np,fp,nn",total,14,eligible
+dat.landenberger2005|recidivism|all,dat.landenberger2005,recidivism,all,"n.cbt.rec,n.cbt.non,n.ctrl.rec,n.ctrl.non",cells,58,eligible
+dat.laopaiboon2015|binary|all,dat.laopaiboon2015,binary,all,"ai,n1i,ci,n2i",total,15,eligible
+dat.lau1992|binary|all,dat.lau1992,binary,all,"ai,n1i,ci,n2i",total,33,eligible
+dat.lee2004|binary|all,dat.lee2004,binary,all,"ai,n1i,ci,n2i",total,16,eligible
+dat.li2007|binary|all,dat.li2007,binary,all,"ai,n1i,ci,n2i",total,22,eligible
+dat.linde2005|binary|3,dat.linde2005,binary,3,"ai,n1i,ci,n2i",total,6,eligible
+dat.linde2005|binary|4,dat.linde2005,binary,4,"ai,n1i,ci,n2i",total,6,eligible
+dat.linde2005|binary|1,dat.linde2005,binary,1,"ai,n1i,ci,n2i",total,6,eligible
+dat.linde2005|binary|2,dat.linde2005,binary,2,"ai,n1i,ci,n2i",total,6,eligible
+dat.linde2015|resp|Hypericum vs Placebo,dat.linde2015,resp,Hypericum vs Placebo,"e1,n1,e2,n2",total,9,eligible
+dat.linde2015|resp|Hypericum vs SSRI,dat.linde2015,resp,Hypericum vs SSRI,"e1,n1,e2,n2",total,6,eligible
+dat.linde2015|resp|Hypericum vs TCA,dat.linde2015,resp,Hypericum vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|resp|Low-dose SARI vs NaSSa,dat.linde2015,resp,Low-dose SARI vs NaSSa,"e1,n1,e2,n2",total,4,eligible
+dat.linde2015|resp|Low-dose SARI vs TCA,dat.linde2015,resp,Low-dose SARI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|resp|NRI vs SSRI,dat.linde2015,resp,NRI vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|resp|NaSSa vs Placebo,dat.linde2015,resp,NaSSa vs Placebo,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|resp|NaSSa vs SSRI,dat.linde2015,resp,NaSSa vs SSRI,"e1,n1,e2,n2",total,3,eligible
+dat.linde2015|resp|NaSSa vs TCA,dat.linde2015,resp,NaSSa vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|resp|NaSSa vs rMAO-A,dat.linde2015,resp,NaSSa vs rMAO-A,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|resp|Placebo vs SNRI,dat.linde2015,resp,Placebo vs SNRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|resp|Placebo vs SSRI,dat.linde2015,resp,Placebo vs SSRI,"e1,n1,e2,n2",total,7,eligible
+dat.linde2015|resp|Placebo vs TCA,dat.linde2015,resp,Placebo vs TCA,"e1,n1,e2,n2",total,8,eligible
+dat.linde2015|resp|SNRI vs SSRI,dat.linde2015,resp,SNRI vs SSRI,"e1,n1,e2,n2",total,3,eligible
+dat.linde2015|resp|SNRI vs TCA,dat.linde2015,resp,SNRI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|resp|SSRI vs TCA,dat.linde2015,resp,SSRI vs TCA,"e1,n1,e2,n2",total,18,eligible
+dat.linde2015|resp|TCA vs rMAO-A,dat.linde2015,resp,TCA vs rMAO-A,"e1,n1,e2,n2",total,3,eligible
+dat.linde2015|remi|Hypericum vs Placebo,dat.linde2015,remi,Hypericum vs Placebo,"e1,n1,e2,n2",total,8,eligible
+dat.linde2015|remi|Hypericum vs SSRI,dat.linde2015,remi,Hypericum vs SSRI,"e1,n1,e2,n2",total,6,eligible
+dat.linde2015|remi|Hypericum vs TCA,dat.linde2015,remi,Hypericum vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|remi|Low-dose SARI vs NaSSa,dat.linde2015,remi,Low-dose SARI vs NaSSa,"e1,n1,e2,n2",total,3,eligible
+dat.linde2015|remi|Low-dose SARI vs TCA,dat.linde2015,remi,Low-dose SARI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|remi|NRI vs SSRI,dat.linde2015,remi,NRI vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|remi|NaSSa vs Placebo,dat.linde2015,remi,NaSSa vs Placebo,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|remi|NaSSa vs SSRI,dat.linde2015,remi,NaSSa vs SSRI,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|remi|NaSSa vs TCA,dat.linde2015,remi,NaSSa vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|remi|NaSSa vs rMAO-A,dat.linde2015,remi,NaSSa vs rMAO-A,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|remi|Placebo vs SSRI,dat.linde2015,remi,Placebo vs SSRI,"e1,n1,e2,n2",total,5,eligible
+dat.linde2015|remi|Placebo vs TCA,dat.linde2015,remi,Placebo vs TCA,"e1,n1,e2,n2",total,6,eligible
+dat.linde2015|remi|SNRI vs SSRI,dat.linde2015,remi,SNRI vs SSRI,"e1,n1,e2,n2",total,4,eligible
+dat.linde2015|remi|SNRI vs TCA,dat.linde2015,remi,SNRI vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|remi|SSRI vs TCA,dat.linde2015,remi,SSRI vs TCA,"e1,n1,e2,n2",total,14,eligible
+dat.linde2015|remi|TCA vs rMAO-A,dat.linde2015,remi,TCA vs rMAO-A,"e1,n1,e2,n2",total,5,eligible
+dat.linde2015|loss|Hypericum vs Placebo,dat.linde2015,loss,Hypericum vs Placebo,"e1,n1,e2,n2",total,9,eligible
+dat.linde2015|loss|Hypericum vs SSRI,dat.linde2015,loss,Hypericum vs SSRI,"e1,n1,e2,n2",total,6,eligible
+dat.linde2015|loss|Hypericum vs TCA,dat.linde2015,loss,Hypericum vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss|Low-dose SARI vs NaSSa,dat.linde2015,loss,Low-dose SARI vs NaSSa,"e1,n1,e2,n2",total,4,eligible
+dat.linde2015|loss|Low-dose SARI vs TCA,dat.linde2015,loss,Low-dose SARI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss|NRI vs SSRI,dat.linde2015,loss,NRI vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|loss|NaSSa vs Placebo,dat.linde2015,loss,NaSSa vs Placebo,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss|NaSSa vs SSRI,dat.linde2015,loss,NaSSa vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|loss|NaSSa vs TCA,dat.linde2015,loss,NaSSa vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss|NaSSa vs rMAO-A,dat.linde2015,loss,NaSSa vs rMAO-A,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|loss|Placebo vs SNRI,dat.linde2015,loss,Placebo vs SNRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|loss|Placebo vs SSRI,dat.linde2015,loss,Placebo vs SSRI,"e1,n1,e2,n2",total,6,eligible
+dat.linde2015|loss|Placebo vs TCA,dat.linde2015,loss,Placebo vs TCA,"e1,n1,e2,n2",total,10,eligible
+dat.linde2015|loss|SNRI vs SSRI,dat.linde2015,loss,SNRI vs SSRI,"e1,n1,e2,n2",total,4,eligible
+dat.linde2015|loss|SNRI vs TCA,dat.linde2015,loss,SNRI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss|SSRI vs TCA,dat.linde2015,loss,SSRI vs TCA,"e1,n1,e2,n2",total,15,eligible
+dat.linde2015|loss|TCA vs rMAO-A,dat.linde2015,loss,TCA vs rMAO-A,"e1,n1,e2,n2",total,5,eligible
+dat.linde2015|loss.ae|Hypericum vs Placebo,dat.linde2015,loss.ae,Hypericum vs Placebo,"e1,n1,e2,n2",total,9,eligible
+dat.linde2015|loss.ae|Hypericum vs SSRI,dat.linde2015,loss.ae,Hypericum vs SSRI,"e1,n1,e2,n2",total,6,eligible
+dat.linde2015|loss.ae|Hypericum vs TCA,dat.linde2015,loss.ae,Hypericum vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss.ae|Low-dose SARI vs NaSSa,dat.linde2015,loss.ae,Low-dose SARI vs NaSSa,"e1,n1,e2,n2",total,4,eligible
+dat.linde2015|loss.ae|Low-dose SARI vs TCA,dat.linde2015,loss.ae,Low-dose SARI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss.ae|NRI vs SSRI,dat.linde2015,loss.ae,NRI vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|loss.ae|NaSSa vs Placebo,dat.linde2015,loss.ae,NaSSa vs Placebo,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss.ae|NaSSa vs SSRI,dat.linde2015,loss.ae,NaSSa vs SSRI,"e1,n1,e2,n2",total,3,eligible
+dat.linde2015|loss.ae|NaSSa vs TCA,dat.linde2015,loss.ae,NaSSa vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|loss.ae|Placebo vs SNRI,dat.linde2015,loss.ae,Placebo vs SNRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2015|loss.ae|Placebo vs SSRI,dat.linde2015,loss.ae,Placebo vs SSRI,"e1,n1,e2,n2",total,8,eligible
+dat.linde2015|loss.ae|Placebo vs TCA,dat.linde2015,loss.ae,Placebo vs TCA,"e1,n1,e2,n2",total,7,eligible
+dat.linde2015|loss.ae|SNRI vs SSRI,dat.linde2015,loss.ae,SNRI vs SSRI,"e1,n1,e2,n2",total,4,eligible
+dat.linde2015|loss.ae|SNRI vs TCA,dat.linde2015,loss.ae,SNRI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|loss.ae|SSRI vs TCA,dat.linde2015,loss.ae,SSRI vs TCA,"e1,n1,e2,n2",total,15,eligible
+dat.linde2015|loss.ae|TCA vs rMAO-A,dat.linde2015,loss.ae,TCA vs rMAO-A,"e1,n1,e2,n2",total,5,eligible
+dat.linde2015|ae|Hypericum vs Placebo,dat.linde2015,ae,Hypericum vs Placebo,"e1,n1,e2,n2",total,9,eligible
+dat.linde2015|ae|Hypericum vs SSRI,dat.linde2015,ae,Hypericum vs SSRI,"e1,n1,e2,n2",total,6,eligible
+dat.linde2015|ae|Hypericum vs TCA,dat.linde2015,ae,Hypericum vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|ae|Low-dose SARI vs NaSSa,dat.linde2015,ae,Low-dose SARI vs NaSSa,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|ae|NaSSa vs SSRI,dat.linde2015,ae,NaSSa vs SSRI,"e1,n1,e2,n2",total,2,eligible
+dat.linde2015|ae|Placebo vs SSRI,dat.linde2015,ae,Placebo vs SSRI,"e1,n1,e2,n2",total,5,eligible
+dat.linde2015|ae|Placebo vs TCA,dat.linde2015,ae,Placebo vs TCA,"e1,n1,e2,n2",total,4,eligible
+dat.linde2015|ae|SNRI vs SSRI,dat.linde2015,ae,SNRI vs SSRI,"e1,n1,e2,n2",total,3,eligible
+dat.linde2015|ae|SSRI vs TCA,dat.linde2015,ae,SSRI vs TCA,"e1,n1,e2,n2",total,13,eligible
+dat.linde2015|ae|TCA vs rMAO-A,dat.linde2015,ae,TCA vs rMAO-A,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|Face-to-face CBT vs Other face-to-face,dat.linde2016,resp,Face-to-face CBT vs Other face-to-face,"e1,n1,e2,n2",total,3,eligible
+dat.linde2016|resp|Face-to-face CBT vs Remote CBT,dat.linde2016,resp,Face-to-face CBT vs Remote CBT,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face CBT vs TCA,dat.linde2016,resp,Face-to-face CBT vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face CBT vs UC,dat.linde2016,resp,Face-to-face CBT vs UC,"e1,n1,e2,n2",total,7,eligible
+dat.linde2016|resp|Face-to-face CBT + SSRI vs SSRI,dat.linde2016,resp,Face-to-face CBT + SSRI vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face PST vs Face-to-face PST + SSRI,dat.linde2016,resp,Face-to-face PST vs Face-to-face PST + SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face PST vs Placebo,dat.linde2016,resp,Face-to-face PST vs Placebo,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|Face-to-face PST vs SSRI,dat.linde2016,resp,Face-to-face PST vs SSRI,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|Face-to-face PST vs TCA,dat.linde2016,resp,Face-to-face PST vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face PST vs UC,dat.linde2016,resp,Face-to-face PST vs UC,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face PST + SSRI vs SSRI,dat.linde2016,resp,Face-to-face PST + SSRI vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face interpsy vs Face-to-face interpsy + SSRI,dat.linde2016,resp,Face-to-face interpsy vs Face-to-face interpsy + SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face interpsy vs SSRI,dat.linde2016,resp,Face-to-face interpsy vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face interpsy vs TCA,dat.linde2016,resp,Face-to-face interpsy vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face interpsy vs UC,dat.linde2016,resp,Face-to-face interpsy vs UC,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|Face-to-face interpsy + SSRI vs SSRI,dat.linde2016,resp,Face-to-face interpsy + SSRI vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Face-to-face psychodyn vs SSRI,dat.linde2016,resp,Face-to-face psychodyn vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Hypericum vs Placebo,dat.linde2016,resp,Hypericum vs Placebo,"e1,n1,e2,n2",total,9,eligible
+dat.linde2016|resp|Hypericum vs SSRI,dat.linde2016,resp,Hypericum vs SSRI,"e1,n1,e2,n2",total,6,eligible
+dat.linde2016|resp|Hypericum vs TCA,dat.linde2016,resp,Hypericum vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|Ind drug vs Other face-to-face,dat.linde2016,resp,Ind drug vs Other face-to-face,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Low-dose SARI vs NaSSa,dat.linde2016,resp,Low-dose SARI vs NaSSa,"e1,n1,e2,n2",total,4,eligible
+dat.linde2016|resp|Low-dose SARI vs TCA,dat.linde2016,resp,Low-dose SARI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|NRI vs SSRI,dat.linde2016,resp,NRI vs SSRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|NaSSa vs Placebo,dat.linde2016,resp,NaSSa vs Placebo,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|NaSSa vs SSRI,dat.linde2016,resp,NaSSa vs SSRI,"e1,n1,e2,n2",total,3,eligible
+dat.linde2016|resp|NaSSa vs TCA,dat.linde2016,resp,NaSSa vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|NaSSa vs rMAO-A,dat.linde2016,resp,NaSSa vs rMAO-A,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|No contact CBT vs UC,dat.linde2016,resp,No contact CBT vs UC,"e1,n1,e2,n2",total,4,eligible
+dat.linde2016|resp|Other face-to-face vs TCA,dat.linde2016,resp,Other face-to-face vs TCA,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Other face-to-face vs UC,dat.linde2016,resp,Other face-to-face vs UC,"e1,n1,e2,n2",total,6,eligible
+dat.linde2016|resp|Placebo vs SNRI,dat.linde2016,resp,Placebo vs SNRI,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.linde2016|resp|Placebo vs SSRI,dat.linde2016,resp,Placebo vs SSRI,"e1,n1,e2,n2",total,7,eligible
+dat.linde2016|resp|Placebo vs TCA,dat.linde2016,resp,Placebo vs TCA,"e1,n1,e2,n2",total,9,eligible
+dat.linde2016|resp|Remote CBT vs UC,dat.linde2016,resp,Remote CBT vs UC,"e1,n1,e2,n2",total,3,eligible
+dat.linde2016|resp|SNRI vs SSRI,dat.linde2016,resp,SNRI vs SSRI,"e1,n1,e2,n2",total,4,eligible
+dat.linde2016|resp|SNRI vs TCA,dat.linde2016,resp,SNRI vs TCA,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|SSRI vs TCA,dat.linde2016,resp,SSRI vs TCA,"e1,n1,e2,n2",total,18,eligible
+dat.linde2016|resp|Self-help CBT vs UC,dat.linde2016,resp,Self-help CBT vs UC,"e1,n1,e2,n2",total,4,eligible
+dat.linde2016|resp|TCA vs UC,dat.linde2016,resp,TCA vs UC,"e1,n1,e2,n2",total,2,eligible
+dat.linde2016|resp|TCA vs rMAO-A,dat.linde2016,resp,TCA vs rMAO-A,"e1,n1,e2,n2",total,3,eligible
+dat.moore1998|binary|all,dat.moore1998,binary,all,"Ee,Ne,Ec,Nc",total,37,eligible
+dat.nielweise2007|binary|all,dat.nielweise2007,binary,all,"ai,n1i,ci,n2i",total,18,eligible
+dat.nissen2007|infarction|all,dat.nissen2007,infarction,all,"treat.infarction,treat.total,cont.infarction,cont.total",total,42,eligible
+dat.nissen2007|death|all,dat.nissen2007,death,all,"treat.death,treat.total,cont.death,cont.total",total,42,eligible
+dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 2,dat.obrien2003,preeclampsia by within-study BMI category rank,1 vs 2,"e1,n1,e2,n2",total,13,eligible
+dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 3,dat.obrien2003,preeclampsia by within-study BMI category rank,1 vs 3,"e1,n1,e2,n2",total,10,eligible
+dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 4,dat.obrien2003,preeclampsia by within-study BMI category rank,1 vs 4,"e1,n1,e2,n2",total,6,eligible
+dat.obrien2003|preeclampsia by within-study BMI category rank|1 vs 5,dat.obrien2003,preeclampsia by within-study BMI category rank,1 vs 5,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 3,dat.obrien2003,preeclampsia by within-study BMI category rank,2 vs 3,"e1,n1,e2,n2",total,10,eligible
+dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 4,dat.obrien2003,preeclampsia by within-study BMI category rank,2 vs 4,"e1,n1,e2,n2",total,6,eligible
+dat.obrien2003|preeclampsia by within-study BMI category rank|2 vs 5,dat.obrien2003,preeclampsia by within-study BMI category rank,2 vs 5,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 4,dat.obrien2003,preeclampsia by within-study BMI category rank,3 vs 4,"e1,n1,e2,n2",total,6,eligible
+dat.obrien2003|preeclampsia by within-study BMI category rank|3 vs 5,dat.obrien2003,preeclampsia by within-study BMI category rank,3 vs 5,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.obrien2003|preeclampsia by within-study BMI category rank|4 vs 5,dat.obrien2003,preeclampsia by within-study BMI category rank,4 vs 5,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.pagliaro1992|xi|beta-blockers vs control,dat.pagliaro1992,xi,beta-blockers vs control,"e1,n1,e2,n2",total,9,eligible
+dat.pagliaro1992|xi|beta-blockers vs sclerotherapy,dat.pagliaro1992,xi,beta-blockers vs sclerotherapy,"e1,n1,e2,n2",total,2,eligible
+dat.pagliaro1992|xi|control vs sclerotherapy,dat.pagliaro1992,xi,control vs sclerotherapy,"e1,n1,e2,n2",total,19,eligible
+dat.quan2000|binary|all,dat.quan2000,binary,all,"Ee,Ne,Ec,Nc",total,11,eligible
+dat.rivera2025|test positive in cases vs noncases|all,dat.rivera2025,test positive in cases vs noncases,all,"TP,FN,FP,TN",cells,10,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 120,dat.roever2022,dose-limiting toxicity by dose cohort,100 vs 120,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 125,dat.roever2022,dose-limiting toxicity by dose cohort,100 vs 125,"e1,n1,e2,n2",total,3,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 150,dat.roever2022,dose-limiting toxicity by dose cohort,100 vs 150,"e1,n1,e2,n2",total,4,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 40,dat.roever2022,dose-limiting toxicity by dose cohort,100 vs 40,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 60,dat.roever2022,dose-limiting toxicity by dose cohort,100 vs 60,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 70,dat.roever2022,dose-limiting toxicity by dose cohort,100 vs 70,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 80,dat.roever2022,dose-limiting toxicity by dose cohort,100 vs 80,"e1,n1,e2,n2",total,4,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|100 vs 90,dat.roever2022,dose-limiting toxicity by dose cohort,100 vs 90,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|120 vs 150,dat.roever2022,dose-limiting toxicity by dose cohort,120 vs 150,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|120 vs 80,dat.roever2022,dose-limiting toxicity by dose cohort,120 vs 80,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|125 vs 150,dat.roever2022,dose-limiting toxicity by dose cohort,125 vs 150,"e1,n1,e2,n2",total,3,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|150 vs 80,dat.roever2022,dose-limiting toxicity by dose cohort,150 vs 80,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 50,dat.roever2022,dose-limiting toxicity by dose cohort,40 vs 50,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 60,dat.roever2022,dose-limiting toxicity by dose cohort,40 vs 60,"e1,n1,e2,n2",total,2,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|40 vs 80,dat.roever2022,dose-limiting toxicity by dose cohort,40 vs 80,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 60,dat.roever2022,dose-limiting toxicity by dose cohort,50 vs 60,"e1,n1,e2,n2",total,2,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 70,dat.roever2022,dose-limiting toxicity by dose cohort,50 vs 70,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|50 vs 80,dat.roever2022,dose-limiting toxicity by dose cohort,50 vs 80,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|60 vs 70,dat.roever2022,dose-limiting toxicity by dose cohort,60 vs 70,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.roever2022|dose-limiting toxicity by dose cohort|60 vs 80,dat.roever2022,dose-limiting toxicity by dose cohort,60 vs 80,"e1,n1,e2,n2",total,4,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|70 vs 80,dat.roever2022,dose-limiting toxicity by dose cohort,70 vs 80,"e1,n1,e2,n2",total,3,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|70 vs 90,dat.roever2022,dose-limiting toxicity by dose cohort,70 vs 90,"e1,n1,e2,n2",total,2,eligible
+dat.roever2022|dose-limiting toxicity by dose cohort|80 vs 90,dat.roever2022,dose-limiting toxicity by dose cohort,80 vs 90,"e1,n1,e2,n2",total,2,eligible
+dat.thompson1999|IHD|all,dat.thompson1999,IHD,all,"ihd.exp,noihd.exp,ihd.cont,noihd.cont",cells,28,eligible
+dat.tian2009|deaths|Control vs Rosiglitazone,dat.tian2009,deaths,Control vs Rosiglitazone,"e1,n1,e2,n2",total,48,eligible
+dat.tian2009|infarcts|Control vs Rosiglitazone,dat.tian2009,infarcts,Control vs Rosiglitazone,"e1,n1,e2,n2",total,48,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|100 vs 200,dat.ursino2021,dose-limiting toxicity by dose cohort,100 vs 200,"e1,n1,e2,n2",total,7,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|100 vs 300,dat.ursino2021,dose-limiting toxicity by dose cohort,100 vs 300,"e1,n1,e2,n2",total,2,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|100 vs 400,dat.ursino2021,dose-limiting toxicity by dose cohort,100 vs 400,"e1,n1,e2,n2",total,7,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|100 vs 600,dat.ursino2021,dose-limiting toxicity by dose cohort,100 vs 600,"e1,n1,e2,n2",total,6,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|100 vs 800,dat.ursino2021,dose-limiting toxicity by dose cohort,100 vs 800,"e1,n1,e2,n2",total,3,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 200,dat.ursino2021,dose-limiting toxicity by dose cohort,1000 vs 200,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 400,dat.ursino2021,dose-limiting toxicity by dose cohort,1000 vs 400,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 600,dat.ursino2021,dose-limiting toxicity by dose cohort,1000 vs 600,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.ursino2021|dose-limiting toxicity by dose cohort|1000 vs 800,dat.ursino2021,dose-limiting toxicity by dose cohort,1000 vs 800,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.ursino2021|dose-limiting toxicity by dose cohort|200 vs 300,dat.ursino2021,dose-limiting toxicity by dose cohort,200 vs 300,"e1,n1,e2,n2",total,2,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|200 vs 400,dat.ursino2021,dose-limiting toxicity by dose cohort,200 vs 400,"e1,n1,e2,n2",total,13,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|200 vs 600,dat.ursino2021,dose-limiting toxicity by dose cohort,200 vs 600,"e1,n1,e2,n2",total,9,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|200 vs 800,dat.ursino2021,dose-limiting toxicity by dose cohort,200 vs 800,"e1,n1,e2,n2",total,4,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 400,dat.ursino2021,dose-limiting toxicity by dose cohort,300 vs 400,"e1,n1,e2,n2",total,2,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 600,dat.ursino2021,dose-limiting toxicity by dose cohort,300 vs 600,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.ursino2021|dose-limiting toxicity by dose cohort|300 vs 800,dat.ursino2021,dose-limiting toxicity by dose cohort,300 vs 800,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.ursino2021|dose-limiting toxicity by dose cohort|400 vs 600,dat.ursino2021,dose-limiting toxicity by dose cohort,400 vs 600,"e1,n1,e2,n2",total,9,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|400 vs 800,dat.ursino2021,dose-limiting toxicity by dose cohort,400 vs 800,"e1,n1,e2,n2",total,4,eligible
+dat.ursino2021|dose-limiting toxicity by dose cohort|600 vs 800,dat.ursino2021,dose-limiting toxicity by dose cohort,600 vs 800,"e1,n1,e2,n2",total,4,eligible
+dat.vanhowe1999|positive|all,dat.vanhowe1999,positive,all,"cir.pos,cir.neg,non.pos,non.neg",cells,33,eligible
+dat.viechtbauer2021|binary|all,dat.viechtbauer2021,binary,all,"xTi,nTi,xCi,nCi",total,20,eligible
+dat.woods2010|r|Fluticasone vs Placebo,dat.woods2010,r,Fluticasone vs Placebo,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.woods2010|r|Fluticasone vs SFC,dat.woods2010,r,Fluticasone vs SFC,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.woods2010|r|Fluticasone vs Salmeterol,dat.woods2010,r,Fluticasone vs Salmeterol,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.woods2010|r|Placebo vs SFC,dat.woods2010,r,Placebo vs SFC,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.woods2010|r|Placebo vs Salmeterol,dat.woods2010,r,Placebo vs Salmeterol,"e1,n1,e2,n2",total,3,eligible
+dat.woods2010|r|SFC vs Salmeterol,dat.woods2010,r,SFC vs Salmeterol,"e1,n1,e2,n2",total,1,single-row page refusal
+dat.yusuf1985|binary|6,dat.yusuf1985,binary,6,"ai,n1i,ci,n2i",total,21,eligible
+dat.yusuf1985|binary|9,dat.yusuf1985,binary,9,"ai,n1i,ci,n2i",total,26,eligible
+dat.yusuf1985|binary|10,dat.yusuf1985,binary,10,"ai,n1i,ci,n2i",total,23,eligible
+dat.yusuf1985|binary|11,dat.yusuf1985,binary,11,"ai,n1i,ci,n2i",total,20,eligible
+dat.yusuf1985|binary|12a,dat.yusuf1985,binary,12a,"ai,n1i,ci,n2i",total,14,eligible
+dat.yusuf1985|binary|12b,dat.yusuf1985,binary,12b,"ai,n1i,ci,n2i",total,14,eligible

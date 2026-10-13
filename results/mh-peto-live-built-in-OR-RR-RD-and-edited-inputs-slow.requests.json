@@ -1,0 +1,58 @@
+{
+  "title": "mh-peto live built-in OR RR RD and edited inputs @slow",
+  "status": "passed",
+  "panels": [
+    {
+      "url": "http://127.0.0.1:8000/mh-peto/index.html#eyJ2IjoxLCJzcmMiOiJPbmUsMCwxMDAsNSwxMDBcblR3bywyLDE1MCw4LDE1MCIsIm1lYXN1cmUiOiJSRCJ9",
+      "panel": "INDEPENDENT VALIDATION\nValidate this analysis in RRe-run full validation\n\n7/7 live R quantities passed.\n\nR R version 4.5.1 (2025-06-13)\n\nwebR 0.5.5\n\nmetafor 4.8-0\n\nValidated version in the paper: metafor 5.2-1. Any differences beyond tolerance are reported as FAIL.\n\nEstimate, CI, z and p are exported on the display scale. Beta and SE are recovered from the full-precision estimate and CI, as in the paper. No MH/Peto heterogeneity statistics are claimed.\n\nQUANTITY\tAPP\tR\tDIFFERENCE\tTOLERANCE\tPASS/FAIL\nMH RD est\t-0.044\t-0.044\t0\t1e-9\tPASS\nMH RD lo\t-0.07364944654488229\t-0.07364944654488229\t0\t1e-9\tPASS\nMH RD hi\t-0.014350553455117713\t-0.014350553455117713\t0\t1e-9\tPASS\nMH RD z\t-2.9086011838102173\t-2.908601183810217\t1.526813687355767e-16\t1e-9\tPASS\nMH RD p\t0.003630496711133482\t0.0036304967111334863\t4.336808689942018e-18\t1e-9\tPASS\nMH RD beta\t-0.044\t-0.044\t0\t1e-9\tPASS\nMH RD se\t0.01512754661756713\t0.01512754661756713\t0\t1e-9\tPASS\n\nFull R re-execution (one-command instructions) · Open Codespaces · Reproducible repository ·"
+    }
+  ],
+  "requests": [
+    "http://127.0.0.1:8000/mh-peto/index.html",
+    "http://127.0.0.1:8000/shared/forced-colors.css",
+    "http://127.0.0.1:8000/hub/app-style.css",
+    "http://127.0.0.1:8000/hub/shared/csv-upload.js",
+    "http://127.0.0.1:8000/hub/shared/chart-download.js",
+    "http://127.0.0.1:8000/hub/shared/axis-controls.js",
+    "http://127.0.0.1:8000/hub/shared/results-export.js",
+    "http://127.0.0.1:8000/hub/shared/url-state.js",
+    "http://127.0.0.1:8000/hub/shared/reset-undo.js",
+    "http://127.0.0.1:8000/hub/shared/tooltips.js",
+    "http://127.0.0.1:8000/shared/ma-core.js",
+    "http://127.0.0.1:8000/shared/fragility.js",
+    "http://127.0.0.1:8000/shared/diagnostic-plots.js",
+    "http://127.0.0.1:8000/shared/build-info.js",
+    "http://127.0.0.1:8000/shared/ma-studies-v1.js",
+    "http://127.0.0.1:8000/shared/truthcert-export.js",
+    "http://127.0.0.1:8000/shared/truthcert-ui.js",
+    "http://127.0.0.1:8000/shared/ma-comparisons-v1.js",
+    "http://127.0.0.1:8000/shared/autosave.js",
+    "http://127.0.0.1:8000/hub/shared/glossary.json",
+    "http://127.0.0.1:8000/hub/shared/a11y-landmarks.js",
+    "http://127.0.0.1:8000/shared/alm-validate.js",
+    "http://127.0.0.1:8000/mh-peto/validate/adapter.js",
+    "http://127.0.0.1:8000/shared/webr-runner.js",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/repo/manifest.json",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/packages/metafor/metafor_4.8-0.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/packages/Matrix/Matrix_1.7-5.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/packages/lattice/lattice_0.22-9.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/packages/metadat/metadat_1.4-0.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/packages/mathjaxr/mathjaxr_2.0-0.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/packages/numDeriv/numDeriv_2016.8-1.1.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/packages/nlme/nlme_3.1-169.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/packages/pbapply/pbapply_1.7-4.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/repo/bin/emscripten/contrib/4.5/digest_0.6.39.tgz",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/webr.mjs",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/webr-worker.js",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/R.js",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/R.wasm",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/libRblas.so",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/vfs/usr/lib/R/library/translations/DESCRIPTION",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/libRlapack.so",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/vfs/usr/lib/R/share.js.metadata",
+    "http://127.0.0.1:8000/r-shiny/shinylive/webr/vfs/usr/lib/R/share.data.gz"
+  ],
+  "hosts": [
+    "127.0.0.1:8000"
+  ]
+}

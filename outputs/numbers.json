@@ -1,0 +1,52 @@
+{
+  "checks": {
+    "value": 68461,
+    "source": "results/reference.json + app-patched.json + data/corpus.json + fragility-reference.json",
+    "transformation": "count recomputed check ledger"
+  },
+  "passed": {
+    "value": 68461,
+    "source": "same records",
+    "transformation": "sum passed comparisons"
+  },
+  "before_passed": {
+    "value": 64256,
+    "source": "results/app.json + references",
+    "transformation": "sum passed comparisons before fixes"
+  },
+  "fixes": {
+    "value": 7,
+    "source": "bench/fix.patch and results/HISTORICAL_RESULTS.md",
+    "transformation": "static defect classification; not seven independent numerical groups"
+  },
+  "configurations": {
+    "value": 336,
+    "source": "data/corpus.json",
+    "transformation": "count configurations"
+  },
+  "datasets_used": {
+    "value": 55,
+    "source": "data/dataset-audit.json",
+    "transformation": "count included datasets"
+  },
+  "datasets_enumerated": {
+    "value": 114,
+    "source": "data/dataset-audit.json",
+    "transformation": "count all dataset records"
+  },
+  "rows": {
+    "value": 2473,
+    "source": "data/corpus.json",
+    "transformation": "sum occurrences across configurations"
+  },
+  "rows_with_zero_cell": {
+    "value": 429,
+    "source": "data/corpus.json",
+    "transformation": "sum occurrences across configurations"
+  },
+  "double_zero_or_double_all_event_rows": {
+    "value": 155,
+    "source": "data/corpus.json",
+    "transformation": "sum occurrences across configurations"
+  }
+}

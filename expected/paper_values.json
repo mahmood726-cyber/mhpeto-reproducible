@@ -1,0 +1,12 @@
+{
+  "checks": 68461,
+  "passed": 68461,
+  "before_passed": 64256,
+  "fixes": 7,
+  "datasets_enumerated": 114,
+  "datasets_used": 55,
+  "configurations": 336,
+  "rows": 2473,
+  "rows_with_zero_cell": 429,
+  "double_zero_or_double_all_event_rows": 155
+}
