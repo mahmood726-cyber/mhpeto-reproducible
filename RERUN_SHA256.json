@@ -1,0 +1,46 @@
+{
+  "required_files": {
+    "RUN_LOG.txt": {
+      "sha256": "9ab8864ee4a4fe1ffdbfbb96622184cf046232b01a2e81d823ce9a6b2cb2ad40",
+      "bytes": 28500
+    },
+    "compare.log": {
+      "sha256": "f108e77d6dd48c0e679cd09954c9e64d2d0af94d6f92067af5e6c2d65b5496ff",
+      "bytes": 9241
+    },
+    "validate-R.log": {
+      "sha256": "53cb69a4b2f090581257dd1dbfb42c67524cc9e90b2eca569524494a00007d8d",
+      "bytes": 8823
+    },
+    "plus-comparison.json": {
+      "sha256": "3db8d7ab0458dc3eb0d95553dd07f7ba14bda359ccf339d03e62e03777ba2a9e",
+      "bytes": 5937
+    },
+    "results/comparison.json": {
+      "sha256": "6b33e88f6505a14faa12c71bb6c023e15f2848ba66cfa02fb3e4bd5577542017",
+      "bytes": 64632
+    },
+    "results/comparison.tails.json": {
+      "sha256": "479c2a1018150c40ce84a2c6bccd2a6e992e76120161dec3ff6226779ef2bd5c",
+      "bytes": 30205
+    },
+    "results/app-patched-browser-errors.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    }
+  },
+  "large_files": {
+    "results/app-patched.json": {
+      "sha256": "b87819616e3e89b7b90663a4ae4ceb1e07fad7a4e902f8e8234bea3fbdee4724",
+      "bytes": 11458693
+    },
+    "results/check-ledger.json": {
+      "sha256": "f366e540247ee3af2916815ed1b49ab4406f816a9b143e37bf211d12daad45a9",
+      "bytes": 17744871
+    },
+    "outputs/validate_R_table.csv": {
+      "sha256": "9889c9697f627c8fb34ca3b6561ffdd277b3dae913703ee50d4003a74886147a",
+      "bytes": 13157009
+    }
+  }
+}

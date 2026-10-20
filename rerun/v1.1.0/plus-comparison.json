@@ -1,0 +1,392 @@
+{
+ "oracle": {
+  "R": "R version 4.6.0 (2026-04-24 ucrt)",
+  "metafor": "5.2.1",
+  "meta": "8.5.0",
+  "jsonlite": "2.0.0"
+ },
+ "mutation": null,
+ "checks": 120010,
+ "passed": 120000,
+ "documented": 10,
+ "unexpected": 0,
+ "families": {
+  "full.MH.beta": [
+   756,
+   756,
+   3.714910247976432e-15
+  ],
+  "full.MH.se": [
+   756,
+   756,
+   4.59540385842928e-15
+  ],
+  "full.MH.z": [
+   756,
+   756,
+   3.0786442443627975e-14
+  ],
+  "full.MH.p": [
+   756,
+   756,
+   9.936496070395151e-15
+  ],
+  "full.MH.lo": [
+   756,
+   756,
+   4.183137719258473e-15
+  ],
+  "full.MH.hi": [
+   756,
+   756,
+   4.6431566428475805e-15
+  ],
+  "full.MH.QE": [
+   756,
+   756,
+   9.315993178144008e-15
+  ],
+  "full.MH.QEp": [
+   756,
+   756,
+   4.9404924595819466e-15
+  ],
+  "full.MH.I2": [
+   756,
+   756,
+   2.440679444740012e-13
+  ],
+  "full.MH.H2": [
+   756,
+   756,
+   6.5073960630272095e-15
+  ],
+  "full.PETO.beta": [
+   252,
+   252,
+   3.860580416056149e-15
+  ],
+  "full.PETO.se": [
+   252,
+   252,
+   4.799423353114079e-15
+  ],
+  "full.PETO.z": [
+   252,
+   252,
+   4.478776069607428e-15
+  ],
+  "full.PETO.p": [
+   252,
+   252,
+   8.326672684688674e-16
+  ],
+  "full.PETO.lo": [
+   252,
+   252,
+   4.877617533360472e-15
+  ],
+  "full.PETO.hi": [
+   252,
+   252,
+   4.4629648207412375e-15
+  ],
+  "full.PETO.QE": [
+   252,
+   252,
+   9.438766039436947e-15
+  ],
+  "full.PETO.QEp": [
+   252,
+   252,
+   6.905587213168474e-14
+  ],
+  "full.PETO.I2": [
+   252,
+   252,
+   2.1538326677728037e-14
+  ],
+  "full.PETO.H2": [
+   252,
+   252,
+   8.31694548556945e-15
+  ],
+  "full.OR.MH": [
+   252,
+   252,
+   4.554354336669295e-15
+  ],
+  "full.OR.MHp": [
+   252,
+   252,
+   7.216449660063518e-16
+  ],
+  "full.OR.TA": [
+   252,
+   252,
+   2.317758911198204e-12
+  ],
+  "full.OR.TAp": [
+   252,
+   252,
+   1.3529177778082158e-12
+  ],
+  "full.OR.BD": [
+   252,
+   252,
+   2.31755437577494e-12
+  ],
+  "full.OR.BDp": [
+   252,
+   252,
+   1.3528067555057532e-12
+  ],
+  "conv.metamh.beta": [
+   756,
+   754,
+   null
+  ],
+  "conv.metamh.se": [
+   756,
+   754,
+   null
+  ],
+  "conv.metamh.p": [
+   756,
+   754,
+   null
+  ],
+  "conv.metamh.lo": [
+   756,
+   754,
+   null
+  ],
+  "conv.metamh.hi": [
+   756,
+   754,
+   null
+  ],
+  "conv.ivfe.beta": [
+   756,
+   756,
+   5.0113329260805316e-15
+  ],
+  "conv.ivfe.se": [
+   756,
+   756,
+   4.577881832093506e-15
+  ],
+  "conv.ivfe.p": [
+   756,
+   756,
+   6.8833827526759706e-15
+  ],
+  "conv.ivfe.lo": [
+   756,
+   756,
+   4.9379000449738185e-15
+  ],
+  "conv.ivfe.hi": [
+   756,
+   756,
+   4.7467888913180384e-15
+  ],
+  "loo.MH.beta": [
+   6837,
+   6837,
+   4.854856567386969e-15
+  ],
+  "loo.MH.se": [
+   6837,
+   6837,
+   4.618266368393853e-15
+  ],
+  "loo.MH.z": [
+   6837,
+   6837,
+   6.744604874597826e-14
+  ],
+  "loo.MH.p": [
+   6837,
+   6837,
+   4.8960835385969403e-14
+  ],
+  "loo.MH.lo": [
+   6837,
+   6837,
+   5.009215320298103e-15
+  ],
+  "loo.MH.hi": [
+   6837,
+   6837,
+   4.75268572645452e-15
+  ],
+  "loo.MH.QE": [
+   6837,
+   6837,
+   8.560315385170427e-15
+  ],
+  "loo.MH.QEp": [
+   6837,
+   6837,
+   5.440092820663267e-15
+  ],
+  "loo.MH.I2": [
+   6837,
+   6837,
+   1.5779797597146937e-13
+  ],
+  "loo.MH.H2": [
+   6837,
+   6837,
+   8.872985293633728e-15
+  ],
+  "loo.MH.flag": [
+   6837,
+   6837,
+   0
+  ],
+  "loo.PETO.beta": [
+   2279,
+   2279,
+   4.6851656442714084e-15
+  ],
+  "loo.PETO.se": [
+   2279,
+   2279,
+   4.799423353114079e-15
+  ],
+  "loo.PETO.z": [
+   2279,
+   2279,
+   4.8839728058422674e-15
+  ],
+  "loo.PETO.p": [
+   2279,
+   2279,
+   7.632783294297951e-16
+  ],
+  "loo.PETO.lo": [
+   2279,
+   2279,
+   5.09503284523761e-15
+  ],
+  "loo.PETO.hi": [
+   2279,
+   2279,
+   4.873509678053366e-15
+  ],
+  "loo.PETO.QE": [
+   2279,
+   2279,
+   1.9086026824223198e-14
+  ],
+  "loo.PETO.QEp": [
+   2279,
+   2279,
+   1.2212453270876722e-14
+  ],
+  "loo.PETO.I2": [
+   2279,
+   2279,
+   7.960305331225054e-14
+  ],
+  "loo.PETO.H2": [
+   2279,
+   2279,
+   1.9086026824223198e-14
+  ],
+  "loo.PETO.flag": [
+   2279,
+   2279,
+   0
+  ],
+  "loo.refusal": [
+   165,
+   165,
+   0
+  ],
+  "loo.refusal.R": [
+   165,
+   165,
+   0
+  ],
+  "skip.k<2": [
+   252,
+   252,
+   0
+  ]
+ },
+ "failures": [
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|OR",
+   "family": "conv.metamh.beta",
+   "app": 0.2022357711083082,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|OR",
+   "family": "conv.metamh.se",
+   "app": 0.04525925809820305,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|OR",
+   "family": "conv.metamh.p",
+   "app": 0.000007881251741490637,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|OR",
+   "family": "conv.metamh.lo",
+   "app": 0.11352925526882744,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|OR",
+   "family": "conv.metamh.hi",
+   "app": 0.29094228694778895,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|RR",
+   "family": "conv.metamh.beta",
+   "app": 0.098306734537798,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|RR",
+   "family": "conv.metamh.se",
+   "app": 0.022008300442643063,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|RR",
+   "family": "conv.metamh.p",
+   "app": 0.000007939731338506388,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|RR",
+   "family": "conv.metamh.lo",
+   "app": 0.055171258309280664,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  },
+  {
+   "id": "dat.baker2009|exac|Placebo vs Salmeterol|RR",
+   "family": "conv.metamh.hi",
+   "app": 0.14144221076631533,
+   "ref": null,
+   "documented": "metabin-reml-refusal"
+  }
+ ]
+}

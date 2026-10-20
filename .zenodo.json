@@ -5,7 +5,7 @@
       "name": "Ahmad, Mahmood"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "upload_type": "software",
   "access_right": "open",
@@ -19,7 +19,12 @@
       "identifier": "10.5281/zenodo.23288388",
       "relation": "isDerivedFrom",
       "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23515177",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
     }
   ],
-  "description": "Validation of MH/Peto pooling: 68461/68461 checks after seven fixes. See README for numerical, UI and diagnostic scope."
+  "description": "Paper 10 MH/Peto validation archive v1.1.0, prepared against allmeta v1.8.0 (1cb3f8409c7af75ed41f7e1811f9c502f900fc79; 10.5281/zenodo.23515177), release run 2026-10-20 against allmeta 1cb3f84. Retains the original 68,461-check protocol and 106 tail checks and adds PR #159 heterogeneity, CMH/Tarone/Breslow-Day, leave-one-out and conventions validation against metafor 5.2-1 and meta 8.5-0. Extras contract: 120,000/120,010 (10 documented failures) and 3,793/3,793 text claims. Fresh browser-to-Python and browser-to-R checks passed 68,461/68,461 plus 106/106 tails; extras measured 120,000/120,010 (10 documented metabin-reml-refusal, 0 unexpected), with claims 3,793/3,793. Evidence: provenance/run_plan-2026-10-20-release.log. Historical results are retained separately."
 }

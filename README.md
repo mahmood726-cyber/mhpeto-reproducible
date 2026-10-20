@@ -1,13 +1,73 @@
 # Mantel-Haenszel and Peto meta-analysis in the browser: a tool validated against the R package metafor
 
-Version 1.0.0. Creator: Ahmad, Mahmood. MIT archive code.
-Allmeta commit: `7433ef7` (PR #105, squash-merged; seven fixes, direct upper-tail p-values and the Validate-in-R button); supplied source is the PR #105 fix on main 6036f3b6c1fd404b6da7916460faa8b3ebaf56bc. The archive app additionally includes this task's validation adapter/mount. No commit, push, deployment or Overmind certification is implied.
+Version 1.1.0. Creator: Ahmad, Mahmood. MIT archive code.
+
+## What's new in v1.1.0
+
+The archive records the completed **2026-10-20** release run against
+**allmeta v1.8.0, commit 1cb3f84** (full SHA
+`1cb3f8409c7af75ed41f7e1811f9c502f900fc79`; DOI 10.5281/zenodo.23515177).
+The redacted authoritative log is [the release run](provenance/run_plan-2026-10-20-release.log).
+
+| Release-run stage | Measured result |
+|---|---|
+| Browser coverage | 1,008 page configurations; 0 browser errors |
+| Original browser-to-Python checks | 68,461/68,461; supplemental tails 106/106 (94 with absolute z at least 8) |
+| Original browser-to-R checks | 68,461/68,461; supplemental tails 106/106 |
+| Extras | 120,000/120,010; 10 documented failures, 0 unexpected; CONTRACT PASS |
+| Text claims | 3,793/3,793; CLAIMS CONTRACT PASS |
+| Retained publication checks | 10/10 paper-value assertions; 68,461/68,461 final checks; 64,256/68,461 before fixes |
+| Integrity and outputs | ARCHIVE PASS (56 app hashes, 250 source hashes at execution); MANIFEST PASS |
+
+The original corpus, R references, expected values, comparison code and
+tolerances are unchanged. These are checks of recorded configurations, UI,
+structure and statistical outputs, not independent statistical estimates.
+PR #159 adds heterogeneity, CMH/Tarone/Breslow-Day, leave-one-out, conventions
+and text-claim checks against metafor 5.2-1 and meta 8.5-0.
+
+Release browser and comparison records are under rerun/v1.1.0.
+RERUN_SHA256.json pins only these release records. Earlier candidate attempts
+are excluded from this archive. Existing results/ and outputs/ retain v1.0.0 evidence.
+The log's 250 source hashes describe the tree at execution; finalization adds
+documentation and provenance, so the regenerated inventory has its own count.
+
+Upstream build-info.js is preserved unchanged: v1.8.0, embedded build SHA
+42a94da2110a02200d0b5bff4c56f636b9cbffa9. This embedded SHA differs from the
+release commit and does not replace it.
+
+The supplied source checkout uses CRLF conversions. Before publication, the
+human-side runner must execute `FINAL_BLOBS.cmd` from the parent task folder.
+Its 65-entry COPY_MAP.json covers every upstream app and extras copy.
+finalize_blobs.py reads binary Git blobs at the pinned full release commit,
+checks byte equality, prints `BLOB PASS 65/65`, then regenerates and verifies
+the archive inventories. No Git blob pass is claimed from this Python-only
+finalization environment. See RECUT_NOTES.md for the audit.
+
+To repeat the numerical release replay, set the documented environment and run:
+
+    RUN_PLAN.cmd
+
+See RUN_PLAN_EXPECTED.md for dependencies, expected values and preservation
+of prior attempts. RUN_PLAN.cmd runs the archived page with Node/Playwright
+and Chrome, compares fresh records using the original Python protocol, runs
+unchanged validate.R with native R, and checks extras and manifests.
+
+Historical v1.0.0 source: allmeta commit `7433ef7` (PR #105); supplied base
+`6036f3b6c1fd404b6da7916460faa8b3ebaf56bc`, with the archive validation mount.
+Historical benchmark scripts and source hashes identify that old evidence.
 
 Reference environment: R 4.6.0, metafor 5.2-1, metadat 1.6-0, recorded in results/session.txt. Browser live R uses vendored webR 0.5.5 / metafor 4.8-0 and reports both versions. Package versions and source identifiers are supplied local evidence, not independently verified remote release claims.
 
-The full primary comparison passes **68,461/68,461 checks after seven fixes**, versus **64,256/68,461 before fixes**. These are full-precision, rounded UI, fragility, L'Abbe and structural checks, not 68,461 independent statistical estimates. analysis/checks.py preserves bench/compare.py's check contract and derives the full ledger from recorded app/R values. See outputs/table1_by_quantity.csv for before/after counts per quantity and measure.
+The retained v1.0.0 primary comparison passes **68,461/68,461 checks after seven fixes**, versus **64,256/68,461 before fixes**. These are full-precision, rounded UI, fragility, L'Abbe and structural checks, not 68,461 independent statistical estimates. analysis/checks.py preserves bench/compare.py's check contract and derives the full ledger from recorded app/R values. See outputs/table1_by_quantity.csv for before/after counts per quantity and measure.
 
-## Validate with one command
+The release log records R 4.6.0, metafor 5.2.1, meta 8.5.0 and jsonlite
+2.0.0. It does not print Node, Chrome, Playwright or Python versions.
+Earlier run 4 environment observations remain in RECUT_NOTES.md.
+The optional regenerate-plus.R was not executed by RUN_PLAN.cmd; extras
+use the stored R oracle. The unchanged R replay banner refers to the fresh
+rerun/v1.1.0 browser records for this release execution.
+
+## Recheck historical records with one R command
 
 With R and existing installed metafor and jsonlite packages, from this folder:
 
@@ -39,16 +99,17 @@ The overall improvement is 64,256 to 68,461 passing checks out of 68,461. Label 
 
 ## Limits
 
-No CMH, Tarone, Breslow-Day, Q or I2 statistics are displayed or validated for MH/Peto. Displayed k counts input rows. Fragility is a DL random-effects greedy index, not a proven global minimum. L'Abbe uses an inverse-variance fixed-effect estimate (RR when selected, OR otherwise), not MH/Peto. Hart's person-time data were treated as counts solely for numerical coverage. O'Brien BMI rank groupings, Frank genotype dichotomy, diagnostic-case comparisons and dose-cohort pairs retain the supplied corpus interpretations; computational regroupings are not clinical analyses. See the historical report for all inclusion qualifications and warning/error records.
+The original 68,461-check protocol does not cover CMH, Tarone, Breslow-Day, Q or I2. The v1.8.0 release displays these additions and validation-plus checks them separately. Displayed k counts input rows. Fragility is a DL random-effects greedy index, not a proven global minimum. L'Abbe uses an inverse-variance fixed-effect estimate (RR when selected, OR otherwise), not MH/Peto. Hart's person-time data were treated as counts solely for numerical coverage. O'Brien BMI rank groupings, Frank genotype dichotomy, diagnostic-case comparisons and dose-cohort pairs retain the supplied corpus interpretations; computational regroupings are not clinical analyses. See the historical report for all inclusion qualifications and warning/error records.
 
 ## Rebuild and verify the archive
 
     python analysis/make_outputs.py
     python analysis/verify_archive.py
+    python analysis/recut_manifest.py --verify
 
 Python requires matplotlib, Pillow and PyYAML. Expected values are assertions, never substituted for computed findings. Outputs include both CSV tables, before/after check ledgers, figure2_agreement and visual_abstract in PNG/TIFF (300 dpi, 170 mm, minimum 8 pt), dimensions, numerical provenance and reproduction_report.md.
 
-app/ contains byte-identical files from the supplied allmeta worktree after adding validation, including dynamically fetched webR runtime and metafor dependency archives. app/app-sha256.json pins the complete snapshot. SOURCE_SHA256.json pins archive source files, excluding generated outputs, caches, rerun/, git metadata and itself. Browser test request logs establish fetched asset coverage. No manuscript drafts are included and the verifier permits .git.
+app/ initially contains byte-identical files from the supplied v1.8.0 release's Windows working tree; FINAL_BLOBS.cmd restores the exact release Git blobs before publication, including recursively resolved page/shared-script dependencies and the existing dynamically fetched webR runtime and metafor dependency archives. app/app-sha256.json pins the complete snapshot. To regenerate inventories after intentional source edits, run `python analysis/recut_manifest.py --write`; it first verifies the immutable original and plus inputs. SOURCE_SHA256.json pins archive source files, excluding generated outputs, caches, rerun/, git metadata and itself. Retained browser request logs establish historical asset-path coverage; they are not fresh release execution evidence. No manuscript drafts are included and the verifier permits .git.
 
 | Element | Static / dynamic | Source |
 |---|---|---|
@@ -59,6 +120,6 @@ app/ contains byte-identical files from the supplied allmeta worktree after addi
 | Browser Tier 2 app values | Dynamic | current page parser, engine and DOM |
 | Tier 2 independent R oracle | Replayed recorded evidence | hash-pinned reference files |
 
-Derived from https://github.com/mahmood726-cyber/allmeta and allmeta v1.2.1 DOI 10.5281/zenodo.23288388 (isDerivedFrom). These are supplied identifiers. The MIT license covers archive code; vendored R, packages, data and documentation retain their upstream licenses and attribution.
+Derived from https://github.com/mahmood726-cyber/allmeta and allmeta v1.2.1 DOI 10.5281/zenodo.23288388 (isDerivedFrom). The current upstream release is allmeta v1.8.0 DOI 10.5281/zenodo.23515177 (concept DOI 10.5281/zenodo.20516880). These are supplied identifiers. The MIT license covers archive code; vendored R, packages, data and documentation retain their upstream licenses and attribution.
 
 Final-page tail regression guard: in addition to the unchanged 68,461 primary checks, every pooled R p-value below 1e-12 is checked with abs(App-R)/abs(R) <= 1e-9. If R underflows to zero, only an app zero matches. Supplemental checks are reported separately; the original primary denominator is unchanged. The final page uses direct normal upper-tail probabilities. Browser Tier 2, bench/compare.py and validate.R enforce this guard. outputs/tail_checks.json and outputs/validate_R_tails.csv record Python and recomputed-R evidence.

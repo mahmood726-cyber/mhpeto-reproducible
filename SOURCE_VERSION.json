@@ -1,0 +1,18 @@
+{
+  "archive_version": "1.1.0",
+  "app": "mh-peto",
+  "allmeta_version": "v1.8.0",
+  "allmeta_commit": "1cb3f8409c7af75ed41f7e1811f9c502f900fc79",
+  "allmeta_doi": "10.5281/zenodo.23515177",
+  "supplied_candidate_commit": "d04b0a9",
+  "status": "Release browser/Node/R run completed on 2026-10-20 against allmeta 1cb3f84; see provenance/run_plan-2026-10-20-release.log. Exact Git-blob packaging is performed by FINAL_BLOBS.cmd before publication.",
+  "candidate_build_info": "Copied unchanged; reports v1.7.0 and an older build SHA. Not the v1.8.0 release identity.",
+  "supplied_release_commit": "1cb3f8409c7af75ed41f7e1811f9c502f900fc79",
+  "candidate_replay_status": "Fresh browser-to-Python and browser-to-R checks passed 68,461/68,461 plus 106/106 tails; extras measured 120,000/120,010 (10 documented metabin-reml-refusal, 0 unexpected), with claims 3,793/3,793. Historical candidate result only; earlier attempt files are excluded from this archive.",
+  "release_build_info": "Copied unchanged: version v1.8.0, embedded SHA 42a94da2110a02200d0b5bff4c56f636b9cbffa9, builtAt 2026-10-20T20:32:27Z. The embedded build SHA differs from the supplied release commit 1cb3f8409c7af75ed41f7e1811f9c502f900fc79.",
+  "allmeta_concept_doi": "10.5281/zenodo.20516880",
+  "release_run_date": "2026-10-20",
+  "release_run_log": "provenance/run_plan-2026-10-20-release.log",
+  "release_replay_status": "Browser: 1008 configurations, 0 errors. Python and R: 68461/68461, tails 106/106. Extras: 120000/120010, 10 documented failures, 0 unexpected. Claims: 3793/3793. ARCHIVE PASS and MANIFEST PASS.",
+  "blob_packaging": "Run ../FINAL_BLOBS.cmd; ../COPY_MAP.json enumerates 56 app and 9 extras copies. No blob pass claimed before that command succeeds."
+}

@@ -1,0 +1,114 @@
+Loading required package: Matrix
+Loading required package: metadat
+Loading required package: numDeriv
+
+Loading the 'metafor' package (version 5.2-1). For an
+introduction to the package please type: help(metafor)
+
+R version 4.6.0 (2026-04-24 ucrt)
+metafor 5.2.1; paper 5.2-1
+Recomputed: every MH/Peto fit, study effect and inverse-variance Labbe reference.
+Replayed: archived browser numerical outputs, rounded UI and structural evidence; independent R greedy FI/FQ and DL baseline oracle records. No browser or greedy search is run.
+
+Per-quantity totals:
+OR.beta: 252/252 pass; max difference 6.9961832143169806e-16; tolerance 1e-09
+OR.display_pooled_est: 247/247 pass; max difference 0.00049796165773319245; tolerance 0.0005
+OR.display_pooled_hi: 247/247 pass; max difference 0.00049794805717939816; tolerance 0.0005
+OR.display_pooled_lo: 247/247 pass; max difference 0.00049276069792525412; tolerance 0.0005
+OR.display_pooled_pval: 247/247 pass; max difference 0.00049930459884080236; tolerance 0.0005
+OR.display_pooled_zval: 247/247 pass; max difference 0.0049791588974406054; tolerance 0.005
+OR.display_study_est: 2389/2389 pass; max difference 0.00050000000000238742; tolerance 0.0005
+OR.display_study_hi: 2389/2389 pass; max difference 0.00049962193468822136; tolerance 0.0005
+OR.display_study_lo: 2389/2389 pass; max difference 0.00049998665163664135; tolerance 0.0005
+OR.est: 252/252 pass; max difference 7.4864612550313653e-16; tolerance 1e-09
+OR.fragility_DL_beta: 252/252 pass; max difference 1.2212453270876722e-15; tolerance 1e-09
+OR.fragility_DL_hi: 252/252 pass; max difference 1.7530171878316158e-15; tolerance 1e-09
+OR.fragility_DL_lo: 252/252 pass; max difference 2.1094237467877974e-15; tolerance 1e-09
+OR.fragility_FI: 252/252 pass; max difference 0; tolerance 1e-09
+OR.fragility_FQ: 252/252 pass; max difference 0; tolerance 1e-09
+OR.hi: 252/252 pass; max difference 9.7129714127222985e-16; tolerance 1e-09
+OR.labbe_curve_max_abs_error: 252/252 pass; max difference 4.4408920985006262e-16; tolerance 1e-09
+OR.labbe_logEff: 252/252 pass; max difference 7.5691279284965076e-16; tolerance 1e-09
+OR.labbe_pc: 2389/2389 pass; max difference 0; tolerance 1e-09
+OR.labbe_pt: 2389/2389 pass; max difference 0; tolerance 1e-09
+OR.lo: 252/252 pass; max difference 9.1697069970274603e-16; tolerance 1e-09
+OR.p: 252/252 pass; max difference 3.7608804959177178e-15; tolerance 1e-09
+OR.se: 252/252 pass; max difference 2.1151887883993452e-16; tolerance 1e-09
+OR.single_row_refusal: 84/84 pass; max difference 0; tolerance 1e-09
+OR.single_row_UI_clear: 84/84 pass; max difference 0; tolerance 1e-09
+OR.study_beta: 2389/2389 pass; max difference 2.6843495405077977e-15; tolerance 1e-09
+OR.study_count: 252/252 pass; max difference 0; tolerance 1e-09
+OR.study_se: 2389/2389 pass; max difference 2.687093631145331e-16; tolerance 1e-09
+OR.z: 252/252 pass; max difference 2.1600469515854499e-14; tolerance 1e-09
+PETO.beta: 252/252 pass; max difference 3.7011802503725701e-16; tolerance 1e-09
+PETO.display_pooled_est: 252/252 pass; max difference 0.0004970882072647953; tolerance 0.0005
+PETO.display_pooled_hi: 252/252 pass; max difference 0.00049879971296218351; tolerance 0.0005
+PETO.display_pooled_lo: 252/252 pass; max difference 0.0004968355153232018; tolerance 0.0005
+PETO.display_pooled_pval: 252/252 pass; max difference 0.00049890159133347822; tolerance 0.0005
+PETO.display_pooled_zval: 252/252 pass; max difference 0.0049850613309729841; tolerance 0.005
+PETO.est: 252/252 pass; max difference 1.3215321498346621e-15; tolerance 1e-09
+PETO.hi: 252/252 pass; max difference 1.2541139812768353e-15; tolerance 1e-09
+PETO.lo: 252/252 pass; max difference 1.3708155804436645e-15; tolerance 1e-09
+PETO.p: 252/252 pass; max difference 4.9266146717741321e-16; tolerance 1e-09
+PETO.se: 252/252 pass; max difference 2.0787924442811585e-16; tolerance 1e-09
+PETO.z: 252/252 pass; max difference 4.5669046949457647e-16; tolerance 1e-09
+RD.beta: 252/252 pass; max difference 1.1275702593849246e-16; tolerance 1e-09
+RD.display_pooled_est: 252/252 pass; max difference 0.00049892780557540817; tolerance 0.0005
+RD.display_pooled_hi: 252/252 pass; max difference 0.00049694651365184139; tolerance 0.0005
+RD.display_pooled_lo: 252/252 pass; max difference 0.00049669503525881509; tolerance 0.0005
+RD.display_pooled_pval: 252/252 pass; max difference 0.00049880988699468887; tolerance 0.0005
+RD.display_pooled_zval: 252/252 pass; max difference 0.0049404542234099402; tolerance 0.005
+RD.display_study_est: 2389/2389 pass; max difference 0.00050000000000000044; tolerance 0.0005
+RD.display_study_hi: 2389/2389 pass; max difference 0.00049924235181941085; tolerance 0.0005
+RD.display_study_lo: 2389/2389 pass; max difference 0.00049977678757237576; tolerance 0.0005
+RD.est: 252/252 pass; max difference 1.1275702593849246e-16; tolerance 1e-09
+RD.fragility_DL_beta: 252/252 pass; max difference 3.3306690738754696e-16; tolerance 1e-09
+RD.fragility_DL_hi: 252/252 pass; max difference 3.3306690738754696e-16; tolerance 1e-09
+RD.fragility_DL_lo: 252/252 pass; max difference 4.4408920985006262e-16; tolerance 1e-09
+RD.fragility_FI: 252/252 pass; max difference 0; tolerance 1e-09
+RD.fragility_FQ: 252/252 pass; max difference 0; tolerance 1e-09
+RD.hi: 252/252 pass; max difference 1.1102230246251565e-16; tolerance 1e-09
+RD.labbe_curve_max_abs_error: 252/252 pass; max difference 4.4408920985006262e-16; tolerance 1e-09
+RD.labbe_logEff: 252/252 pass; max difference 7.5691279284965076e-16; tolerance 1e-09
+RD.labbe_pc: 2389/2389 pass; max difference 0; tolerance 1e-09
+RD.labbe_pt: 2389/2389 pass; max difference 0; tolerance 1e-09
+RD.lo: 252/252 pass; max difference 2.2204460492503131e-16; tolerance 1e-09
+RD.p: 252/252 pass; max difference 3.4972025275692431e-15; tolerance 1e-09
+RD.se: 252/252 pass; max difference 2.7755575615628914e-17; tolerance 1e-09
+RD.single_row_refusal: 84/84 pass; max difference 0; tolerance 1e-09
+RD.single_row_UI_clear: 84/84 pass; max difference 0; tolerance 1e-09
+RD.study_beta: 2236/2236 pass; max difference 0; tolerance 1e-09
+RD.study_count: 252/252 pass; max difference 0; tolerance 1e-09
+RD.study_se: 2236/2236 pass; max difference 5.5511151231257827e-17; tolerance 1e-09
+RD.z: 252/252 pass; max difference 5.8841820305133297e-15; tolerance 1e-09
+RR.beta: 252/252 pass; max difference 6.106226635438361e-16; tolerance 1e-09
+RR.display_pooled_est: 247/247 pass; max difference 0.00049977020006153339; tolerance 0.0005
+RR.display_pooled_hi: 247/247 pass; max difference 0.00049976860335809725; tolerance 0.0005
+RR.display_pooled_lo: 247/247 pass; max difference 0.00049865115989661257; tolerance 0.0005
+RR.display_pooled_pval: 247/247 pass; max difference 0.00049979982933057165; tolerance 0.0005
+RR.display_pooled_zval: 247/247 pass; max difference 0.0049671149844296991; tolerance 0.005
+RR.display_study_est: 2389/2389 pass; max difference 0.00050000000000061107; tolerance 0.0005
+RR.display_study_hi: 2389/2389 pass; max difference 0.00049889243398948402; tolerance 0.0005
+RR.display_study_lo: 2389/2389 pass; max difference 0.00049986372352839314; tolerance 0.0005
+RR.est: 252/252 pass; max difference 6.1964379849028032e-16; tolerance 1e-09
+RR.fragility_DL_beta: 252/252 pass; max difference 2.8310687127941492e-15; tolerance 1e-09
+RR.fragility_DL_hi: 252/252 pass; max difference 9.5479180117763462e-15; tolerance 1e-09
+RR.fragility_DL_lo: 252/252 pass; max difference 3.8302694349567901e-15; tolerance 1e-09
+RR.fragility_FI: 252/252 pass; max difference 0; tolerance 1e-09
+RR.fragility_FQ: 252/252 pass; max difference 0; tolerance 1e-09
+RR.hi: 252/252 pass; max difference 9.486734299035277e-16; tolerance 1e-09
+RR.labbe_curve_max_abs_error: 252/252 pass; max difference 9.9920072216264089e-16; tolerance 1e-09
+RR.labbe_logEff: 252/252 pass; max difference 7.8871810048663771e-16; tolerance 1e-09
+RR.labbe_pc: 2389/2389 pass; max difference 0; tolerance 1e-09
+RR.labbe_pt: 2389/2389 pass; max difference 0; tolerance 1e-09
+RR.lo: 252/252 pass; max difference 6.6613381477509392e-16; tolerance 1e-09
+RR.p: 252/252 pass; max difference 1.0158540675320182e-14; tolerance 1e-09
+RR.se: 252/252 pass; max difference 2.1681944796241854e-16; tolerance 1e-09
+RR.single_row_refusal: 84/84 pass; max difference 0; tolerance 1e-09
+RR.single_row_UI_clear: 84/84 pass; max difference 0; tolerance 1e-09
+RR.study_beta: 2389/2389 pass; max difference 8.2919782151691379e-16; tolerance 1e-09
+RR.study_count: 252/252 pass; max difference 0; tolerance 1e-09
+RR.study_se: 2389/2389 pass; max difference 2.9128992564597523e-16; tolerance 1e-09
+RR.z: 252/252 pass; max difference 3.2232785377221189e-14; tolerance 1e-09
+68461/68461 checks pass
+TAIL: 106/106 relative p-value checks pass; tolerance=1e-9

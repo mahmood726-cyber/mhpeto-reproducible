@@ -16,7 +16,7 @@ def main():
     app=read(ROOT/'app/app-sha256.json')
     assert app=={p.relative_to(ROOT/'app').as_posix():sha(p) for p in (ROOT/'app').rglob('*') if p.is_file() and p.name!='app-sha256.json'}
     for p in sources():
-        if p.suffix.lower() in {'.json','.js','.mjs','.py','.r','.md','.csv','.txt','.html','.cff','.patch','.css'}:
+        if p.suffix.lower() in {'.json','.js','.mjs','.py','.r','.md','.csv','.txt','.html','.cff','.patch','.css','.cmd'}:
             raw=p.read_bytes();assert not raw.startswith(b'\xef\xbb\xbf'),p
             text=raw.decode('utf-8')
             assert not re.search(r'\b[A-Za-z]:[\\/](?:Users|Projects|claude-temp|E156|ProjectIndex)[\\/]',text),'Machine path: '+str(p)
@@ -30,7 +30,7 @@ def main():
     for item in pins:
         p=page.parent/item['path'];assert sha(p)==item['sha256'] and p.stat().st_size==item['bytes']
         assert b'\r' not in p.read_bytes() and item['sha256'] in adapter
-    # Every recorded HTTP request must have a byte-identical archived asset.
+    # Historical HTTP requests establish path coverage only, not a fresh candidate browser run.
     for evidence in (ROOT/'results').glob('*.requests.json'):
         from urllib.parse import urlsplit,unquote
         ev=read(evidence);assert ev['status']=='passed',evidence
@@ -77,8 +77,11 @@ def main():
     z=read(ROOT/'.zenodo.json');cff=yaml.safe_load((ROOT/'CITATION.cff').read_text())
     assert z['title']==cff['title']=='Mantel-Haenszel and Peto meta-analysis in the browser: a tool validated against the R package metafor'
     assert z['creators']==[{'name':'Ahmad, Mahmood'}] and cff['authors']==[{'family-names':'Ahmad','given-names':'Mahmood'}]
-    assert z['version']==cff['version']=='1.0.0' and z['license']==cff['license']=='MIT'
-    assert {(r['identifier'],r['relation']) for r in z['related_identifiers']}=={('https://github.com/mahmood726-cyber/allmeta','isDerivedFrom'),('10.5281/zenodo.23288388','isDerivedFrom')}
+    assert z['version']==cff['version']=='1.1.0' and z['license']==cff['license']=='MIT'
+    assert {(r['identifier'],r['relation']) for r in z['related_identifiers']}=={('https://github.com/mahmood726-cyber/allmeta','isDerivedFrom'),('10.5281/zenodo.23288388','isDerivedFrom'),(read(ROOT/'SOURCE_VERSION.json')['allmeta_doi'],'isDerivedFrom')}
+    assert str(cff['date-released']) == '2026-10-20'
+    from recut_manifest import verify_pins
+    verify_pins()
     assert (ROOT/'.gitattributes').read_text().strip()=='* -text'
     print(f'ARCHIVE PASS: {len(app)} app hashes; {len(manifest)} source hashes; 68461/68461 final checks; tables, paired image pixels and reproducible outputs verified.')
 if __name__=='__main__':main()

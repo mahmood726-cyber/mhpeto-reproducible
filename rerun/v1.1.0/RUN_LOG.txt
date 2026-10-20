@@ -1,0 +1,384 @@
+=== R PATH 
+=== R user library 
+=== R additional library 
+=== R environment 
+=== runtime note 
+=== UTF-8 console 
+=== Verify prepared manifests 
+RUN EVIDENCE PASS: 7 required files; 3 large-file hashes recorded and checked when present
+ORIGINAL INPUTS AND PLUS PINS PASS; app dependencies and webR package pins verified
+MANIFEST PASS: app and archive inventories match
+=== Check native R versions 
+[1] "<LOCAL>\allmeta-offload/Rlib_dta"  
+[2] "<LOCAL>\allmeta-offload/Rlib_extra"
+[3] "<LOCAL>\R/R-4.6.0/library"         
+[1] "R version 4.6.0 (2026-04-24 ucrt)"
+metafor 5.2.1 
+meta 8.5.0 
+jsonlite 2.0.0 
+R PACKAGE VERSIONS PASS
+=== Preserve previous replay 
+RUN EVIDENCE PASS: 7 required files; 3 large-file hashes recorded and checked when present
+Preserved previous replay as [earlier attempt path omitted]
+=== Prepare original replay 
+Prepared fresh original protocol with unchanged corpus, references and validate.R
+=== Replay original browser 
+rerun/v1.1.0/results/app-patched.json: 30/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 60/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 90/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 120/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 150/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 180/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 210/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 240/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 270/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 300/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 330/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 360/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 390/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 420/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 450/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 480/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 510/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 540/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 570/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 600/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 630/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 660/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 690/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 720/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 750/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 780/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 810/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 840/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 870/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 900/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 930/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 960/1008 page configurations
+rerun/v1.1.0/results/app-patched.json: 990/1008 page configurations
+Completed 1008 page configurations; 0 browser errors
+=== Compare original protocol 
+OR.est: 252/252 max_finite=7.48646125503e-16 undefined_mismatches=0 tolerance=1e-09
+OR.lo: 252/252 max_finite=9.16970699703e-16 undefined_mismatches=0 tolerance=1e-09
+OR.hi: 252/252 max_finite=9.71297141272e-16 undefined_mismatches=0 tolerance=1e-09
+OR.z: 252/252 max_finite=2.16004695159e-14 undefined_mismatches=0 tolerance=1e-09
+OR.p: 252/252 max_finite=3.76088049592e-15 undefined_mismatches=0 tolerance=1e-09
+OR.beta: 252/252 max_finite=6.99618321432e-16 undefined_mismatches=0 tolerance=1e-09
+OR.se: 252/252 max_finite=2.1151887884e-16 undefined_mismatches=0 tolerance=1e-09
+PETO.est: 252/252 max_finite=1.32153214983e-15 undefined_mismatches=0 tolerance=1e-09
+PETO.lo: 252/252 max_finite=1.37081558044e-15 undefined_mismatches=0 tolerance=1e-09
+PETO.hi: 252/252 max_finite=1.25411398128e-15 undefined_mismatches=0 tolerance=1e-09
+PETO.z: 252/252 max_finite=4.56690469495e-16 undefined_mismatches=0 tolerance=1e-09
+PETO.p: 252/252 max_finite=4.92661467177e-16 undefined_mismatches=0 tolerance=1e-09
+PETO.beta: 252/252 max_finite=3.70118025037e-16 undefined_mismatches=0 tolerance=1e-09
+PETO.se: 252/252 max_finite=2.07879244428e-16 undefined_mismatches=0 tolerance=1e-09
+OR.display_pooled_est: 247/247 max_finite=0.000497961657733 undefined_mismatches=0 tolerance=0.0005000001
+OR.display_pooled_lo: 247/247 max_finite=0.000492760697925 undefined_mismatches=0 tolerance=0.0005000001
+OR.display_pooled_hi: 247/247 max_finite=0.000497948057179 undefined_mismatches=0 tolerance=0.0005000001
+OR.display_pooled_zval: 247/247 max_finite=0.00497915889744 undefined_mismatches=0 tolerance=0.0050000001
+OR.display_pooled_pval: 247/247 max_finite=0.000499304598841 undefined_mismatches=0 tolerance=0.0005000001
+PETO.display_pooled_est: 252/252 max_finite=0.000497088207265 undefined_mismatches=0 tolerance=0.0005000001
+PETO.display_pooled_lo: 252/252 max_finite=0.000496835515323 undefined_mismatches=0 tolerance=0.0005000001
+PETO.display_pooled_hi: 252/252 max_finite=0.000498799712962 undefined_mismatches=0 tolerance=0.0005000001
+PETO.display_pooled_zval: 252/252 max_finite=0.00498506133097 undefined_mismatches=0 tolerance=0.0050000001
+PETO.display_pooled_pval: 252/252 max_finite=0.000498901591333 undefined_mismatches=0 tolerance=0.0005000001
+OR.study_count: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+OR.study_beta: 2389/2389 max_finite=2.68434954051e-15 undefined_mismatches=0 tolerance=1e-09
+OR.study_se: 2389/2389 max_finite=2.68709363115e-16 undefined_mismatches=0 tolerance=1e-09
+OR.display_study_est: 2389/2389 max_finite=0.000500000000002 undefined_mismatches=0 tolerance=0.0005000001
+OR.display_study_lo: 2389/2389 max_finite=0.000499986651637 undefined_mismatches=0 tolerance=0.0005000001
+OR.display_study_hi: 2389/2389 max_finite=0.000499621934688 undefined_mismatches=0 tolerance=0.0005000001
+OR.labbe_logEff: 252/252 max_finite=7.5691279285e-16 undefined_mismatches=0 tolerance=1e-09
+OR.labbe_pc: 2389/2389 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+OR.labbe_pt: 2389/2389 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+OR.labbe_curve_max_abs_error: 252/252 max_finite=4.4408920985e-16 undefined_mismatches=0 tolerance=1e-09
+RR.est: 252/252 max_finite=6.1964379849e-16 undefined_mismatches=0 tolerance=1e-09
+RR.lo: 252/252 max_finite=6.66133814775e-16 undefined_mismatches=0 tolerance=1e-09
+RR.hi: 252/252 max_finite=9.48673429904e-16 undefined_mismatches=0 tolerance=1e-09
+RR.z: 252/252 max_finite=3.22327853772e-14 undefined_mismatches=0 tolerance=1e-09
+RR.p: 252/252 max_finite=1.01585406753e-14 undefined_mismatches=0 tolerance=1e-09
+RR.beta: 252/252 max_finite=6.10622663544e-16 undefined_mismatches=0 tolerance=1e-09
+RR.se: 252/252 max_finite=2.16819447962e-16 undefined_mismatches=0 tolerance=1e-09
+RR.display_pooled_est: 247/247 max_finite=0.000499770200062 undefined_mismatches=0 tolerance=0.0005000001
+RR.display_pooled_lo: 247/247 max_finite=0.000498651159897 undefined_mismatches=0 tolerance=0.0005000001
+RR.display_pooled_hi: 247/247 max_finite=0.000499768603358 undefined_mismatches=0 tolerance=0.0005000001
+RR.display_pooled_zval: 247/247 max_finite=0.00496711498443 undefined_mismatches=0 tolerance=0.0050000001
+RR.display_pooled_pval: 247/247 max_finite=0.000499799829331 undefined_mismatches=0 tolerance=0.0005000001
+RR.study_count: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RR.study_beta: 2389/2389 max_finite=8.29197821517e-16 undefined_mismatches=0 tolerance=1e-09
+RR.study_se: 2389/2389 max_finite=2.91289925646e-16 undefined_mismatches=0 tolerance=1e-09
+RR.display_study_est: 2389/2389 max_finite=0.000500000000001 undefined_mismatches=0 tolerance=0.0005000001
+RR.display_study_lo: 2389/2389 max_finite=0.000499863723528 undefined_mismatches=0 tolerance=0.0005000001
+RR.display_study_hi: 2389/2389 max_finite=0.000498892433989 undefined_mismatches=0 tolerance=0.0005000001
+RR.labbe_logEff: 252/252 max_finite=7.88718100487e-16 undefined_mismatches=0 tolerance=1e-09
+RR.labbe_pc: 2389/2389 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RR.labbe_pt: 2389/2389 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RR.labbe_curve_max_abs_error: 252/252 max_finite=9.99200722163e-16 undefined_mismatches=0 tolerance=1e-09
+RD.est: 252/252 max_finite=1.12757025938e-16 undefined_mismatches=0 tolerance=1e-09
+RD.lo: 252/252 max_finite=2.22044604925e-16 undefined_mismatches=0 tolerance=1e-09
+RD.hi: 252/252 max_finite=1.11022302463e-16 undefined_mismatches=0 tolerance=1e-09
+RD.z: 252/252 max_finite=5.88418203051e-15 undefined_mismatches=0 tolerance=1e-09
+RD.p: 252/252 max_finite=3.49720252757e-15 undefined_mismatches=0 tolerance=1e-09
+RD.beta: 252/252 max_finite=1.12757025938e-16 undefined_mismatches=0 tolerance=1e-09
+RD.se: 252/252 max_finite=2.77555756156e-17 undefined_mismatches=0 tolerance=1e-09
+RD.display_pooled_est: 252/252 max_finite=0.000498927805575 undefined_mismatches=0 tolerance=0.0005000001
+RD.display_pooled_lo: 252/252 max_finite=0.000496695035259 undefined_mismatches=0 tolerance=0.0005000001
+RD.display_pooled_hi: 252/252 max_finite=0.000496946513652 undefined_mismatches=0 tolerance=0.0005000001
+RD.display_pooled_zval: 252/252 max_finite=0.00494045422341 undefined_mismatches=0 tolerance=0.0050000001
+RD.display_pooled_pval: 252/252 max_finite=0.000498809886995 undefined_mismatches=0 tolerance=0.0005000001
+RD.study_count: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RD.study_beta: 2236/2236 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RD.study_se: 2236/2236 max_finite=5.55111512313e-17 undefined_mismatches=0 tolerance=1e-09
+RD.display_study_est: 2389/2389 max_finite=0.0005 undefined_mismatches=0 tolerance=0.0005000001
+RD.display_study_lo: 2389/2389 max_finite=0.000499776787572 undefined_mismatches=0 tolerance=0.0005000001
+RD.display_study_hi: 2389/2389 max_finite=0.000499242351819 undefined_mismatches=0 tolerance=0.0005000001
+RD.labbe_logEff: 252/252 max_finite=7.5691279285e-16 undefined_mismatches=0 tolerance=1e-09
+RD.labbe_pc: 2389/2389 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RD.labbe_pt: 2389/2389 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RD.labbe_curve_max_abs_error: 252/252 max_finite=4.4408920985e-16 undefined_mismatches=0 tolerance=1e-09
+OR.single_row_refusal: 84/84 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+OR.single_row_UI_clear: 84/84 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RR.single_row_refusal: 84/84 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RR.single_row_UI_clear: 84/84 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RD.single_row_refusal: 84/84 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RD.single_row_UI_clear: 84/84 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+OR.fragility_FI: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+OR.fragility_FQ: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+OR.fragility_DL_beta: 252/252 max_finite=1.22124532709e-15 undefined_mismatches=0 tolerance=1e-09
+OR.fragility_DL_lo: 252/252 max_finite=2.10942374679e-15 undefined_mismatches=0 tolerance=1e-09
+OR.fragility_DL_hi: 252/252 max_finite=1.75301718783e-15 undefined_mismatches=0 tolerance=1e-09
+RR.fragility_FI: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RR.fragility_FQ: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RR.fragility_DL_beta: 252/252 max_finite=2.83106871279e-15 undefined_mismatches=0 tolerance=1e-09
+RR.fragility_DL_lo: 252/252 max_finite=3.83026943496e-15 undefined_mismatches=0 tolerance=1e-09
+RR.fragility_DL_hi: 252/252 max_finite=9.54791801178e-15 undefined_mismatches=0 tolerance=1e-09
+RD.fragility_FI: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RD.fragility_FQ: 252/252 max_finite=0 undefined_mismatches=0 tolerance=1e-09
+RD.fragility_DL_beta: 252/252 max_finite=3.33066907388e-16 undefined_mismatches=0 tolerance=1e-09
+RD.fragility_DL_lo: 252/252 max_finite=4.4408920985e-16 undefined_mismatches=0 tolerance=1e-09
+RD.fragility_DL_hi: 252/252 max_finite=3.33066907388e-16 undefined_mismatches=0 tolerance=1e-09
+68461/68461 checks pass
+TAIL: 106/106 relative p-value checks pass; 94 with |z| >= 8; tolerance=1e-9
+FRESH ORIGINAL PASS: 68461/68461; tails 106/106
+=== Recompute original R validation 
+Loading required package: Matrix
+Loading required package: metadat
+Loading required package: numDeriv
+
+Loading the 'metafor' package (version 5.2-1). For an
+introduction to the package please type: help(metafor)
+
+R version 4.6.0 (2026-04-24 ucrt)
+metafor 5.2.1; paper 5.2-1
+Recomputed: every MH/Peto fit, study effect and inverse-variance Labbe reference.
+Replayed: archived browser numerical outputs, rounded UI and structural evidence; independent R greedy FI/FQ and DL baseline oracle records. No browser or greedy search is run.
+
+Per-quantity totals:
+OR.beta: 252/252 pass; max difference 6.9961832143169806e-16; tolerance 1e-09
+OR.display_pooled_est: 247/247 pass; max difference 0.00049796165773319245; tolerance 0.0005
+OR.display_pooled_hi: 247/247 pass; max difference 0.00049794805717939816; tolerance 0.0005
+OR.display_pooled_lo: 247/247 pass; max difference 0.00049276069792525412; tolerance 0.0005
+OR.display_pooled_pval: 247/247 pass; max difference 0.00049930459884080236; tolerance 0.0005
+OR.display_pooled_zval: 247/247 pass; max difference 0.0049791588974406054; tolerance 0.005
+OR.display_study_est: 2389/2389 pass; max difference 0.00050000000000238742; tolerance 0.0005
+OR.display_study_hi: 2389/2389 pass; max difference 0.00049962193468822136; tolerance 0.0005
+OR.display_study_lo: 2389/2389 pass; max difference 0.00049998665163664135; tolerance 0.0005
+OR.est: 252/252 pass; max difference 7.4864612550313653e-16; tolerance 1e-09
+OR.fragility_DL_beta: 252/252 pass; max difference 1.2212453270876722e-15; tolerance 1e-09
+OR.fragility_DL_hi: 252/252 pass; max difference 1.7530171878316158e-15; tolerance 1e-09
+OR.fragility_DL_lo: 252/252 pass; max difference 2.1094237467877974e-15; tolerance 1e-09
+OR.fragility_FI: 252/252 pass; max difference 0; tolerance 1e-09
+OR.fragility_FQ: 252/252 pass; max difference 0; tolerance 1e-09
+OR.hi: 252/252 pass; max difference 9.7129714127222985e-16; tolerance 1e-09
+OR.labbe_curve_max_abs_error: 252/252 pass; max difference 4.4408920985006262e-16; tolerance 1e-09
+OR.labbe_logEff: 252/252 pass; max difference 7.5691279284965076e-16; tolerance 1e-09
+OR.labbe_pc: 2389/2389 pass; max difference 0; tolerance 1e-09
+OR.labbe_pt: 2389/2389 pass; max difference 0; tolerance 1e-09
+OR.lo: 252/252 pass; max difference 9.1697069970274603e-16; tolerance 1e-09
+OR.p: 252/252 pass; max difference 3.7608804959177178e-15; tolerance 1e-09
+OR.se: 252/252 pass; max difference 2.1151887883993452e-16; tolerance 1e-09
+OR.single_row_refusal: 84/84 pass; max difference 0; tolerance 1e-09
+OR.single_row_UI_clear: 84/84 pass; max difference 0; tolerance 1e-09
+OR.study_beta: 2389/2389 pass; max difference 2.6843495405077977e-15; tolerance 1e-09
+OR.study_count: 252/252 pass; max difference 0; tolerance 1e-09
+OR.study_se: 2389/2389 pass; max difference 2.687093631145331e-16; tolerance 1e-09
+OR.z: 252/252 pass; max difference 2.1600469515854499e-14; tolerance 1e-09
+PETO.beta: 252/252 pass; max difference 3.7011802503725701e-16; tolerance 1e-09
+PETO.display_pooled_est: 252/252 pass; max difference 0.0004970882072647953; tolerance 0.0005
+PETO.display_pooled_hi: 252/252 pass; max difference 0.00049879971296218351; tolerance 0.0005
+PETO.display_pooled_lo: 252/252 pass; max difference 0.0004968355153232018; tolerance 0.0005
+PETO.display_pooled_pval: 252/252 pass; max difference 0.00049890159133347822; tolerance 0.0005
+PETO.display_pooled_zval: 252/252 pass; max difference 0.0049850613309729841; tolerance 0.005
+PETO.est: 252/252 pass; max difference 1.3215321498346621e-15; tolerance 1e-09
+PETO.hi: 252/252 pass; max difference 1.2541139812768353e-15; tolerance 1e-09
+PETO.lo: 252/252 pass; max difference 1.3708155804436645e-15; tolerance 1e-09
+PETO.p: 252/252 pass; max difference 4.9266146717741321e-16; tolerance 1e-09
+PETO.se: 252/252 pass; max difference 2.0787924442811585e-16; tolerance 1e-09
+PETO.z: 252/252 pass; max difference 4.5669046949457647e-16; tolerance 1e-09
+RD.beta: 252/252 pass; max difference 1.1275702593849246e-16; tolerance 1e-09
+RD.display_pooled_est: 252/252 pass; max difference 0.00049892780557540817; tolerance 0.0005
+RD.display_pooled_hi: 252/252 pass; max difference 0.00049694651365184139; tolerance 0.0005
+RD.display_pooled_lo: 252/252 pass; max difference 0.00049669503525881509; tolerance 0.0005
+RD.display_pooled_pval: 252/252 pass; max difference 0.00049880988699468887; tolerance 0.0005
+RD.display_pooled_zval: 252/252 pass; max difference 0.0049404542234099402; tolerance 0.005
+RD.display_study_est: 2389/2389 pass; max difference 0.00050000000000000044; tolerance 0.0005
+RD.display_study_hi: 2389/2389 pass; max difference 0.00049924235181941085; tolerance 0.0005
+RD.display_study_lo: 2389/2389 pass; max difference 0.00049977678757237576; tolerance 0.0005
+RD.est: 252/252 pass; max difference 1.1275702593849246e-16; tolerance 1e-09
+RD.fragility_DL_beta: 252/252 pass; max difference 3.3306690738754696e-16; tolerance 1e-09
+RD.fragility_DL_hi: 252/252 pass; max difference 3.3306690738754696e-16; tolerance 1e-09
+RD.fragility_DL_lo: 252/252 pass; max difference 4.4408920985006262e-16; tolerance 1e-09
+RD.fragility_FI: 252/252 pass; max difference 0; tolerance 1e-09
+RD.fragility_FQ: 252/252 pass; max difference 0; tolerance 1e-09
+RD.hi: 252/252 pass; max difference 1.1102230246251565e-16; tolerance 1e-09
+RD.labbe_curve_max_abs_error: 252/252 pass; max difference 4.4408920985006262e-16; tolerance 1e-09
+RD.labbe_logEff: 252/252 pass; max difference 7.5691279284965076e-16; tolerance 1e-09
+RD.labbe_pc: 2389/2389 pass; max difference 0; tolerance 1e-09
+RD.labbe_pt: 2389/2389 pass; max difference 0; tolerance 1e-09
+RD.lo: 252/252 pass; max difference 2.2204460492503131e-16; tolerance 1e-09
+RD.p: 252/252 pass; max difference 3.4972025275692431e-15; tolerance 1e-09
+RD.se: 252/252 pass; max difference 2.7755575615628914e-17; tolerance 1e-09
+RD.single_row_refusal: 84/84 pass; max difference 0; tolerance 1e-09
+RD.single_row_UI_clear: 84/84 pass; max difference 0; tolerance 1e-09
+RD.study_beta: 2236/2236 pass; max difference 0; tolerance 1e-09
+RD.study_count: 252/252 pass; max difference 0; tolerance 1e-09
+RD.study_se: 2236/2236 pass; max difference 5.5511151231257827e-17; tolerance 1e-09
+RD.z: 252/252 pass; max difference 5.8841820305133297e-15; tolerance 1e-09
+RR.beta: 252/252 pass; max difference 6.106226635438361e-16; tolerance 1e-09
+RR.display_pooled_est: 247/247 pass; max difference 0.00049977020006153339; tolerance 0.0005
+RR.display_pooled_hi: 247/247 pass; max difference 0.00049976860335809725; tolerance 0.0005
+RR.display_pooled_lo: 247/247 pass; max difference 0.00049865115989661257; tolerance 0.0005
+RR.display_pooled_pval: 247/247 pass; max difference 0.00049979982933057165; tolerance 0.0005
+RR.display_pooled_zval: 247/247 pass; max difference 0.0049671149844296991; tolerance 0.005
+RR.display_study_est: 2389/2389 pass; max difference 0.00050000000000061107; tolerance 0.0005
+RR.display_study_hi: 2389/2389 pass; max difference 0.00049889243398948402; tolerance 0.0005
+RR.display_study_lo: 2389/2389 pass; max difference 0.00049986372352839314; tolerance 0.0005
+RR.est: 252/252 pass; max difference 6.1964379849028032e-16; tolerance 1e-09
+RR.fragility_DL_beta: 252/252 pass; max difference 2.8310687127941492e-15; tolerance 1e-09
+RR.fragility_DL_hi: 252/252 pass; max difference 9.5479180117763462e-15; tolerance 1e-09
+RR.fragility_DL_lo: 252/252 pass; max difference 3.8302694349567901e-15; tolerance 1e-09
+RR.fragility_FI: 252/252 pass; max difference 0; tolerance 1e-09
+RR.fragility_FQ: 252/252 pass; max difference 0; tolerance 1e-09
+RR.hi: 252/252 pass; max difference 9.486734299035277e-16; tolerance 1e-09
+RR.labbe_curve_max_abs_error: 252/252 pass; max difference 9.9920072216264089e-16; tolerance 1e-09
+RR.labbe_logEff: 252/252 pass; max difference 7.8871810048663771e-16; tolerance 1e-09
+RR.labbe_pc: 2389/2389 pass; max difference 0; tolerance 1e-09
+RR.labbe_pt: 2389/2389 pass; max difference 0; tolerance 1e-09
+RR.lo: 252/252 pass; max difference 6.6613381477509392e-16; tolerance 1e-09
+RR.p: 252/252 pass; max difference 1.0158540675320182e-14; tolerance 1e-09
+RR.se: 252/252 pass; max difference 2.1681944796241854e-16; tolerance 1e-09
+RR.single_row_refusal: 84/84 pass; max difference 0; tolerance 1e-09
+RR.single_row_UI_clear: 84/84 pass; max difference 0; tolerance 1e-09
+RR.study_beta: 2389/2389 pass; max difference 8.2919782151691379e-16; tolerance 1e-09
+RR.study_count: 252/252 pass; max difference 0; tolerance 1e-09
+RR.study_se: 2389/2389 pass; max difference 2.9128992564597523e-16; tolerance 1e-09
+RR.z: 252/252 pass; max difference 3.2232785377221189e-14; tolerance 1e-09
+68461/68461 checks pass
+TAIL: 106/106 relative p-value checks pass; tolerance=1e-9
+FRESH R PASS: 68461/68461; tails 106/106
+=== Check extras and text claims 
+mh-peto v2 vs R oracle (R version 4.6.0 (2026-04-24 ucrt); metafor 5.2.1; meta 8.5.0): 120000/120010 checks pass over 1008 configuration-measures; 10 documented failures, 0 unexpected
+  conv.ivfe.beta               756/756 max 5.01e-15
+  conv.ivfe.hi                 756/756 max 4.75e-15
+  conv.ivfe.lo                 756/756 max 4.94e-15
+  conv.ivfe.p                  756/756 max 6.88e-15
+  conv.ivfe.se                 756/756 max 4.58e-15
+  conv.metamh.beta             754/756 max Infinity
+  conv.metamh.hi               754/756 max Infinity
+  conv.metamh.lo               754/756 max Infinity
+  conv.metamh.p                754/756 max Infinity
+  conv.metamh.se               754/756 max Infinity
+  full.MH.H2                   756/756 max 6.51e-15
+  full.MH.I2                   756/756 max 2.44e-13
+  full.MH.QE                   756/756 max 9.32e-15
+  full.MH.QEp                  756/756 max 4.94e-15
+  full.MH.beta                 756/756 max 3.71e-15
+  full.MH.hi                   756/756 max 4.64e-15
+  full.MH.lo                   756/756 max 4.18e-15
+  full.MH.p                    756/756 max 9.94e-15
+  full.MH.se                   756/756 max 4.60e-15
+  full.MH.z                    756/756 max 3.08e-14
+  full.OR.BD                   252/252 max 2.32e-12
+  full.OR.BDp                  252/252 max 1.35e-12
+  full.OR.MH                   252/252 max 4.55e-15
+  full.OR.MHp                  252/252 max 7.22e-16
+  full.OR.TA                   252/252 max 2.32e-12
+  full.OR.TAp                  252/252 max 1.35e-12
+  full.PETO.H2                 252/252 max 8.32e-15
+  full.PETO.I2                 252/252 max 2.15e-14
+  full.PETO.QE                 252/252 max 9.44e-15
+  full.PETO.QEp                252/252 max 6.91e-14
+  full.PETO.beta               252/252 max 3.86e-15
+  full.PETO.hi                 252/252 max 4.46e-15
+  full.PETO.lo                 252/252 max 4.88e-15
+  full.PETO.p                  252/252 max 8.33e-16
+  full.PETO.se                 252/252 max 4.80e-15
+  full.PETO.z                  252/252 max 4.48e-15
+  loo.MH.H2                  6837/6837 max 8.87e-15
+  loo.MH.I2                  6837/6837 max 1.58e-13
+  loo.MH.QE                  6837/6837 max 8.56e-15
+  loo.MH.QEp                 6837/6837 max 5.44e-15
+  loo.MH.beta                6837/6837 max 4.85e-15
+  loo.MH.flag                6837/6837 max 0.00e+0
+  loo.MH.hi                  6837/6837 max 4.75e-15
+  loo.MH.lo                  6837/6837 max 5.01e-15
+  loo.MH.p                   6837/6837 max 4.90e-14
+  loo.MH.se                  6837/6837 max 4.62e-15
+  loo.MH.z                   6837/6837 max 6.74e-14
+  loo.PETO.H2                2279/2279 max 1.91e-14
+  loo.PETO.I2                2279/2279 max 7.96e-14
+  loo.PETO.QE                2279/2279 max 1.91e-14
+  loo.PETO.QEp               2279/2279 max 1.22e-14
+  loo.PETO.beta              2279/2279 max 4.69e-15
+  loo.PETO.flag              2279/2279 max 0.00e+0
+  loo.PETO.hi                2279/2279 max 4.87e-15
+  loo.PETO.lo                2279/2279 max 5.10e-15
+  loo.PETO.p                 2279/2279 max 7.63e-16
+  loo.PETO.se                2279/2279 max 4.80e-15
+  loo.PETO.z                 2279/2279 max 4.88e-15
+  loo.refusal                  165/165 max 0.00e+0
+  loo.refusal.R                165/165 max 0.00e+0
+  skip.k<2                     252/252 max 0.00e+0
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|OR conv.metamh.beta metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|OR conv.metamh.se metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|OR conv.metamh.p metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|OR conv.metamh.lo metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|OR conv.metamh.hi metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|RR conv.metamh.beta metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|RR conv.metamh.se metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|RR conv.metamh.p metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|RR conv.metamh.lo metabin-reml-refusal
+DOCUMENTED FAIL dat.baker2009|exac|Placebo vs Salmeterol|RR conv.metamh.hi metabin-reml-refusal
+CONTRACT PASS: 120000/120010 as pinned; 10 documented failures as pinned; inputs match SHA-256 pins
+text claims vs R (claims-plus.json): 3793/3793 claim checks pass; RD with MH.exact = TRUE: SE differs in 252/252, p in 217/252; default rma.mh: Q differs in 172 configuration-measures, Q undefined under both calls in 2; CMH: |O-E| = 0.25 in 1, undefined in 0
+  claim.default.CMH-differs-unless-|O-E|=0.25                  252/252
+  claim.default.Q-differs-iff-double-zero-or-all-event         754/754
+  claim.default.beta                                           756/756
+  claim.mhexact.OR.beta                                        252/252
+  claim.mhexact.OR.p                                           252/252
+  claim.mhexact.OR.se                                          252/252
+  claim.mhexact.RD.beta                                        252/252
+  claim.mhexact.RD.se-differs                                  252/252
+  claim.mhexact.RR.beta                                        252/252
+  claim.mhexact.RR.p                                           252/252
+  claim.mhexact.RR.se                                          252/252
+  claim.pin.default-differs.I2                                     2/2
+  claim.pin.default-differs.MH                                     1/1
+  claim.pin.default-differs.QE                                     2/2
+  claim.pin.page.H2                                                2/2
+  claim.pin.page.I2                                                2/2
+  claim.pin.page.MH                                                1/1
+  claim.pin.page.MHp                                               1/1
+  claim.pin.page.QE                                                2/2
+  claim.pin.page.QEp                                               2/2
+CLAIMS CONTRACT PASS: 3793/3793 as pinned; claims-plus.json matches its SHA-256 pin
+=== Verify retained publication outputs 
+PASS: 10/10 paper-value assertions; 68461/68461 final checks; 64256/68461 before fixes.
+TAIL ARCHIVE PASS: 106/106 relative p-value checks; 94 with |z| >= 8; R tail table verified.
+RUN EVIDENCE PASS: 7 required files; 3 large-file hashes recorded and checked when present
+ORIGINAL INPUTS AND PLUS PINS PASS; app dependencies and webR package pins verified
+ARCHIVE PASS: 56 app hashes; 250 source hashes; 68461/68461 final checks; tables, paired image pixels and reproducible outputs verified.
+=== Verify final manifests 
+RUN EVIDENCE PASS: 7 required files; 3 large-file hashes recorded and checked when present
+ORIGINAL INPUTS AND PLUS PINS PASS; app dependencies and webR package pins verified
+MANIFEST PASS: app and archive inventories match

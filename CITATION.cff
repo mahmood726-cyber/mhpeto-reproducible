@@ -5,7 +5,8 @@ type: software
 authors:
   - family-names: Ahmad
     given-names: Mahmood
-version: 1.0.0
+version: 1.1.0
+date-released: 2026-10-20
 license: MIT
 references:
   - type: software
@@ -14,7 +15,7 @@ references:
       - family-names: Ahmad
         given-names: Mahmood
     url: https://github.com/mahmood726-cyber/allmeta
-    notes: "isDerivedFrom; validated source commit 7433ef7 (PR #105, squash-merged; seven fixes, direct upper-tail p-values and the Validate-in-R button)"
+    notes: "Historical v1.0.0 evidence; isDerivedFrom; validated source commit 7433ef7 (PR #105, squash-merged; seven fixes, direct upper-tail p-values and the Validate-in-R button)"
   - type: software
     title: allmeta
     authors:
@@ -23,3 +24,11 @@ references:
     version: 1.2.1
     doi: 10.5281/zenodo.23288388
     notes: isDerivedFrom
+  - type: software
+    title: allmeta
+    authors:
+      - family-names: Ahmad
+        given-names: Mahmood
+    version: 1.8.0
+    doi: "10.5281/zenodo.23515177"
+    notes: "isDerivedFrom; release commit 1cb3f8409c7af75ed41f7e1811f9c502f900fc79; release run 2026-10-20 against allmeta 1cb3f84; Fresh browser-to-Python and browser-to-R checks passed 68,461/68,461 plus 106/106 tails; extras measured 120,000/120,010 (10 documented metabin-reml-refusal, 0 unexpected), with claims 3,793/3,793. Evidence: provenance/run_plan-2026-10-20-release.log."
